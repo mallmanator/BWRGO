@@ -55,15 +55,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += tragocoind
+  bin_PROGRAMS += chipsd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += tragocoin-cli tragocoin-tx
+  bin_PROGRAMS += chips-cli chips-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# tragocoin core #
+# chips core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addressindex.h \
@@ -191,7 +191,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between tragocoind and tragocoin-qt
+# server: shared between chipsd and chips-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -249,7 +249,7 @@ libbitcoin_zmq_a_SOURCES = \
 endif
 
 
-# wallet: shared between tragocoind and tragocoin-qt, but only linked
+# wallet: shared between chipsd and chips-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -338,7 +338,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sha512.cpp \
   crypto/sha512.h
 
-# common: shared between tragocoind, and tragocoin-qt and non-server tools
+# common: shared between chipsd, and chips-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -395,7 +395,7 @@ if GLIBC_BACK_COMPAT
 libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
-# cli: shared between tragocoin-cli and tragocoin-qt
+# cli: shared between chips-cli and chips-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -406,16 +406,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-tragocoind_SOURCES = tragocoind.cpp
-tragocoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-tragocoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-tragocoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+chipsd_SOURCES = chipsd.cpp
+chipsd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+chipsd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+chipsd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-tragocoind_SOURCES += tragocoind-res.rc
+chipsd_SOURCES += chipsd-res.rc
 endif
 
-tragocoind_LDADD = \
+chipsd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -426,50 +426,50 @@ tragocoind_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-tragocoind_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+chipsd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-tragocoind_LDADD += libbitcoin_wallet.a
+chipsd_LDADD += libbitcoin_wallet.a
 endif
 
-tragocoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+chipsd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 
-# tragocoin-cli binary #
-tragocoin_cli_SOURCES = tragocoin-cli.cpp
-tragocoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-tragocoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-tragocoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# chips-cli binary #
+chips_cli_SOURCES = chips-cli.cpp
+chips_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+chips_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+chips_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-tragocoin_cli_SOURCES += tragocoin-cli-res.rc
+chips_cli_SOURCES += chips-cli-res.rc
 endif
 
-tragocoin_cli_LDADD = \
+chips_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL)
-tragocoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+chips_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# tragocoin-tx binary #
-tragocoin_tx_SOURCES = tragocoin-tx.cpp
-tragocoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-tragocoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-tragocoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# chips-tx binary #
+chips_tx_SOURCES = chips-tx.cpp
+chips_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+chips_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+chips_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-tragocoin_tx_SOURCES += tragocoin-tx-res.rc
+chips_tx_SOURCES += chips-tx-res.rc
 endif
 
-tragocoin_tx_LDADD = \
+chips_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-tragocoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+chips_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

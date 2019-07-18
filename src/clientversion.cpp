@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both tragocoind and tragocoin-qt, to make it harder for attackers to
+ * for both chipsd and chips-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("tragocoin Core");
+const std::string CLIENT_NAME("chips Core");
 
 /**
  * Client version number

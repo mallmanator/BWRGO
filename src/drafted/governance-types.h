@@ -16,9 +16,9 @@ enum GovernanceObjectType {
     ValueOverride = 1, 
 
     // -------------------------------
-    // tragocoinNetwork - is the root node
-    tragocoinNetwork = 1000,
-    tragocoinNetworkVariable = 1001,
+    // chipsNetwork - is the root node
+    chipsNetwork = 1000,
+    chipsNetworkVariable = 1001,
     Category = 1002,
 
     // Actors

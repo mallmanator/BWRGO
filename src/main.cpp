@@ -3,7 +3,7 @@
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
 // Copyright (c) 2017-2018 The Proton Core developers
-// Copyright (c) 2018 The tragocoin Core developers
+// Copyright (c) 2018 The chips Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -60,7 +60,7 @@
 using namespace std;
 
 #if defined(NDEBUG)
-# error "tragocoin Core cannot be compiled without assertions."
+# error "chips Core cannot be compiled without assertions."
 #endif
 
 /**
@@ -121,7 +121,7 @@ static void CheckBlockIndex(const Consensus::Params& consensusParams);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "tragocoinCoin Signed Message:\n";
+const string strMessageMagic = "chipsCoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -2431,7 +2431,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("tragocoin-scriptch");
+    RenameThread("chips-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -5017,7 +5017,7 @@ bool static AlreadyHave(const CInv& inv) EXCLUSIVE_LOCKS_REQUIRED(cs_main)
         return mapBlockIndex.count(inv.hash);
 
     /*
-        tragocoin Related Inventory Messages
+        chips Related Inventory Messages
 
         --
 

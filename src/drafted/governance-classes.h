@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2018 The Proton Core developers
-// Copyright (c) 2018 The tragocoin Core developers
+// Copyright (c) 2018 The chips Core developers
 
 /*
  * FIELDS AND CLASSIFICATION
@@ -46,7 +46,7 @@
  * =========================
  *
  *   // network
- *   CtragocoinNetwork lvl, network-type, network-status, network-error, milestone-status*
+ *   CchipsNetwork lvl, network-type, network-status, network-error, milestone-status*
  *   CCategory lvl, category-type, status, status-error
  *   CNetworkGlobalVariable lvl, global-type, status, status-error
  *   // base: actor
@@ -118,7 +118,7 @@ private:
     int nLevel;
     std::string strCategory;
 
-    // Current OBJECT STATUS (see http://govman.tragocoincoin.info/index.php/Documentation_:_Status_Field)
+    // Current OBJECT STATUS (see http://govman.chipscoin.info/index.php/Documentation_:_Status_Field)
     int nStatusID;
     std::string strStatusMessage;
 
@@ -131,7 +131,7 @@ public:
 };
 
 // // root node
-class CtragocoinNetwork : public CGovernanceObject
+class CchipsNetwork : public CGovernanceObject
 {
 private:
     std::string strName;
@@ -139,7 +139,7 @@ private:
 
 
 public:
-    CtragocoinNetwork(UniValue objIn)
+    CchipsNetwork(UniValue objIn)
     {
         strName = objIn["name"].get_str();
         strURL = objIn["name"].get_str();
@@ -175,9 +175,9 @@ public:
 
 };
 
-// // can be under: tragocoinNetwork
+// // can be under: chipsNetwork
 // //   -- signature requirements : Key1(User)
-// class CtragocoinNetworkVariable : public CGovernanceObject
+// class CchipsNetworkVariable : public CGovernanceObject
 // {
 // private:
 
@@ -280,7 +280,7 @@ public:
 //     // isRootCategory()
 //     // {
 //     //     // root categories won't have categories as parents
-//     //     return (IsType() == tragocoinNetwork);
+//     //     return (IsType() == chipsNetwork);
 //     // }
 
 //     // isSubcategoryOf(std::string strParentName)

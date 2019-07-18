@@ -123,7 +123,7 @@ public:
 };
 
 /**
- * tragocoin RPC command dispatcher.
+ * chips RPC command dispatcher.
  */
 class CRPCTable
 {

@@ -62,12 +62,12 @@
         <translation>Adresa prijatia</translation>
     </message>
     <message>
-        <source>These are your tragocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú Vaše tragocoin adresy pre posielanie platieb. Pred poslaním mincí vždy overte sumu a doručovaciu adresu.</translation>
+        <source>These are your chips addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú Vaše chips adresy pre posielanie platieb. Pred poslaním mincí vždy overte sumu a doručovaciu adresu.</translation>
     </message>
     <message>
-        <source>These are your tragocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú Vaše tragocoin adresy pre posielanie platieb. Pre každú transakciu sa doporučuje použiť novú doručovaciu adresu.</translation>
+        <source>These are your chips addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú Vaše chips adresy pre posielanie platieb. Pre každú transakciu sa doporučuje použiť novú doručovaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -234,8 +234,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>tragocoin Core</source>
-        <translation>tragocoin Core</translation>
+        <source>chips Core</source>
+        <translation>chips Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -258,16 +258,16 @@
         <translation>&amp;Odoslať</translation>
     </message>
     <message>
-        <source>Send coins to a tragocoin address</source>
-        <translation>Poslať mince na tragocoin adresu</translation>
+        <source>Send coins to a chips address</source>
+        <translation>Poslať mince na chips adresu</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
         <translation>&amp;Prijať</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and tragocoin: URIs)</source>
-        <translation>Vyžiadať platby (vygeneruje QR kódy a tragocoin: URI)</translation>
+        <source>Request payments (generates QR codes and chips: URIs)</source>
+        <translation>Vyžiadať platby (vygeneruje QR kódy a chips: URI)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -294,12 +294,12 @@
         <translation>Ukončiť program</translation>
     </message>
     <message>
-        <source>&amp;About tragocoin Core</source>
-        <translation>&amp;O tragocoin Core</translation>
+        <source>&amp;About chips Core</source>
+        <translation>&amp;O chips Core</translation>
     </message>
     <message>
-        <source>Show information about tragocoin Core</source>
-        <translation>Zobraziť informácie o tragocoin Core</translation>
+        <source>Show information about chips Core</source>
+        <translation>Zobraziť informácie o chips Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -362,16 +362,16 @@
         <translation>Podpísať &amp;správu...</translation>
     </message>
     <message>
-        <source>Sign messages with your tragocoin addresses to prove you own them</source>
-        <translation>Podpísať správy s Vašimi tragocoin adresami ako dôkaz že ich vlastníte</translation>
+        <source>Sign messages with your chips addresses to prove you own them</source>
+        <translation>Podpísať správy s Vašimi chips adresami ako dôkaz že ich vlastníte</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>Overiť správu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified tragocoin addresses</source>
-        <translation>Overiť správy pre uistenie, že boli podpísané zadanými tragocoin adresami</translation>
+        <source>Verify messages to ensure they were signed with specified chips addresses</source>
+        <translation>Overiť správy pre uistenie, že boli podpísané zadanými chips adresami</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -446,16 +446,16 @@
         <translation>Otvoriť &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a tragocoin: URI or payment request</source>
-        <translation>Otvoriť tragocoin: URI alebo žiadosť o platbu </translation>
+        <source>Open a chips: URI or payment request</source>
+        <translation>Otvoriť chips: URI alebo žiadosť o platbu </translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Možnosti príkazového riadku</translation>
     </message>
     <message>
-        <source>tragocoin Core client</source>
-        <translation>tragocoin Core klient</translation>
+        <source>chips Core client</source>
+        <translation>chips Core klient</translation>
     </message>
     <message>
         <source>Synchronizing additional data: %p%</source>
@@ -482,8 +482,8 @@
         <translation>Lišta záložiek</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to tragocoin network</source>
-        <translation><numerusform>%n aktívne spojenie so sieťou tragocoin</numerusform><numerusform>%n aktívne spojenia so sieťou tragocoin</numerusform><numerusform>%n aktívnych spojení so sieťou tragocoin</numerusform></translation>
+        <source>%n active connection(s) to chips network</source>
+        <translation><numerusform>%n aktívne spojenie so sieťou chips</numerusform><numerusform>%n aktívne spojenia so sieťou chips</numerusform><numerusform>%n aktívnych spojení so sieťou chips</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -510,8 +510,8 @@
         <translation><numerusform>%n hodina</numerusform><numerusform>%n hodiny</numerusform><numerusform>%n hodín</numerusform></translation>
     </message>
     <message>
-        <source>Modify configuration options for tragocoin Core</source>
-        <translation>Upraviť možnosti konfigurácie tragocoin Core</translation>
+        <source>Modify configuration options for chips Core</source>
+        <translation>Upraviť možnosti konfigurácie chips Core</translation>
     </message>
     <message>
         <source>Open Wallet &amp;Configuration File</source>
@@ -933,16 +933,16 @@
         <translation>Nastavenie PrivateSend</translation>
     </message>
     <message>
-        <source>PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening tragocoin's configuration screen.</source>
-        <translation>Darksend bol úspešne nastavený na základnú hodnotu (%1 a 2 kolá). Toto nastavenie môžete kedykoľvek zmeniť otvorením konfiguračnej obrazovky tragocoin.</translation>
+        <source>PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening chips's configuration screen.</source>
+        <translation>Darksend bol úspešne nastavený na základnú hodnotu (%1 a 2 kolá). Toto nastavenie môžete kedykoľvek zmeniť otvorením konfiguračnej obrazovky chips.</translation>
     </message>
     <message>
-        <source>PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening tragocoin's configuration screen.</source>
-        <translation>PrivateSend bol úspešne nastavený na základnú hodnotu (%1 a 8 kôl). Toto nastavenie môžete kedykoľvek zmeniť otvorením konfiguračnej obrazovky tragocoin.</translation>
+        <source>PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening chips's configuration screen.</source>
+        <translation>PrivateSend bol úspešne nastavený na základnú hodnotu (%1 a 8 kôl). Toto nastavenie môžete kedykoľvek zmeniť otvorením konfiguračnej obrazovky chips.</translation>
     </message>
     <message>
-        <source>PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening tragocoin's configuration screen.</source>
-        <translation>PrivateSend bol úspešne nastavený na maximálnu hodnotu (%1 a 16 kôl). Toto nastavenie môžete kedykoľvek zmeniť otvorením konfiguračnej obrazovky tragocoin.</translation>
+        <source>PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening chips's configuration screen.</source>
+        <translation>PrivateSend bol úspešne nastavený na maximálnu hodnotu (%1 a 16 kôl). Toto nastavenie môžete kedykoľvek zmeniť otvorením konfiguračnej obrazovky chips.</translation>
     </message>
 </context>
 <context>
@@ -984,8 +984,8 @@
         <translation>Upraviť odosielaciu adresu</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid tragocoin address.</source>
-        <translation>Zadaná adresa "%1" nie je platná tragocoin adresa.</translation>
+        <source>The entered address "%1" is not a valid chips address.</source>
+        <translation>Zadaná adresa "%1" nie je platná chips adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1026,8 +1026,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>tragocoin Core</source>
-        <translation>tragocoin Core</translation>
+        <source>chips Core</source>
+        <translation>chips Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -1038,8 +1038,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About tragocoin Core</source>
-        <translation>O tragocoin Core</translation>
+        <source>About chips Core</source>
+        <translation>O chips Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1077,16 +1077,16 @@
         <translation>Vitajte</translation>
     </message>
     <message>
-        <source>Welcome to tragocoin Core.</source>
-        <translation>Vitajte v tragocoin Core.</translation>
+        <source>Welcome to chips Core.</source>
+        <translation>Vitajte v chips Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where tragocoin Core will store its data.</source>
-        <translation>Keďže toto je prvý krát čo spúšťate tento program, môžete vybrať kam bude tragocoin Core ukladať svoje dáta.</translation>
+        <source>As this is the first time the program is launched, you can choose where chips Core will store its data.</source>
+        <translation>Keďže toto je prvý krát čo spúšťate tento program, môžete vybrať kam bude chips Core ukladať svoje dáta.</translation>
     </message>
     <message>
-        <source>tragocoin Core will download and store a copy of the tragocoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>tragocoin Core stiahne a uloží kópiu reťazca blokov tragocoin. Pri najmenej %1GB dát bude uložených v tejto zložke and bude ďalej rásť. Peňaženka bude tiež uložená v tejto zložke.</translation>
+        <source>chips Core will download and store a copy of the chips block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>chips Core stiahne a uloží kópiu reťazca blokov chips. Pri najmenej %1GB dát bude uložených v tejto zložke and bude ďalej rásť. Peňaženka bude tiež uložená v tejto zložke.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1097,8 +1097,8 @@
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-        <source>tragocoin Core</source>
-        <translation>tragocoin Core</translation>
+        <source>chips Core</source>
+        <translation>chips Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1222,20 +1222,20 @@
         <translation>(0 = auto, &lt;0 = nechať toľko jadier voľných)</translation>
     </message>
     <message>
-        <source>Amount of tragocoin to keep anonymized</source>
-        <translation>Suma tragocoin ktorú držať anonymne </translation>
+        <source>Amount of chips to keep anonymized</source>
+        <translation>Suma chips ktorú držať anonymne </translation>
     </message>
     <message>
         <source>W&amp;allet</source>
         <translation>Peňaženka</translation>
     </message>
     <message>
-        <source>Automatically start tragocoin Core after logging in to the system.</source>
-        <translation>Automaticky spustiť tragocoin Core po prihlásení do systému.</translation>
+        <source>Automatically start chips Core after logging in to the system.</source>
+        <translation>Automaticky spustiť chips Core po prihlásení do systému.</translation>
     </message>
     <message>
-        <source>&amp;Start tragocoin Core on system login</source>
-        <translation>&amp;Spusť tragocoin po prihlásení do systému</translation>
+        <source>&amp;Start chips Core on system login</source>
+        <translation>&amp;Spusť chips po prihlásení do systému</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
@@ -1258,8 +1258,8 @@
         <translation>Povoliť prichádzajúce spojenia</translation>
     </message>
     <message>
-        <source>Connect to the tragocoin network through a SOCKS5 proxy.</source>
-        <translation>Pripojiť sa do siete tragocoin cez proxy SOCKS5.</translation>
+        <source>Connect to the chips network through a SOCKS5 proxy.</source>
+        <translation>Pripojiť sa do siete chips cez proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1347,9 +1347,9 @@
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/tragocoin/</source>
+https://www.transifex.com/projects/p/chips/</source>
         <translation>Chýbajúci alebo nekompletný preklad? Pomôžte nám tu:
-https://www.transifex.com/projects/p/tragocoin/</translation>
+https://www.transifex.com/projects/p/chips/</translation>
     </message>
     <message>
         <source>User Interface Theme:</source>
@@ -1423,8 +1423,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the tragocoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky zosynchronizuje so sieťou tragocoin akonáhle nadviaže spojenie, avšak tento proces ešte nebol dokončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the chips network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky zosynchronizuje so sieťou chips akonáhle nadviaže spojenie, avšak tento proces ešte nebol dokončený.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1653,8 +1653,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Chyba pri vyžiadaní platby</translation>
     </message>
     <message>
-        <source>Cannot start tragocoin: click-to-pay handler</source>
-        <translation>tragocoin sa nedá spustiť: click-to-pay handler</translation>
+        <source>Cannot start chips: click-to-pay handler</source>
+        <translation>chips sa nedá spustiť: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1673,8 +1673,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Neplatná adresa platby %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid tragocoin address or malformed URI parameters.</source>
-        <translation>URI sa nedá analyzovať! Toto môže byť spôsobené neplatnou tragocoin adresou, alebo nesprávnym tvarom URI parametrov.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid chips address or malformed URI parameters.</source>
+        <translation>URI sa nedá analyzovať! Toto môže byť spôsobené neplatnou chips adresou, alebo nesprávnym tvarom URI parametrov.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1747,8 +1747,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Suma</translation>
     </message>
     <message>
-        <source>Enter a tragocoin address (e.g. %1)</source>
-        <translation>Zadajte tragocoin adresu (e.g. %1)</translation>
+        <source>Enter a chips address (e.g. %1)</source>
+        <translation>Zadajte chips adresu (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2096,8 +2096,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Znovu použiť jestvujúcu prijímaciu adresu (neodporúča sa)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the tragocoin network.</source>
-        <translation>Pripojiť ku vyžiadanej platbe voliteľnú správu, ktorá sa zobrazí, keď bude žiadosť otvorená. Poznámka: Správa nebude poslaná spolu s platbou cez sieť tragocoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the chips network.</source>
+        <translation>Pripojiť ku vyžiadanej platbe voliteľnú správu, ktorá sa zobrazí, keď bude žiadosť otvorená. Poznámka: Správa nebude poslaná spolu s platbou cez sieť chips.</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2108,8 +2108,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Voliteľný popis ktorý sa pridá k tejto novej prijímajúcej adrese.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the tragocoin network.</source>
-        <translation>Pripojiť ku vyžiadanej platbe voliteľnú správu, ktorá sa zobrazí, keď bude žiadosť otvorená. &lt;br&gt;Poznámka: Správa nebude poslaná spolu s platbou cez sieť tragocoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the chips network.</source>
+        <translation>Pripojiť ku vyžiadanej platbe voliteľnú správu, ktorá sa zobrazí, keď bude žiadosť otvorená. &lt;br&gt;Poznámka: Správa nebude poslaná spolu s platbou cez sieť chips.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2365,8 +2365,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Ak je vlastný poplatok nastavený na 1000 duffov a transakcia je len 250 bytov, v tom prípade "za kilobajt" zaplatí iba 250 duffov na poplatkoch, &lt;br /&gt;zatiaľ čo "celkovo pri najmenšom" zaplatí 1000 duffov. Pre transakcie väčšie ako jeden kilobajt, obe zaplatia rovnako za kilobajt. </translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for tragocoin transactions than the network can process.</source>
-        <translation>Platenie minimálneho poplatku je v poriadku pokiaľ je objem transakcií menší ako je miesto v bloku. &lt;br /&gt;Buďte opatrný pretože to môže skončiť s nikdy nepotvrdenými transakciami, akonáhle je dopyt po tragocoin transakciách väčší ako dokáže sieť tragocoin spracovať.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for chips transactions than the network can process.</source>
+        <translation>Platenie minimálneho poplatku je v poriadku pokiaľ je objem transakcií menší ako je miesto v bloku. &lt;br /&gt;Buďte opatrný pretože to môže skončiť s nikdy nepotvrdenými transakciami, akonáhle je dopyt po chips transakciách väčší ako dokáže sieť chips spracovať.</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2541,8 +2541,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Transakcia bola zamietnutá! Toto sa môže stať ak niektoré coins vo vašej peňaženke už boli minuté, ako keď použijete kópiu wallet.dat a coins boli minuté z kópie ale neoznačené ako minuté tu.</translation>
     </message>
     <message>
-        <source>Warning: Invalid tragocoin address</source>
-        <translation>Upozornenie: Neplatná tragocoin adresa</translation>
+        <source>Warning: Invalid chips address</source>
+        <translation>Upozornenie: Neplatná chips adresa</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2564,8 +2564,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Zapla&amp;tiť:</translation>
     </message>
     <message>
-        <source>The tragocoin address to send the payment to</source>
-        <translation>tragocoin adresa pre poslanie platby</translation>
+        <source>The chips address to send the payment to</source>
+        <translation>chips adresa pre poslanie platby</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2604,8 +2604,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Správa:</translation>
     </message>
     <message>
-        <source>A message that was attached to the tragocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the tragocoin network.</source>
-        <translation>Správa ktorá bola pripojená ku tragocoin: URI ktorá sa uchová spolu s transakciou pre Vašu referenciu. Poznámka: Táto správa nebude poslaná cez sieť tragocoin.</translation>
+        <source>A message that was attached to the chips: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the chips network.</source>
+        <translation>Správa ktorá bola pripojená ku chips: URI ktorá sa uchová spolu s transakciou pre Vašu referenciu. Poznámka: Táto správa nebude poslaná cez sieť chips.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2623,8 +2623,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>tragocoin Core is shutting down...</source>
-        <translation>tragocoin core sa vypína...</translation>
+        <source>chips Core is shutting down...</source>
+        <translation>chips core sa vypína...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2642,8 +2642,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>&amp;Podpísať Správu</translation>
     </message>
     <message>
-        <source>The tragocoin address to sign the message with</source>
-        <translation>tragocoin adresa na podpísanie správy</translation>
+        <source>The chips address to sign the message with</source>
+        <translation>chips adresa na podpísanie správy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2674,8 +2674,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Kopírovať práve zvolenú adresu do systémového klipbordu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this tragocoin address</source>
-        <translation>Podpísať spravu aby ste dokázali, že vlastníte túto tragocoin adresu</translation>
+        <source>Sign the message to prove you own this chips address</source>
+        <translation>Podpísať spravu aby ste dokázali, že vlastníte túto chips adresu</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2694,12 +2694,12 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Overiť správu...</translation>
     </message>
     <message>
-        <source>The tragocoin address the message was signed with</source>
-        <translation>Adresa tragocoin s ktorou bola podpísaná správa</translation>
+        <source>The chips address the message was signed with</source>
+        <translation>Adresa chips s ktorou bola podpísaná správa</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified tragocoin address</source>
-        <translation>Overiť správu pre uistenie, že bola podpísaná zadanou tragocoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified chips address</source>
+        <translation>Overiť správu pre uistenie, že bola podpísaná zadanou chips adresou</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2765,8 +2765,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>tragocoin Core</source>
-        <translation>tragocoin Core</translation>
+        <source>chips Core</source>
+        <translation>chips Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2777,8 +2777,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Vývojári Bitcoin Core</translation>
     </message>
     <message>
-        <source>The tragocoin Core developers</source>
-        <translation>Vývojári tragocoin Core</translation>
+        <source>The chips Core developers</source>
+        <translation>Vývojári chips Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3325,14 +3325,14 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
 </context>
 <context>
-    <name>tragocoin-core</name>
+    <name>chips-core</name>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Spojiť s danou adresou a vždy na nej počúvať. Použite zápis [host]:port pre IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. tragocoin Core is probably already running.</source>
-        <translation>Nedá sa zamknúť dátový adresár %s. tragocoin Core už pravdepodobne beží.</translation>
+        <source>Cannot obtain a lock on data directory %s. chips Core is probably already running.</source>
+        <translation>Nedá sa zamknúť dátový adresár %s. chips Core už pravdepodobne beží.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -3371,8 +3371,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Toto je predbežná testovacia zostava - používate na vlastné riziko - nepoužívajte na ťaženie alebo obchodné aplikácie</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. tragocoin Core is probably already running.</source>
-        <translation>Nedá sa viazať ku %s na tomto počítači. tragocoin Core už pravdepodobne beží.</translation>
+        <source>Unable to bind to %s on this computer. chips Core is probably already running.</source>
+        <translation>Nedá sa viazať ku %s na tomto počítači. chips Core už pravdepodobne beží.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3635,8 +3635,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Autorské práva (C) 2014-%i Vývojári jadra Proton</translation>
     </message>
     <message>
-        <source>Copyright (C) %i The tragocoin Core Developers</source>
-        <translation>Autorské práva (C) %i Vývojári jadra tragocoin</translation>
+        <source>Copyright (C) %i The chips Core Developers</source>
+        <translation>Autorské práva (C) %i Vývojári jadra chips</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
@@ -3647,8 +3647,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Chyba pripojenia k Masternode.</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of tragocoin Core</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu tragocoin Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of chips Core</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu chips Core</translation>
     </message>
     <message>
         <source>Found enough users, signing ( waiting %s )</source>
@@ -3691,8 +3691,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Informácie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. tragocoin Core is shutting down.</source>
-        <translation>Inicializácia kontroly zdravia zlyhala. tragocoin Core sa vypína.</translation>
+        <source>Initialization sanity check failed. chips Core is shutting down.</source>
+        <translation>Inicializácia kontroly zdravia zlyhala. chips Core sa vypína.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -3899,8 +3899,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Väčšia hodnota ako dovoľuje fronta PrivateSend.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart tragocoin Core to complete</source>
-        <translation>Bolo potrebné prepísať peňaženku: k dokončeniu reštartujte tragocoin Core</translation>
+        <source>Wallet needed to be rewritten: restart chips Core to complete</source>
+        <translation>Bolo potrebné prepísať peňaženku: k dokončeniu reštartujte chips Core</translation>
     </message>
     <message>
         <source>Will retry...</source>
@@ -3951,8 +3951,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>V pamäti udržiavať najviac &lt;n&gt; nepotvrdených transakcií (predvolené: %u)</translation>
     </message>
     <message>
-        <source>Disable all tragocoin specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
-        <translation>Vypnúť všetky funkcie špecifické pre tragocoin (Masternodes, PrivateSend, InstantSend, Vláda) (0-1, predvolené: %u)</translation>
+        <source>Disable all chips specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
+        <translation>Vypnúť všetky funkcie špecifické pre chips (Masternodes, PrivateSend, InstantSend, Vláda) (0-1, predvolené: %u)</translation>
     </message>
     <message>
         <source>Enable InstantSend, show confirmations for locked transactions (0-1, default: %u)</source>
@@ -3987,8 +3987,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <translation>Celkové maximum poplatkov (v %s) pre použitie jednej transakcie peňaženky. Príliš malá hodnota môže prerušiť veľké transakcie (predvolené: %s)</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong tragocoin Core will not work properly.</source>
-        <translation>Skontrolujte si prosím či máte správny čas a dátum na Vašom počítači. Ak je Vaše nastavenie zlé, tragocoin Core nebude pracovať správne.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong chips Core will not work properly.</source>
+        <translation>Skontrolujte si prosím či máte správny čas a dátum na Vašom počítači. Ak je Vaše nastavenie zlé, chips Core nebude pracovať správne.</translation>
     </message>
     <message>
         <source>PrivateSend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>

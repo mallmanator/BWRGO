@@ -4,15 +4,15 @@
 
 	* means the category has an associated class
 	
-	CtragocoinNetwork: TRAGO NETWORK (ROOT)
+	CchipsNetwork: TRAGO NETWORK (ROOT)
 	has:
 		vector<CNetworkVariable> vecNetworkVariables;
-		vector<CtragocoinProject> vecProjects;
+		vector<CchipsProject> vecProjects;
 		vector<CGovernanceObject> vecProposals;
 		vector<CBudgetContract> vecContracts;
 		vector<CBudgetUsers> vecUsers;
 
-	CtragocoinProject:
+	CchipsProject:
 	has:
 		name
 		employees

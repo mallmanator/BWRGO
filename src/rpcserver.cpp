@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
 // Copyright (c) 2017-2018 The Proton Core developers
-// Copyright (c) 2018 The tragocoin Core developers
+// Copyright (c) 2018 The chips Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -245,11 +245,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop tragocoin Core server.");
+            "\nStop chips Core server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "tragocoin Core server stopping";
+    return "chips Core server stopping";
 }
 
 /**
@@ -344,19 +344,19 @@ static const CRPCCommand vRPCCommands[] =
     { "hidden",             "resendwallettransactions", &resendwallettransactions, true},
 #endif
 
-    /* tragocoin features */
-    { "tragocoin",               "masternode",             &masternode,             true  },
-    { "tragocoin",               "masternodelist",         &masternodelist,         true  },
-    { "tragocoin",               "masternodebroadcast",    &masternodebroadcast,    true  },
-    { "tragocoin",               "gobject",                &gobject,                true  },
-    { "tragocoin",               "getgovernanceinfo",      &getgovernanceinfo,      true  },
-    { "tragocoin",               "getsuperblockbudget",    &getsuperblockbudget,    true  },
-    { "tragocoin",               "voteraw",                &voteraw,                true  },
-    { "tragocoin",               "mnsync",                 &mnsync,                 true  },
-    { "tragocoin",               "spork",                  &spork,                  true  },
-    { "tragocoin",               "getpoolinfo",            &getpoolinfo,            true  },
+    /* chips features */
+    { "chips",               "masternode",             &masternode,             true  },
+    { "chips",               "masternodelist",         &masternodelist,         true  },
+    { "chips",               "masternodebroadcast",    &masternodebroadcast,    true  },
+    { "chips",               "gobject",                &gobject,                true  },
+    { "chips",               "getgovernanceinfo",      &getgovernanceinfo,      true  },
+    { "chips",               "getsuperblockbudget",    &getsuperblockbudget,    true  },
+    { "chips",               "voteraw",                &voteraw,                true  },
+    { "chips",               "mnsync",                 &mnsync,                 true  },
+    { "chips",               "spork",                  &spork,                  true  },
+    { "chips",               "getpoolinfo",            &getpoolinfo,            true  },
 #ifdef ENABLE_WALLET
-    { "tragocoin",               "privatesend",            &privatesend,            false },
+    { "chips",               "privatesend",            &privatesend,            false },
 
     /* Wallet */
     { "wallet",             "keepass",                &keepass,                true },
@@ -579,7 +579,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(const std::string& methodname, const std::string& args)
 {
-    return "> tragocoin-cli " + methodname + " " + args + "\n";
+    return "> chips-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(const std::string& methodname, const std::string& args)

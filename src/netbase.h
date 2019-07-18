@@ -6,7 +6,7 @@
 #define BITCOIN_NETBASE_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/tragocoin-config.h"
+#include "config/chips-config.h"
 #endif
 
 #include "compat.h"
@@ -188,13 +188,13 @@ class CService : public CNetAddr
 class proxyType
 {
 public:
-    proxyType(): randomize_ctragocointials(false) {}
-    proxyType(const CService &proxy, bool randomize_ctragocointials=false): proxy(proxy), randomize_ctragocointials(randomize_ctragocointials) {}
+    proxyType(): randomize_cchipstials(false) {}
+    proxyType(const CService &proxy, bool randomize_cchipstials=false): proxy(proxy), randomize_cchipstials(randomize_cchipstials) {}
 
     bool IsValid() const { return proxy.IsValid(); }
 
     CService proxy;
-    bool randomize_ctragocointials;
+    bool randomize_cchipstials;
 };
 
 enum Network ParseNetwork(std::string net);

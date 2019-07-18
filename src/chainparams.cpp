@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin Core developers
 // Copyright (c) 2014-2018 The Resq Core developers
-// Copyright (c) 2014-2018 The tragocoin Core developers
+// Copyright (c) 2014-2018 The chips Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -86,8 +86,8 @@ public:
         consensus.BIP34Height = 2100000000; // FIX
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8"); // FIX
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 2.5 * 60; // tragocoin: every blocks
-        consensus.nPowTargetSpacing = 2.5 * 60; // tragocoin: 2.5 minute
+        consensus.nPowTargetTimespan = 2.5 * 60; // chips: every blocks
+        consensus.nPowTargetSpacing = 2.5 * 60; // chips: 2.5 minute
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
@@ -126,23 +126,23 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x000006a15615feb4d2db6fdffe9e08289ae1cc6c731b9487cbcc194cf043a8ae"));
         assert(genesis.hashMerkleRoot == uint256S("0x4040fb47f6f0376cbfb2f703379eb3329a73840a574252fdc84f3b387c68e375"));
 
-        vSeeds.push_back(CDNSSeedData("tragocoin.com", "tragocoin.com"));
-        vSeeds.push_back(CDNSSeedData("explorer.tragocoin.com", "explorer.tragocoin.com"));
-        vSeeds.push_back(CDNSSeedData("node1.tragocoin.com", "node1.tragocoin.com"));
-        vSeeds.push_back(CDNSSeedData("node2.tragocoin.com", "node2.tragocoin.com"));
-        vSeeds.push_back(CDNSSeedData("node3.tragocoin.com", "node3.tragocoin.com"));
+        vSeeds.push_back(CDNSSeedData("chips.com", "chips.com"));
+        vSeeds.push_back(CDNSSeedData("explorer.chips.com", "explorer.chips.com"));
+        vSeeds.push_back(CDNSSeedData("node1.chips.com", "node1.chips.com"));
+        vSeeds.push_back(CDNSSeedData("node2.chips.com", "node2.chips.com"));
+        vSeeds.push_back(CDNSSeedData("node3.chips.com", "node3.chips.com"));
 
-        // tragocoin addresses start with 'T'
+        // chips addresses start with 'T'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,66);
-        // tragocoin script addresses start with '7'
+        // chips script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,8);
-        // tragocoin private keys start with 'E'
+        // chips private keys start with 'E'
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,194);
-        // tragocoin BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
+        // chips BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
-        // tragocoin BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
+        // chips BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
-        // tragocoin BIP44 coin type is '5'
+        // chips BIP44 coin type is '5'
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x05).convert_to_container<std::vector<unsigned char> >();
 
         fMiningRequiresPeers = true;
@@ -195,8 +195,8 @@ public:
         consensus.BIP34Height = 21111; // FIX
         consensus.BIP34Hash = uint256S("0x0000000023b3a96d3484e5abb3755c413e7d41500f8e2a5c3f0dd01299cd8ef8"); // FIX
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 60 * 60; // tragocoin: 1 hour
-        consensus.nPowTargetSpacing = 2 * 60; // tragocoin: 2 minutes
+        consensus.nPowTargetTimespan = 60 * 60; // chips: 1 hour
+        consensus.nPowTargetSpacing = 2 * 60; // chips: 2 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
@@ -229,17 +229,17 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        // Testnet tragocoin addresses start with 't'
+        // Testnet chips addresses start with 't'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,128);
-        // Testnet tragocoin script addresses start with '5'
+        // Testnet chips script addresses start with '5'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
         // Testnet private keys start with '5' or 'n' (Bitcoin defaults) (?)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,33);
-        // Testnet tragocoin BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Testnet chips BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Testnet tragocoin BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Testnet chips BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        // Testnet tragocoin BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet chips BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
@@ -295,8 +295,8 @@ public:
         consensus.BIP34Height = -1; // BIP34 has not necessarily activated on regtest
         consensus.BIP34Hash = uint256();
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 60 * 60; // tragocoin: 1 hour
-        consensus.nPowTargetSpacing = 2 * 60; // tragocoin: 2 minutes
+        consensus.nPowTargetTimespan = 60 * 60; // chips: 1 hour
+        consensus.nPowTargetSpacing = 2 * 60; // chips: 2 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.nRuleChangeActivationThreshold = 108; // 75% for testchains
@@ -340,17 +340,17 @@ public:
             0,
             0
         };
-        // Regtest tragocoin addresses start with 'n'
+        // Regtest chips addresses start with 'n'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,112);
-        // Regtest tragocoin script addresses start with '5'
+        // Regtest chips script addresses start with '5'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
         // Regtest private keys start with '5' or 'c' (Bitcoin defaults) (?)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,240);
-        // Regtest tragocoin BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Regtest chips BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Regtest tragocoin BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Regtest chips BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        // Regtest tragocoin BIP44 coin type is '1' (All coin's testnet default)
+        // Regtest chips BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
    }
 };

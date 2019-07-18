@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
 // Copyright (c) 2017-2018 The Proton Core developers
-// Copyright (c) 2018 The tragocoin Core developers
+// Copyright (c) 2018 The chips Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -74,10 +74,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case TRAGO: return QString("tragocoin");
-            case mTRAGO: return QString("Milli-tragocoin (1 / 1" THIN_SP_UTF8 "000)");
-            case uTRAGO: return QString("Micro-tragocoin (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-tragocoin (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case TRAGO: return QString("chips");
+            case mTRAGO: return QString("Milli-chips (1 / 1" THIN_SP_UTF8 "000)");
+            case uTRAGO: return QString("Micro-chips (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case duffs: return QString("Ten Nano-chips (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -85,10 +85,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case TRAGO: return QString("Testtragocoins");
-            case mTRAGO: return QString("Milli-Testtragocoin (1 / 1" THIN_SP_UTF8 "000)");
-            case uTRAGO: return QString("Micro-Testtragocoin (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-Testtragocoin (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case TRAGO: return QString("Testchipss");
+            case mTRAGO: return QString("Milli-Testchips (1 / 1" THIN_SP_UTF8 "000)");
+            case uTRAGO: return QString("Micro-Testchips (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case duffs: return QString("Ten Nano-Testchips (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }

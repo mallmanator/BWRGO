@@ -653,12 +653,12 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
         std::string str(s, 34);
         std::string rpcpass = "rpcpassword=" + str + "\n";
         fprintf(ConfFile, rpcpass.c_str());
-        fprintf(ConfFile, "port=9420\n");
+        fprintf(ConfFile, "port=9419\n");
         fprintf(ConfFile, "rpcport=9421\n");
         fprintf(ConfFile, "rpcallowip=127.0.0.1\n");
         fprintf(ConfFile, "# masternode=1\n");
         fprintf(ConfFile, "# masternodeprivkey=use_masternode_genkey\n");
-        fprintf(ConfFile, "# masternodeaddr=Static_IP:9420\n");
+        fprintf(ConfFile, "# masternodeaddr=Static_IP:9419\n");
 
         fclose(ConfFile);
 
@@ -695,7 +695,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 void AddSeedsToConfigFile(FILE* configFile) {
 	fprintf(configFile,"onlynet=ipv4\r\n");
-	fprintf(configFile,"addnode=144.202.109.173:9420\r\n");
+	fprintf(configFile,"addnode=144.202.109.173:9419\r\n");
 
 }
 

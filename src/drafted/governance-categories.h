@@ -4,7 +4,7 @@
 
 	* means the category has an associated class
 	
-	CchipsNetwork: TRAGO NETWORK (ROOT)
+	CchipsNetwork: CHIPS NETWORK (ROOT)
 	has:
 		vector<CNetworkVariable> vecNetworkVariables;
 		vector<CchipsProject> vecProjects;
@@ -19,7 +19,7 @@
 
 */
 
-	// TRAGO NETWORK (ROOT)
+	// CHIPS NETWORK (ROOT)
 	// 	-> NETWORK VARIABLE
 	// 		-> switch, setting
 	// 	-> CATEGORIES
@@ -49,7 +49,7 @@
 	// 			-> USER1 (only users are allowed here in this scope)
 	// 			-> USER2
 	// 		-> GROUP2 (EVO)
-	// 			-> VALUEOVERRIDE (STORE=TRAGODRIVE)
+	// 			-> VALUEOVERRIDE (STORE=CHIPSDRIVE)
 	// 			-> USER1
 
 	// 	-> COMPANIES

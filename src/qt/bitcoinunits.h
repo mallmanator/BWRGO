@@ -59,9 +59,9 @@ public:
      */
     enum Unit
     {
-        TRAGO,
-        mTRAGO,
-        uTRAGO,
+        CHIPS,
+        mCHIPS,
+        uCHIPS,
         duffs
     };
 

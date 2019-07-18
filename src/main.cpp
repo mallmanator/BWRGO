@@ -2828,7 +2828,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     int64_t nTime3 = GetTimeMicros(); nTimeConnect += nTime3 - nTime2;
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime3 - nTime2), 0.001 * (nTime3 - nTime2) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime3 - nTime2) / (nInputs-1), nTimeConnect * 0.000001);
 
-    // TRAGO : MODIFIED TO CHECK MASTERNODE PAYMENTS AND SUPERBLOCKS
+    // CHIPS : MODIFIED TO CHECK MASTERNODE PAYMENTS AND SUPERBLOCKS
 
     // It's possible that we simply don't have enough data and this could fail
     // (i.e. block itself could be a correct one and we need to store it),
@@ -2839,15 +2839,15 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     CAmount blockReward = nFees + GetBlockSubsidy(pindex->pprev->nBits, pindex->pprev->nHeight, chainparams.GetConsensus());
     std::string strError = "";
     if (!IsBlockValueValid(block, pindex->nHeight, blockReward, strError)) {
-        return state.DoS(0, error("ConnectBlock(TRAGO): %s", strError), REJECT_INVALID, "bad-cb-amount");
+        return state.DoS(0, error("ConnectBlock(CHIPS): %s", strError), REJECT_INVALID, "bad-cb-amount");
     }
 
     if (!IsBlockPayeeValid(block.vtx[0], pindex->nHeight, blockReward)) {
         mapRejectedBlocks.insert(make_pair(block.GetHash(), GetTime()));
-        return state.DoS(0, error("ConnectBlock(TRAGO): couldn't find masternode or superblock payments"),
+        return state.DoS(0, error("ConnectBlock(CHIPS): couldn't find masternode or superblock payments"),
                                 REJECT_INVALID, "bad-cb-payee");
     }
-    // END TRAGO
+    // END CHIPS
 
     if (!control.Wait())
         return state.DoS(100, false);
@@ -3785,7 +3785,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                              REJECT_INVALID, "bad-cb-multiple");
 
 
-    // TRAGO : CHECK TRANSACTIONS FOR INSTANTSEND
+    // CHIPS : CHECK TRANSACTIONS FOR INSTANTSEND
 
     if(sporkManager.IsSporkActive(SPORK_3_INSTANTSEND_BLOCK_FILTERING)) {
         // We should never accept block which conflicts with completed transaction lock,
@@ -3805,17 +3805,17 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                     instantsend.Relay(hashLocked);
                     LOCK(cs_main);
                     mapRejectedBlocks.insert(make_pair(block.GetHash(), GetTime()));
-                    return state.DoS(0, error("CheckBlock(TRAGO): transaction %s conflicts with transaction lock %s",
+                    return state.DoS(0, error("CheckBlock(CHIPS): transaction %s conflicts with transaction lock %s",
                                                 tx.GetHash().ToString(), hashLocked.ToString()),
                                      REJECT_INVALID, "conflict-tx-lock");
                 }
             }
         }
     } else {
-        LogPrintf("CheckBlock(TRAGO): spork is off, skipping transaction locking checks\n");
+        LogPrintf("CheckBlock(CHIPS): spork is off, skipping transaction locking checks\n");
     }
 
-    // END TRAGO
+    // END CHIPS
 
     // Check transactions
     BOOST_FOREACH(const CTransaction& tx, block.vtx)

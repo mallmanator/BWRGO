@@ -33,7 +33,7 @@ static const int SPORK_15_KILL_BAD_PEER                                 = 10014;
 
 static const int64_t SPORK_2_INSTANTSEND_ENABLED_DEFAULT                = 0;            // ON
 static const int64_t SPORK_3_INSTANTSEND_BLOCK_FILTERING_DEFAULT        = 0;            // ON
-static const int64_t SPORK_5_INSTANTSEND_MAX_VALUE_DEFAULT              = 50000;         // 50000 TRAGO
+static const int64_t SPORK_5_INSTANTSEND_MAX_VALUE_DEFAULT              = 50000;         // 50000 CHIPS
 static const int64_t SPORK_8_MASTERNODE_PAYMENT_ENFORCEMENT_DEFAULT     = 1562900400;   // ON at (GMT): Friday, July 12, 2019 3:00:00 AM
 static const int64_t SPORK_9_SUPERBLOCKS_ENABLED_DEFAULT                = 4070908800ULL;// OFF
 static const int64_t SPORK_10_MASTERNODE_PAY_UPDATED_NODES_DEFAULT      = 4070908800ULL;// OFF

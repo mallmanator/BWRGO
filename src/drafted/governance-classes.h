@@ -80,7 +80,7 @@
  *  TREE STRUCTURE
  *  ===========================================
  * 
- *  TRAGO NETWORK (ROOT)
+ *  CHIPS NETWORK (ROOT)
  *      -> NETWORK GLOBOLS
  *          -> SWITCHES, SETTINGS
  *      -> CATEGORIES

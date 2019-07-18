@@ -213,7 +213,7 @@ void CActiveMasternode::ManageStateInitial()
     }
 
     if(pwalletMain->GetBalance() < MN_COLLATERAL * COIN) {
-        LogPrintf("CActiveMasternode::ManageStateInitial -- %s: Wallet balance is < 100 000 TRAGO\n", GetStateString());
+        LogPrintf("CActiveMasternode::ManageStateInitial -- %s: Wallet balance is < 100 000 CHIPS\n", GetStateString());
         return;
     }
 

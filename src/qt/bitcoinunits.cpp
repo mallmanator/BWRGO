@@ -21,9 +21,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(TRAGO);
-    unitlist.append(mTRAGO);
-    unitlist.append(uTRAGO);
+    unitlist.append(CHIPS);
+    unitlist.append(mCHIPS);
+    unitlist.append(uCHIPS);
     unitlist.append(duffs);
     return unitlist;
 }
@@ -32,9 +32,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case TRAGO:
-    case mTRAGO:
-    case uTRAGO:
+    case CHIPS:
+    case mCHIPS:
+    case uCHIPS:
     case duffs:
         return true;
     default:
@@ -48,9 +48,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case TRAGO: return QString("TRAGO");
-            case mTRAGO: return QString("mTRAGO");
-            case uTRAGO: return QString::fromUtf8("μTRAGO");
+            case CHIPS: return QString("CHIPS");
+            case mCHIPS: return QString("mCHIPS");
+            case uCHIPS: return QString::fromUtf8("μCHIPS");
             case duffs: return QString("duffs");
             default: return QString("???");
         }
@@ -59,9 +59,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case TRAGO: return QString("tTRAGO");
-            case mTRAGO: return QString("mtTRAGO");
-            case uTRAGO: return QString::fromUtf8("μtTRAGO");
+            case CHIPS: return QString("tCHIPS");
+            case mCHIPS: return QString("mtCHIPS");
+            case uCHIPS: return QString::fromUtf8("μtCHIPS");
             case duffs: return QString("tduffs");
             default: return QString("???");
         }
@@ -74,9 +74,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case TRAGO: return QString("chips");
-            case mTRAGO: return QString("Milli-chips (1 / 1" THIN_SP_UTF8 "000)");
-            case uTRAGO: return QString("Micro-chips (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case CHIPS: return QString("chips");
+            case mCHIPS: return QString("Milli-chips (1 / 1" THIN_SP_UTF8 "000)");
+            case uCHIPS: return QString("Micro-chips (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case duffs: return QString("Ten Nano-chips (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
@@ -85,9 +85,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case TRAGO: return QString("Testchipss");
-            case mTRAGO: return QString("Milli-Testchips (1 / 1" THIN_SP_UTF8 "000)");
-            case uTRAGO: return QString("Micro-Testchips (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case CHIPS: return QString("Testchipss");
+            case mCHIPS: return QString("Milli-Testchips (1 / 1" THIN_SP_UTF8 "000)");
+            case uCHIPS: return QString("Micro-Testchips (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case duffs: return QString("Ten Nano-Testchips (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
@@ -98,9 +98,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case TRAGO:  return 100000000;
-    case mTRAGO: return 100000;
-    case uTRAGO: return 100;
+    case CHIPS:  return 100000000;
+    case mCHIPS: return 100000;
+    case uCHIPS: return 100;
     case duffs: return 1;
     default:   return 100000000;
     }
@@ -110,9 +110,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case TRAGO: return 8;
-    case mTRAGO: return 5;
-    case uTRAGO: return 2;
+    case CHIPS: return 8;
+    case mCHIPS: return 5;
+    case uCHIPS: return 2;
     case duffs: return 0;
     default: return 0;
     }

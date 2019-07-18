@@ -214,8 +214,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TRAGO&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TRAGO&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CHIPS&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CHIPS&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1164,13 +1164,13 @@
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 1000 TRAGO</source>
-        <translation>Use 2 separate masternodes to mix funds up to 1000 TRAGO</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 CHIPS</source>
+        <translation>Use 2 separate masternodes to mix funds up to 1000 CHIPS</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 1000 TRAGO</source>
-        <translation>Use 8 separate masternodes to mix funds up to 1000 TRAGO</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 CHIPS</source>
+        <translation>Use 8 separate masternodes to mix funds up to 1000 CHIPS</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1179,18 +1179,18 @@
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 TRAGO to anonymize 1000 TRAGO</source>
-        <translation>This option is the quickest and will cost about ~0.025 TRAGO to anonymize 1000 TRAGO</translation>
+        <source>This option is the quickest and will cost about ~0.025 CHIPS to anonymize 1000 CHIPS</source>
+        <translation>This option is the quickest and will cost about ~0.025 CHIPS to anonymize 1000 CHIPS</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 TRAGO to anonymize 1000 TRAGO</source>
-        <translation>This option is moderately fast and will cost about 0.05 TRAGO to anonymize 1000 TRAGO</translation>
+        <source>This option is moderately fast and will cost about 0.05 CHIPS to anonymize 1000 CHIPS</source>
+        <translation>This option is moderately fast and will cost about 0.05 CHIPS to anonymize 1000 CHIPS</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>0.1 TRAGO per 1000 TRAGO you anonymize.</source>
-        <translation>0.1 TRAGO per 1000 TRAGO you anonymize.</translation>
+        <source>0.1 CHIPS per 1000 CHIPS you anonymize.</source>
+        <translation>0.1 CHIPS per 1000 CHIPS you anonymize.</translation>
     </message>
     <message>
         <location line="-13"/>
@@ -1381,8 +1381,8 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the chips in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an chipstive process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 TRAGO, 0.1 TRAGO, 1 TRAGO and 10 TRAGO -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href=&quot;https://chipscoin.atlassian.net/wiki/display/DOC/PrivateSend&quot;&gt;https://chipscoin.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </source>
-        <translation>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the chips in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an chipstive process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 TRAGO, 0.1 TRAGO, 1 TRAGO and 10 TRAGO -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href=&quot;https://chipscoin.atlassian.net/wiki/display/DOC/PrivateSend&quot;&gt;https://chipscoin.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </translation>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the chips in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an chipstive process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 CHIPS, 0.1 CHIPS, 1 CHIPS and 10 CHIPS -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href=&quot;https://chipscoin.atlassian.net/wiki/display/DOC/PrivateSend&quot;&gt;https://chipscoin.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </source>
+        <translation>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the chips in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an chipstive process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 CHIPS, 0.1 CHIPS, 1 CHIPS and 10 CHIPS -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href=&quot;https://chipscoin.atlassian.net/wiki/display/DOC/PrivateSend&quot;&gt;https://chipscoin.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </translation>
     </message>
     <message>
         <location line="-50"/>
@@ -2152,8 +2152,8 @@ https://www.transifex.com/projects/p/chips/</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>0 TRAGO / 0 Rounds</source>
-        <translation>0 TRAGO / 0 Rounds</translation>
+        <source>0 CHIPS / 0 Rounds</source>
+        <translation>0 CHIPS / 0 Rounds</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -4665,8 +4665,8 @@ https://www.transifex.com/projects/p/chips/</translation>
     <message>
         <location line="-28"/>
         <location line="+12"/>
-        <source>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TRAGO.</source>
-        <translation>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TRAGO.</translation>
+        <source>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 CHIPS.</source>
+        <translation>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 CHIPS.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -5076,8 +5076,8 @@ https://www.transifex.com/projects/p/chips/</translation>
     </message>
     <message>
         <location line="+17"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 TRAGO.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 1000 TRAGO.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 CHIPS.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 1000 CHIPS.</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -5551,8 +5551,8 @@ https://www.transifex.com/projects/p/chips/</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Keep N TRAGO anonymized (default: %u)</source>
-        <translation>Keep N TRAGO anonymized (default: %u)</translation>
+        <source>Keep N CHIPS anonymized (default: %u)</source>
+        <translation>Keep N CHIPS anonymized (default: %u)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5626,8 +5626,8 @@ https://www.transifex.com/projects/p/chips/</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TRAGO.</source>
-        <translation>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TRAGO.</translation>
+        <source>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 CHIPS.</source>
+        <translation>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 CHIPS.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5736,8 +5736,8 @@ https://www.transifex.com/projects/p/chips/</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 TRAGO.</source>
-        <translation>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 TRAGO.</translation>
+        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 CHIPS.</source>
+        <translation>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 CHIPS.</translation>
     </message>
     <message>
         <location line="+6"/>

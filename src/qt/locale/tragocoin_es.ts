@@ -176,8 +176,8 @@
         <translation>Confirmar cifrado del monedero</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TRAGO&lt;/b&gt;!</source>
-        <translation>Advertencia: Si cifra la cartera y pierde su contraseña, ¡&lt;b&gt;PERDERÁ TODOS SUS TRAGO&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CHIPS&lt;/b&gt;!</source>
+        <translation>Advertencia: Si cifra la cartera y pierde su contraseña, ¡&lt;b&gt;PERDERÁ TODOS SUS CHIPS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -864,28 +864,28 @@ Dirección: %4
         <translation>Por favor, seleccione el nivel de privacidad.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 TRAGO</source>
-        <translation>Usar 2 nodos maestros distintos para mezclar fondos hasta 1000 TRAGO</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 CHIPS</source>
+        <translation>Usar 2 nodos maestros distintos para mezclar fondos hasta 1000 CHIPS</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 TRAGO</source>
-        <translation>Usar 8 nodos maestros diferentes para mezclar fondos hasta 1000 TRAGO</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 CHIPS</source>
+        <translation>Usar 8 nodos maestros diferentes para mezclar fondos hasta 1000 CHIPS</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Usar 16 nodos maestros diferentes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TRAGO to anonymize 1000 TRAGO</source>
-        <translation>Esta es la opción más rápida y anonimizar 1000 TRAGO costará alrededor de 0.025 TRAGO</translation>
+        <source>This option is the quickest and will cost about ~0.025 CHIPS to anonymize 1000 CHIPS</source>
+        <translation>Esta es la opción más rápida y anonimizar 1000 CHIPS costará alrededor de 0.025 CHIPS</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TRAGO to anonymize 1000 TRAGO</source>
-        <translation>Esta opción es moderadamente rápida y anonimizar 1000 TRAGO costará alrededor de 0.05 TRAGO</translation>
+        <source>This option is moderately fast and will cost about 0.05 CHIPS to anonymize 1000 CHIPS</source>
+        <translation>Esta opción es moderadamente rápida y anonimizar 1000 CHIPS costará alrededor de 0.05 CHIPS</translation>
     </message>
     <message>
-        <source>0.1 TRAGO per 1000 TRAGO you anonymize.</source>
-        <translation>0.1 TRAGO por cada 1000 TRAGO que anonimice.</translation>
+        <source>0.1 CHIPS per 1000 CHIPS you anonymize.</source>
+        <translation>0.1 CHIPS por cada 1000 CHIPS que anonimice.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1431,8 +1431,8 @@ https://www.transifex.com/projects/p/chips/</translation>
         <translation>Cuantía y Rondas:</translation>
     </message>
     <message>
-        <source>0 TRAGO / 0 Rounds</source>
-        <translation>0 TRAGO / 0 Rondas</translation>
+        <source>0 CHIPS / 0 Rounds</source>
+        <translation>0 CHIPS / 0 Rondas</translation>
     </message>
     <message>
         <source>Submitted Denom:</source>
@@ -3276,8 +3276,8 @@ https://www.transifex.com/projects/p/chips/</translation>
         <translation>Enviar chips</translation>
     </message>
     <message>
-        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 TRAGO.</source>
-        <translation>InstantX aún no soporta el envío de valores tan elevados. Las transacciones están limitadas actualmente a %1 TRAGO.</translation>
+        <source>InstantX doesn't support sending values that high yet. Transactions are currently limited to %1 CHIPS.</source>
+        <translation>InstantX aún no soporta el envío de valores tan elevados. Las transacciones están limitadas actualmente a %1 CHIPS.</translation>
     </message>
 </context>
 <context>
@@ -3390,8 +3390,8 @@ https://www.transifex.com/projects/p/chips/</translation>
         <translation>No se pueden localizar fondos denominados de Darksend suficientes para esta transacción.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 TRAGO.</source>
-        <translation>No se pueden localizar fondos no denominados de Darksend suficientes para esta transacción que no sean iguales a 1000 TRAGO.</translation>
+        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 CHIPS.</source>
+        <translation>No se pueden localizar fondos no denominados de Darksend suficientes para esta transacción que no sean iguales a 1000 CHIPS.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3635,12 +3635,12 @@ https://www.transifex.com/projects/p/chips/</translation>
         <translation>Error: Se encontró el argumento no permitido -socks. Ajustar la versión de SOCKS ya no es posible, sólo se admiten proxies SOCKS5</translation>
     </message>
     <message>
-        <source>Fees (in TRAGO/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Las comisiones (en TRAGO/Kb) menores a ésta se consideran como cero a efectos de transmisión (predeterminado: %s)</translation>
+        <source>Fees (in CHIPS/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Las comisiones (en CHIPS/Kb) menores a ésta se consideran como cero a efectos de transmisión (predeterminado: %s)</translation>
     </message>
     <message>
-        <source>Fees (in TRAGO/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Las comisiones (en TRAGO/Kb) menores a ésta se consideran como cero a efectos de creación de transacciones (predeterminado: %s)</translation>
+        <source>Fees (in CHIPS/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Las comisiones (en CHIPS/Kb) menores a ésta se consideran como cero a efectos de creación de transacciones (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3735,8 +3735,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de chips" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 TRAGO.</source>
-        <translation>No se pueden localizar fondos suficientes para esta transacción que no sean iguales a 1000 TRAGO.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 CHIPS.</source>
+        <translation>No se pueden localizar fondos suficientes para esta transacción que no sean iguales a 1000 CHIPS.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3853,8 +3853,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de chips" admin@foo.com
         <translation>Error: Se encontró el argumento no soportado -tor, use -onion.</translation>
     </message>
     <message>
-        <source>Fee (in TRAGO/kB) to add to transactions you send (default: %s)</source>
-        <translation>Comisión (en TRAGO/kB) a añadir sobre las transacciones que envíe (predeterminado: %s)</translation>
+        <source>Fee (in CHIPS/kB) to add to transactions you send (default: %s)</source>
+        <translation>Comisión (en CHIPS/kB) a añadir sobre las transacciones que envíe (predeterminado: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4221,8 +4221,8 @@ por ejemplo: alertnotify=echo %%s | mail -s "Alerta de chips" admin@foo.com
         <translation>Clave KeePassHttp para la comunicación cifrada AES con KeePass</translation>
     </message>
     <message>
-        <source>Keep N TRAGO anonymized (default: %u)</source>
-        <translation>Conservar N TRAGO anónimos (predeterminado: %u)</translation>
+        <source>Keep N CHIPS anonymized (default: %u)</source>
+        <translation>Conservar N CHIPS anónimos (predeterminado: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>

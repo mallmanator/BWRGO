@@ -126,11 +126,11 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x000006a15615feb4d2db6fdffe9e08289ae1cc6c731b9487cbcc194cf043a8ae"));
         assert(genesis.hashMerkleRoot == uint256S("0x4040fb47f6f0376cbfb2f703379eb3329a73840a574252fdc84f3b387c68e375"));
 
-        vSeeds.push_back(CDNSSeedData("chips.com", "chips.com"));
-        vSeeds.push_back(CDNSSeedData("explorer.chips.com", "explorer.chips.com"));
-        vSeeds.push_back(CDNSSeedData("node1.chips.com", "node1.chips.com"));
-        vSeeds.push_back(CDNSSeedData("node2.chips.com", "node2.chips.com"));
-        vSeeds.push_back(CDNSSeedData("node3.chips.com", "node3.chips.com"));
+        //vSeeds.push_back(CDNSSeedData("chips.com", "chips.com"));
+        //vSeeds.push_back(CDNSSeedData("explorer.chips.com", "explorer.chips.com"));
+       // vSeeds.push_back(CDNSSeedData("node1.chips.com", "node1.chips.com"));
+       // vSeeds.push_back(CDNSSeedData("node2.chips.com", "node2.chips.com"));
+       // vSeeds.push_back(CDNSSeedData("node3.chips.com", "node3.chips.com"));
 
         // chips addresses start with 'T'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,66);
@@ -162,7 +162,7 @@ public:
             1562303740, // * UNIX timestamp of last checkpoint block
             0,          // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            500	        // * estimated number of transactions per day after checkpoint
+            0.0	        // * estimated number of transactions per day after checkpoint
         };
     }
 };

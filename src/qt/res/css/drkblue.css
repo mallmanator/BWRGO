@@ -35,24 +35,24 @@ color:#333;
 }
 
 QMenu::item:selected {
-background-color:#ff0000;
+background-color:#651403;
 color:#ffffff;
 }
 
 QToolBar {
-background-color:#ff0000;
+background-color:#651403;
 border:0px solid #000;
 padding:0;
 margin:0;
 }
 
 QToolBar > QToolButton {
-background-color:#000000;
+background-color:#651403;
 border:0px solid #333;
 min-height:2.5em;
 padding: 0em 1em;
 font-weight:bold;
-color:#ff0000;
+color:#ffffff;
 }
 
 QToolBar > QToolButton:checked {
@@ -773,7 +773,7 @@ min-width:490px;
 
 QWidget .QFrame#frame > .QLabel {
 min-width:190px;
-font-weight:normal;
+font-weight:bold;
 min-height:30px;
 }
 
@@ -782,6 +782,7 @@ qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 background-color:transparent;
 color:#fff;
+font-weight:bold;
 margin-right:5px;
 padding-right:5px;
 }
@@ -795,18 +796,20 @@ QWidget .QFrame#frame .QLabel#labelSpendable { /* Spendable Header */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:16px;
 margin-left:18px;
+color:#ffffff
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchonly { /* Watch-only Header */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:16px;
 margin-left:16px;
+font-weight:bold;
 }
 
 QWidget .QFrame#frame .QLabel#labelBalanceText { /* Available Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#ff0000;
+background-color:#651403;
 color:#ffffff;
 margin-right:5px;
 padding-right:5px;
@@ -821,22 +824,25 @@ font-size:16px;
 font-weight:bold;
 color:#ffffff;
 margin-left:0px;
+font-weight:bold;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchAvailable { /* Watch-only Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:16px;
 margin-left:16px;
+font-weight:bold;
 }
 
 QWidget .QFrame#frame .QLabel#labelPendingText { /* Pending Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 font-size:16px;
-background-color:#ff0000;
+background-color:#651403;
 color:#ffffff;
 margin-right:5px;
 padding-right:5px;
+font-weight:bold;
 }
 
 QWidget .QFrame#frame .QLabel#labelUnconfirmed { /* Pending Balance */
@@ -844,23 +850,26 @@ qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:16px;
 margin-left:0px;
 color:#ffffff;
+font-weight:bold;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchPending { /* Watch-only Pending Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
-font-size:14px;
+font-size:16px;
 margin-left:16px;
-color:#ff0000;
+color:#ffffff;
+font-weight:bold;
 }
 
 QWidget .QFrame#frame .QLabel#labelImmatureText { /* Immature Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 font-size:16px;
-background-color:#ff0000;
+background-color:#651403;
 color:#ffffff;
 margin-right:5px;
 padding-right:5px;
+font-weight:bold;
 }
 
 QWidget .QFrame#frame .QLabel#labelImmature { /* Immature Balance */
@@ -868,6 +877,7 @@ qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:16px;
 margin-left:0px;
 color:#ffffff;
+font-weight:bold;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchImmature { /* Watch-only Immature Balance */
@@ -875,16 +885,18 @@ qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:16px;
 margin-left:16px;
 color:#ffffff;
+font-weight:bold;
 }
 
 QWidget .QFrame#frame .QLabel#labelTotalText { /* Total Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
 font-size:16px;
-background-color:#ff0000;
+background-color:#651403;
 color:#ffffff;
 margin-right:5px;
 padding-right:5px;
+font-weight:bold;
 }
 
 QWidget .QFrame#frame .QLabel#labelTotal { /* Total Balance */
@@ -892,6 +904,7 @@ qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:14px;
 margin-left:0px;
 color:#ffffff;
+font-weight:bold;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchTotal { /* Watch-only Total Balance */
@@ -899,6 +912,7 @@ qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:14px;
 margin-left:16px;
 color:#ffffff;
+font-weight:bold;
 }
 
 /* PRIVATESEND WIDGET */
@@ -918,7 +932,7 @@ min-width: 421px;
 QWidget .QFrame#framePrivateSend .QLabel#labelPrivateSendHeader { /* PrivateSend Header */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#ff0000;
+background-color:#651403;
 color:#ffffff;
 margin-right:5px;
 padding-right:5px;

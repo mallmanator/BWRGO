@@ -793,13 +793,13 @@ margin-left:3px;
 
 QWidget .QFrame#frame .QLabel#labelSpendable { /* Spendable Header */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
-font-size:12px;
+font-size:16px;
 margin-left:18px;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchonly { /* Watch-only Header */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
-font-size:12px;
+font-size:16px;
 margin-left:16px;
 }
 
@@ -811,38 +811,38 @@ color:#ffffff;
 margin-right:5px;
 padding-right:5px;
 font-weight:bold;
-font-size:14px;
+font-size:16px;
 min-height:35px;
 }
 
 QWidget .QFrame#frame .QLabel#labelBalance { /* Available Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
-font-size:14px;
+font-size:16px;
 font-weight:bold;
-color:#ff0000;
+color:#ffffff;
 margin-left:0px;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchAvailable { /* Watch-only Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
-font-size:14px;
+font-size:16px;
 margin-left:16px;
 }
 
 QWidget .QFrame#frame .QLabel#labelPendingText { /* Pending Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-font-size:14px;
-background-color:#F8F6F6;
+font-size:16px;
+background-color:#ff0000;
 margin-right:5px;
 padding-right:5px;
 }
 
 QWidget .QFrame#frame .QLabel#labelUnconfirmed { /* Pending Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
-font-size:14px;
+font-size:16px;
 margin-left:0px;
-color:#ff0000;
+color:#ffffff;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchPending { /* Watch-only Pending Balance */
@@ -855,31 +855,33 @@ color:#ff0000;
 QWidget .QFrame#frame .QLabel#labelImmatureText { /* Immature Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-font-size:14px;
-background-color:#F8F6F6;
+font-size:16px;
+background-color:#ff0000;
+color:#ffffff;
 margin-right:5px;
 padding-right:5px;
 }
 
 QWidget .QFrame#frame .QLabel#labelImmature { /* Immature Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
-font-size:14px;
+font-size:16px;
 margin-left:0px;
-color:#ff0000;
+color:#ffffff;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchImmature { /* Watch-only Immature Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
-font-size:14px;
+font-size:16px;
 margin-left:16px;
-color:#ff0000;
+color:#ffffff;
 }
 
 QWidget .QFrame#frame .QLabel#labelTotalText { /* Total Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-font-size:14px;
-background-color:#F8F6F6;
+font-size:16px;
+background-color:#ff0000;
+color:#ffffff;
 margin-right:5px;
 padding-right:5px;
 }
@@ -888,14 +890,14 @@ QWidget .QFrame#frame .QLabel#labelTotal { /* Total Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:14px;
 margin-left:0px;
-color:#ff0000;
+color:#ffffff;
 }
 
 QWidget .QFrame#frame .QLabel#labelWatchTotal { /* Watch-only Total Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:14px;
 margin-left:16px;
-color:#ff0000;
+color:#ffffff;
 }
 
 /* PRIVATESEND WIDGET */
@@ -915,12 +917,12 @@ min-width: 421px;
 QWidget .QFrame#framePrivateSend .QLabel#labelPrivateSendHeader { /* PrivateSend Header */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#FF0000;
-color:#fff;
+background-color:#ff0000;
+color:#ffffff;
 margin-right:5px;
 padding-right:5px;
 font-weight:bold;
-font-size:14px;
+font-size:16px;
 min-height:35px;
 max-height:35px;
 }
@@ -944,7 +946,7 @@ min-height:25px;
 QWidget .QFrame#framePrivateSend #privateSendFormLayoutWidget .QLabel#labelPrivateSendEnabledText { /* PrivateSend Status Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#F8F6F6;
+background-color:#ffffff;
 margin-right:5px;
 padding-right:5px;
 }
@@ -956,7 +958,7 @@ QWidget .QFrame#framePrivateSend #privateSendFormLayoutWidget .QLabel#labelPriva
 QWidget .QFrame#framePrivateSend #privateSendFormLayoutWidget .QLabel#labelCompletitionText { /* PrivateSend Completion Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#F8F6F6;
+background-color:#ffffff;
 margin-right:5px;
 padding-right:5px;
 
@@ -978,7 +980,7 @@ width:1px;
 QWidget .QFrame#framePrivateSend #privateSendFormLayoutWidget .QLabel#labelAnonymizedText { /* PrivateSend Balance Label */
 qproperty-alignment: 'AlignVCenter | AlignRight';
 min-width:160px;
-background-color:#F8F6F6;
+background-color:#ffffff;
 margin-right:5px;
 padding-right:5px;
 }
@@ -996,7 +998,7 @@ padding-right:5px;
 }
 
 QWidget .QFrame#framePrivateSend #privateSendFormLayoutWidget .QLabel#labelAmountRounds { /* PrivateSend Amount and Rounds */
-
+color:#ffffff;
 }
 
 QWidget .QFrame#framePrivateSend #privateSendFormLayoutWidget .QLabel#labelSubmittedDenomText { /* PrivateSend Submitted Denom Label */
@@ -1020,7 +1022,7 @@ qproperty-alignment: 'AlignVCenter | AlignCenter';
 min-width: 288px;
 min-height: 43px;
 font-size:11px;
-color:#818181;
+color:#ffffff;
 }
 
 /* PRIVATESEND BUTTONS */
@@ -1035,8 +1037,9 @@ outline:none;
 }
 
 QWidget .QFrame#framePrivateSend .QPushButton#togglePrivateSend { /* Start PrivateSend Mixing */
-font-size:15px;
+font-size:16px;
 font-weight:bold;
+background-color:#ff0000;
 color:#ffffff;
 padding-left:10px;
 padding-right:10px;
@@ -1115,13 +1118,13 @@ background-repeat:none;
 
 QWidget .QFrame#frame_2 .QLabel#label_4 { /* Recent Transactions Label */
 min-width:180px;
-color:#3398CC;
+color:#ff0000;
 margin-left:67px;
 margin-top:83px;
 margin-right:5px;
 padding-right:5px;
 font-weight:bold;
-font-size:15px;
+font-size:16px;
 min-height:24px;
 }
 
@@ -1139,6 +1142,7 @@ font-weight:normal;
 font-size:12px;
 max-width:369px;
 margin-top:12px;
+color:#ffffff;
 margin-left:0px; /* CSS Voodoo - set to -66px to hide default transaction icons */
 }
 

@@ -22,8 +22,8 @@ First install the toolchains:
 
 To build executables for Windows 32-bit:
 
-    chmod 755 -R ~/tragocoinTRAGO 
-    cd ~/tragocoinTRAGO/depends
+    chmod 755 -R ~/CHIPS 
+    cd ~/CHIPS/depends
     make HOST=i686-w64-mingw32 -j4
     cd ..
     ./configure --prefix=`pwd`/depends/i686-w64-mingw32
@@ -32,8 +32,8 @@ To build executables for Windows 32-bit:
 To build executables for Windows 64-bit:
 
     
-    chmod 755 -R ~/tragocoinTRAGO 
-    cd ~/tragocoinTRAGO/depends
+    chmod 755 -R ~/CHIPS 
+    cd ~/CHIPS/depends
     make HOST=x86_64-w64-mingw32 -j4
     cd ..
     ./configure --prefix=`pwd`/depends/x86_64-w64-mingw32

@@ -1,4 +1,4 @@
-What is BWRGO?
+What is BWRGO CHIPS?
 ----------------
 First, let's get the acronym out of the way:<br>
 <b>B</b> - Blue <br>

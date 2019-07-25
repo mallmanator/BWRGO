@@ -1,7 +1,40 @@
+What is BWRGO?
+----------------
+First, let's get the acronym out of the way:<br>
+<b>B</b> - Blue <br>
+<b>W</b> - White<br>
+<b>R</b> - Red<br>
+<b>G</b> - Green<br>
+<b>O</b> - Orange<br>
+These are the standard chip colors used in Thursday night poker.
+
+BWRGO is an experimental digital currency used exclusively to fund and  
+forever enshrine the legacy of Thursday night poker.  Thursday night 
+poker is famous for such titles as "Atlanta" and Cocktail Cove (a.k.a. tha cock). 
+More information can be found on these revolutionary games at 
+https://mike.skott.us/2018/atlanta-cocktail-cove/ 
+
+BWRGO uses peer-to-peer technology to operate with no central 
+authority: managing transactions and issuing money are carried
+out collectively by the network. The fuel for this network is know as CHIPS and is the name of open source
+software which enables the use of this currency.
+
+For more information, as well as an immediately useable, binary version of
+the CHIPS Core software, see https://github.com/mallmanator/CHIPS/releases
+
+License
+-------
+CHIPS Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+information or see https://opensource.org/licenses/MIT.
+
+Development Process
+-------------------
+The `master` branch is regularly built and tested, but is not guaranteed to be
+completely stable. [Tags](https://github.com/bwrgo-project/bwrgo/tags) are created
+regularly to indicate new official, stable release versions of bwrgo Core.
 
 
-
-Features
+CHIPS Currence Features
 =============
 
 * PoW X16R algorithm.
@@ -17,41 +50,41 @@ Features
 
 | Specification | Value |
 |:-----------|:-----------|
-| Name | `Tragocoin` |
-| Currency | `TRAGO` |
+| Name | `CHIPS` |
+| Currency | `CHIPS` |
 | Total Supply | `25,000,000` |
 | Block Size | `4MB` |
 | Block Time | `2.5 Minutes` |
-| PoW Normal Reward | `5 TRAGO` |
-| PoW Mega Reward | `200 TRAGO` |
-| Masternode Collateral | `20,000 TRAGO` |
+| PoW Normal Reward | `5 CHIPS` |
+| PoW Mega Reward | `200 CHIPS` |
+| Masternode Collateral | `20,000 CHIPS` |
 | Masternode Reward | `50% Of Block Reward` |
 | Masternode Start | `Friday, July 12, 2019 3:00:00 AM` |
-| Port | `9420` |
-| RPC Port | `9421` |
-| Masternode Fixed Port | `9420` |
+| Port | `9419` |
+| RPC Port | `19419` |
+| Masternode Fixed Port | `9419` |
 
 
 ## Block Rewards 
 
 | Days | PoW Reward | Miner Reward | MN Reward |
 |:-----------|:-----------|:-----------|:-----------|
-| 1 | `5 TRAGO` | `5 TRAGO` | `None` |
-| 2 | `20 TRAGO` | `20 TRAGO` | `None` |
-| 3 - 7 | `100 TRAGO` | `100 TRAGO` | `None` |
-| 8 - 15 | `100 TRAGO` | `50 TRAGO` | `50 TRAGO` |
-| 16 | `75 TRAGO` | `37.5 TRAGO` | `37.5 TRAGO` |
-| 17 | `50 TRAGO` | `25 TRAGO` | `25 TRAGO` |
-| 18 | `25 TRAGO` | `12.5 TRAGO` | `12.5 TRAGO` |
-| 19 | `10 TRAGO` | `5 TRAGO` | `5 TRAGO` |
-| 20 ~ | `5 TRAGO` | `2.5 TRAGO` | `2.5 TRAGO` |
+| 1 | `5 CHIPS` | `5 CHIPS` | `None` |
+| 2 | `20 CHIPS` | `20 CHIPS` | `None` |
+| 3 - 7 | `100 CHIPS` | `100 CHIPS` | `None` |
+| 8 - 15 | `100 CHIPS` | `50 CHIPS` | `50 CHIPS` |
+| 16 | `75 CHIPS` | `37.5 CHIPS` | `37.5 CHIPS` |
+| 17 | `50 CHIPS` | `25 CHIPS` | `25 CHIPS` |
+| 18 | `25 CHIPS` | `12.5 CHIPS` | `12.5 CHIPS` |
+| 19 | `10 CHIPS` | `5 CHIPS` | `5 TRAGO` |
+| 20 ~ | `5 CHIPS` | `2.5 CHIPS` | `2.5 CHIPS` |
 
 
 
 | Monthly Mega Block | PoW Reward | Miner Reward | MN Reward |
 |:-----------|:-----------|:-----------|:-----------|
-| Year 1 | `200 TRAGO` | `100 TRAGO` | `100 TRAGO` |
-| Year 2 | `100 TRAGO` | `60 TRAGO` | `40 TRAGO` |
+| Year 1 | `200 CHIPS` | `100 CHIPS` | `100 CHIPS` |
+| Year 2 | `100 CHIPS` | `60 CHIPS` | `40 CHIPS` |
 | Year 3 ~ | `None` | `None` | `None` |
 
 
@@ -82,8 +115,8 @@ Note that for WSL the tragocoin Core source path MUST be somewhere in the defaul
 The next three steps are an example of how to acquire the source in an appropriate way.
 
     cd /usr/src
-    sudo git clone https://github.com/trago-project/tragocoin.git
-    sudo chmod -R a+rw tragocoin
+    sudo git clone https://github.com/mallmanator/CHIPS/chips.git
+    sudo chmod -R a+rw CHIPS
     
 Once the source code is ready the build steps are below.
 
@@ -107,9 +140,9 @@ Once the source code is ready the build steps are below.
     # If you want to build the Qt GUI:
     sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 
-    git clone https://github.com/trago-project/tragocoin --recursive
+    git clone https://github.com/mallmanator/CHIPS/chips.git --recursive
     
-    cd tragocoin
+    cd CHIPS
 
     # Note autogen will prompt to install some more dependencies if needed
     ./autogen.sh
@@ -141,12 +174,12 @@ NOTE: Building with Qt4 is still supported, however, could result in a broken UI
 
 1. Clone the tragocoin source code and cd into `tragocoin`
 
-        git clone --recursive https://github.com/trago-project/tragocoin.git
-        cd tragocoin
+        git clone --recursive https://github.com/mallmanator/CHIPS/chips.git
+        cd CHIPS
 
 2.  Build Tragocoin Core:
 
-    Configure and build the headless tragocoin binaries as well as the GUI (if Qt is found).
+    Configure and build the headless CHIPS binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -157,14 +190,24 @@ NOTE: Building with Qt4 is still supported, however, could result in a broken UI
 
 ### Run
 
-Then you can either run the command-line daemon using `src/tragocoind` and `src/tragocoin-cli`, or you can run the Qt GUI using `src/qt/tragocoin-qt`
+Then you can either run the command-line daemon using `src/tragocoind` and `src/chips-cli`, or you can run the Qt GUI using `src/qt/chipsn-qt`
 
-For in-depth description of Sparknet and how to use Tragocoin for interacting with contracts, please see [sparknet-guide](doc/sparknet-guide.md).
+For in-depth description of Sparknet and how to use CHIPS for interacting with contracts, please see [sparknet-guide](doc/sparknet-guide.md).
 
 
 ### Mining
 
-Create an TRAGO Wallet. Setup your tragocoin.conf file. download miner software https://www.tragocoin.com 
+Method 1
+
+Headlesss - ./chips-cli generate 1
+    Change 1 to the number of blocks you want to attempt to mine. 
+
+QT - Go to Help --> Debug COnsole and enter generate 1
+    Change 1 to the number of blocks you want to attempt to mine.
+    
+Method 2
+
+Create an CHIPS Wallet. Setup your chips.conf file. download miner software (cpuminer)
 
 Example commandline for cpuminer is:
 
@@ -175,14 +218,14 @@ Coinbase address is the wallet address you would like the reward to goto. Debug 
 
 ### Building a masternode
 
-Setting up a masternode requires a basic understanding of Linux and blockchain technology, as well as an ability to follow instructions closely. It also requires regular maintenance and careful security. Full guide instructions setup : https://www.tragocoin.com/page/setup
+Setting up a masternode requires a basic understanding of Linux and blockchain technology, as well as an ability to follow instructions closely. It also requires regular maintenance and careful security. Full guide instructions setup : https://github.com/mallmanator/CHIPS/doc/masternode_setup_guide.txt
 
 
 Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/trago-project/tragocoin/tags) are created
+completely stable. [Tags](https://github.com/mallmanator/CHIPS/tags) are created
 regularly to indicate new official, stable release versions of Tragocoin.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).

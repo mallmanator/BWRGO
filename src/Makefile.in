@@ -990,62 +990,26 @@ bench_bench_swamp_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(bench_bench_swamp_CXXFLAGS) $(CXXFLAGS) \
 	$(bench_bench_swamp_LDFLAGS) $(LDFLAGS) -o $@
-am__swamp_cli_SOURCES_DIST = swamp-cli.cpp swamp-cli-res.rc
-@TARGET_WINDOWS_TRUE@am__objects_13 = swamp-cli-res.$(OBJEXT)
-am_swamp_cli_OBJECTS = swamp_cli-swamp-cli.$(OBJEXT) $(am__objects_13)
-swamp_cli_OBJECTS = $(am_swamp_cli_OBJECTS)
-swamp_cli_DEPENDENCIES = $(LIBBITCOIN_CLI) $(LIBUNIVALUE) \
-	$(LIBBITCOIN_UTIL) $(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
-swamp_cli_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
-	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(swamp_cli_CXXFLAGS) \
-	$(CXXFLAGS) $(swamp_cli_LDFLAGS) $(LDFLAGS) -o $@
-am__swamp_tx_SOURCES_DIST = swamp-tx.cpp swamp-tx-res.rc
-@TARGET_WINDOWS_TRUE@am__objects_14 = swamp-tx-res.$(OBJEXT)
-am_swamp_tx_OBJECTS = swamp_tx-swamp-tx.$(OBJEXT) $(am__objects_14)
-swamp_tx_OBJECTS = $(am_swamp_tx_OBJECTS)
-swamp_tx_DEPENDENCIES = $(LIBUNIVALUE) $(LIBBITCOIN_COMMON) \
-	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBSECP256K1) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
-swamp_tx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
-	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(swamp_tx_CXXFLAGS) \
-	$(CXXFLAGS) $(swamp_tx_LDFLAGS) $(LDFLAGS) -o $@
-am__swampd_SOURCES_DIST = swampd.cpp swampd-res.rc
-@TARGET_WINDOWS_TRUE@am__objects_15 = swampd-res.$(OBJEXT)
-am_swampd_OBJECTS = swampd-swampd.$(OBJEXT) $(am__objects_15)
-swampd_OBJECTS = $(am_swampd_OBJECTS)
-@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_5 = $(LIBBITCOIN_ZMQ) \
-@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_3)
-swampd_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
-	$(LIBUNIVALUE) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
-	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) $(LIBSECP256K1) \
-	$(am__DEPENDENCIES_5) $(am__append_9) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
-	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
-swampd_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
-	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(swampd_CXXFLAGS) \
-	$(CXXFLAGS) $(swampd_LDFLAGS) $(LDFLAGS) -o $@
 am__qt_swamp_qt_SOURCES_DIST = qt/swamp.cpp qt/macdockiconhandler.mm \
 	qt/macnotificationhandler.mm qt/res/swamp-qt-res.rc
-@ENABLE_QT_TRUE@am__objects_16 =  \
+@ENABLE_QT_TRUE@am__objects_13 =  \
 @ENABLE_QT_TRUE@	qt/qt_swamp_qt-macdockiconhandler.$(OBJEXT) \
 @ENABLE_QT_TRUE@	qt/qt_swamp_qt-macnotificationhandler.$(OBJEXT)
-@ENABLE_QT_TRUE@@TARGET_DARWIN_TRUE@am__objects_17 =  \
-@ENABLE_QT_TRUE@@TARGET_DARWIN_TRUE@	$(am__objects_16)
-@ENABLE_QT_TRUE@am__objects_18 = qt/res/swamp-qt-res.$(OBJEXT)
-@ENABLE_QT_TRUE@@TARGET_WINDOWS_TRUE@am__objects_19 =  \
-@ENABLE_QT_TRUE@@TARGET_WINDOWS_TRUE@	$(am__objects_18)
+@ENABLE_QT_TRUE@@TARGET_DARWIN_TRUE@am__objects_14 =  \
+@ENABLE_QT_TRUE@@TARGET_DARWIN_TRUE@	$(am__objects_13)
+@ENABLE_QT_TRUE@am__objects_15 = qt/res/swamp-qt-res.$(OBJEXT)
+@ENABLE_QT_TRUE@@TARGET_WINDOWS_TRUE@am__objects_16 =  \
+@ENABLE_QT_TRUE@@TARGET_WINDOWS_TRUE@	$(am__objects_15)
 @ENABLE_QT_TRUE@am_qt_swamp_qt_OBJECTS =  \
 @ENABLE_QT_TRUE@	qt/qt_swamp_qt-swamp.$(OBJEXT) \
-@ENABLE_QT_TRUE@	$(am__objects_17) $(am__objects_19)
+@ENABLE_QT_TRUE@	$(am__objects_14) $(am__objects_16)
 qt_swamp_qt_OBJECTS = $(am_qt_swamp_qt_OBJECTS)
-@ENABLE_QT_TRUE@@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_6 =  \
+@ENABLE_QT_TRUE@@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_5 =  \
 @ENABLE_QT_TRUE@@ENABLE_ZMQ_TRUE@	$(LIBBITCOIN_ZMQ) \
 @ENABLE_QT_TRUE@@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_3)
 @ENABLE_QT_TRUE@qt_swamp_qt_DEPENDENCIES = qt/libbitcoinqt.a \
 @ENABLE_QT_TRUE@	$(LIBBITCOIN_SERVER) $(am__append_38) \
-@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_6) $(LIBBITCOIN_CLI) \
+@ENABLE_QT_TRUE@	$(am__DEPENDENCIES_5) $(LIBBITCOIN_CLI) \
 @ENABLE_QT_TRUE@	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
 @ENABLE_QT_TRUE@	$(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) \
 @ENABLE_QT_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) \
@@ -1063,25 +1027,25 @@ am__qt_test_test_swamp_qt_SOURCES_DIST = qt/test/compattests.cpp \
 	qt/test/compattests.h qt/test/uritests.h \
 	qt/test/paymentrequestdata.h qt/test/paymentservertests.h \
 	qt/test/paymentservertests.cpp
-@ENABLE_QT_TESTS_TRUE@@ENABLE_WALLET_TRUE@am__objects_20 = qt/test/qt_test_test_swamp_qt-paymentservertests.$(OBJEXT)
+@ENABLE_QT_TESTS_TRUE@@ENABLE_WALLET_TRUE@am__objects_17 = qt/test/qt_test_test_swamp_qt-paymentservertests.$(OBJEXT)
 @ENABLE_QT_TESTS_TRUE@am_qt_test_test_swamp_qt_OBJECTS = qt/test/qt_test_test_swamp_qt-compattests.$(OBJEXT) \
 @ENABLE_QT_TESTS_TRUE@	qt/test/qt_test_test_swamp_qt-test_main.$(OBJEXT) \
 @ENABLE_QT_TESTS_TRUE@	qt/test/qt_test_test_swamp_qt-uritests.$(OBJEXT) \
-@ENABLE_QT_TESTS_TRUE@	$(am__objects_3) $(am__objects_20)
-@ENABLE_QT_TESTS_TRUE@@ENABLE_WALLET_TRUE@am__objects_21 = qt/test/qt_test_test_swamp_qt-moc_paymentservertests.$(OBJEXT)
-@ENABLE_QT_TESTS_TRUE@am__objects_22 = qt/test/qt_test_test_swamp_qt-moc_compattests.$(OBJEXT) \
+@ENABLE_QT_TESTS_TRUE@	$(am__objects_3) $(am__objects_17)
+@ENABLE_QT_TESTS_TRUE@@ENABLE_WALLET_TRUE@am__objects_18 = qt/test/qt_test_test_swamp_qt-moc_paymentservertests.$(OBJEXT)
+@ENABLE_QT_TESTS_TRUE@am__objects_19 = qt/test/qt_test_test_swamp_qt-moc_compattests.$(OBJEXT) \
 @ENABLE_QT_TESTS_TRUE@	qt/test/qt_test_test_swamp_qt-moc_uritests.$(OBJEXT) \
-@ENABLE_QT_TESTS_TRUE@	$(am__objects_21)
+@ENABLE_QT_TESTS_TRUE@	$(am__objects_18)
 @ENABLE_QT_TESTS_TRUE@nodist_qt_test_test_swamp_qt_OBJECTS =  \
-@ENABLE_QT_TESTS_TRUE@	$(am__objects_22)
+@ENABLE_QT_TESTS_TRUE@	$(am__objects_19)
 qt_test_test_swamp_qt_OBJECTS = $(am_qt_test_test_swamp_qt_OBJECTS) \
 	$(nodist_qt_test_test_swamp_qt_OBJECTS)
-@ENABLE_QT_TESTS_TRUE@@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_7 =  \
+@ENABLE_QT_TESTS_TRUE@@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_6 =  \
 @ENABLE_QT_TESTS_TRUE@@ENABLE_ZMQ_TRUE@	$(LIBBITCOIN_ZMQ) \
 @ENABLE_QT_TESTS_TRUE@@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_3)
 @ENABLE_QT_TESTS_TRUE@qt_test_test_swamp_qt_DEPENDENCIES =  \
 @ENABLE_QT_TESTS_TRUE@	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
-@ENABLE_QT_TESTS_TRUE@	$(am__append_45) $(am__DEPENDENCIES_7) \
+@ENABLE_QT_TESTS_TRUE@	$(am__append_45) $(am__DEPENDENCIES_6) \
 @ENABLE_QT_TESTS_TRUE@	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
 @ENABLE_QT_TESTS_TRUE@	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
 @ENABLE_QT_TESTS_TRUE@	$(LIBUNIVALUE) $(am__DEPENDENCIES_1) \
@@ -1102,6 +1066,42 @@ qt_test_test_swamp_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(qt_test_test_swamp_qt_CXXFLAGS) $(CXXFLAGS) \
 	$(qt_test_test_swamp_qt_LDFLAGS) $(LDFLAGS) -o $@
+am__swamp_cli_SOURCES_DIST = swamp-cli.cpp swamp-cli-res.rc
+@TARGET_WINDOWS_TRUE@am__objects_20 = swamp-cli-res.$(OBJEXT)
+am_swamp_cli_OBJECTS = swamp_cli-swamp-cli.$(OBJEXT) $(am__objects_20)
+swamp_cli_OBJECTS = $(am_swamp_cli_OBJECTS)
+swamp_cli_DEPENDENCIES = $(LIBBITCOIN_CLI) $(LIBUNIVALUE) \
+	$(LIBBITCOIN_UTIL) $(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
+swamp_cli_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
+	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(swamp_cli_CXXFLAGS) \
+	$(CXXFLAGS) $(swamp_cli_LDFLAGS) $(LDFLAGS) -o $@
+am__swamp_tx_SOURCES_DIST = swamp-tx.cpp swamp-tx-res.rc
+@TARGET_WINDOWS_TRUE@am__objects_21 = swamp-tx-res.$(OBJEXT)
+am_swamp_tx_OBJECTS = swamp_tx-swamp-tx.$(OBJEXT) $(am__objects_21)
+swamp_tx_OBJECTS = $(am_swamp_tx_OBJECTS)
+swamp_tx_DEPENDENCIES = $(LIBUNIVALUE) $(LIBBITCOIN_COMMON) \
+	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBSECP256K1) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
+swamp_tx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
+	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(swamp_tx_CXXFLAGS) \
+	$(CXXFLAGS) $(swamp_tx_LDFLAGS) $(LDFLAGS) -o $@
+am__swampd_SOURCES_DIST = swampd.cpp swampd-res.rc
+@TARGET_WINDOWS_TRUE@am__objects_22 = swampd-res.$(OBJEXT)
+am_swampd_OBJECTS = swampd-swampd.$(OBJEXT) $(am__objects_22)
+swampd_OBJECTS = $(am_swampd_OBJECTS)
+@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_7 = $(LIBBITCOIN_ZMQ) \
+@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_3)
+swampd_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
+	$(LIBUNIVALUE) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
+	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_2) $(LIBSECP256K1) \
+	$(am__DEPENDENCIES_7) $(am__append_9) $(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3) \
+	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_3)
+swampd_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
+	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(swampd_CXXFLAGS) \
+	$(CXXFLAGS) $(swampd_LDFLAGS) $(LDFLAGS) -o $@
 am__test_test_swamp_SOURCES_DIST = test/arith_uint256_tests.cpp \
 	test/scriptnum10.h test/addrman_tests.cpp test/alert_tests.cpp \
 	test/allocator_tests.cpp test/base32_tests.cpp \
@@ -1298,9 +1298,9 @@ SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(qt_libbitcoinqt_a_SOURCES) \
 	$(nodist_qt_libbitcoinqt_a_SOURCES) \
 	$(libbitcoinconsensus_la_SOURCES) $(bench_bench_swamp_SOURCES) \
-	$(swamp_cli_SOURCES) $(swamp_tx_SOURCES) $(swampd_SOURCES) \
 	$(qt_swamp_qt_SOURCES) $(qt_test_test_swamp_qt_SOURCES) \
-	$(nodist_qt_test_test_swamp_qt_SOURCES) \
+	$(nodist_qt_test_test_swamp_qt_SOURCES) $(swamp_cli_SOURCES) \
+	$(swamp_tx_SOURCES) $(swampd_SOURCES) \
 	$(test_test_swamp_SOURCES) $(nodist_test_test_swamp_SOURCES)
 DIST_SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(am__leveldb_libleveldb_a_SOURCES_DIST) \
@@ -1313,10 +1313,10 @@ DIST_SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(am__qt_libbitcoinqt_a_SOURCES_DIST) \
 	$(am__libbitcoinconsensus_la_SOURCES_DIST) \
 	$(am__bench_bench_swamp_SOURCES_DIST) \
-	$(am__swamp_cli_SOURCES_DIST) $(am__swamp_tx_SOURCES_DIST) \
-	$(am__swampd_SOURCES_DIST) $(am__qt_swamp_qt_SOURCES_DIST) \
+	$(am__qt_swamp_qt_SOURCES_DIST) \
 	$(am__qt_test_test_swamp_qt_SOURCES_DIST) \
-	$(am__test_test_swamp_SOURCES_DIST)
+	$(am__swamp_cli_SOURCES_DIST) $(am__swamp_tx_SOURCES_DIST) \
+	$(am__swampd_SOURCES_DIST) $(am__test_test_swamp_SOURCES_DIST)
 RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \
 	ctags-recursive dvi-recursive html-recursive info-recursive \
 	install-data-recursive install-dvi-recursive \
@@ -3631,18 +3631,6 @@ bench/bench_bench_swamp-Examples.$(OBJEXT): bench/$(am__dirstamp) \
 bench/bench_swamp$(EXEEXT): $(bench_bench_swamp_OBJECTS) $(bench_bench_swamp_DEPENDENCIES) $(EXTRA_bench_bench_swamp_DEPENDENCIES) bench/$(am__dirstamp)
 	@rm -f bench/bench_swamp$(EXEEXT)
 	$(AM_V_CXXLD)$(bench_bench_swamp_LINK) $(bench_bench_swamp_OBJECTS) $(bench_bench_swamp_LDADD) $(LIBS)
-
-swamp-cli$(EXEEXT): $(swamp_cli_OBJECTS) $(swamp_cli_DEPENDENCIES) $(EXTRA_swamp_cli_DEPENDENCIES) 
-	@rm -f swamp-cli$(EXEEXT)
-	$(AM_V_CXXLD)$(swamp_cli_LINK) $(swamp_cli_OBJECTS) $(swamp_cli_LDADD) $(LIBS)
-
-swamp-tx$(EXEEXT): $(swamp_tx_OBJECTS) $(swamp_tx_DEPENDENCIES) $(EXTRA_swamp_tx_DEPENDENCIES) 
-	@rm -f swamp-tx$(EXEEXT)
-	$(AM_V_CXXLD)$(swamp_tx_LINK) $(swamp_tx_OBJECTS) $(swamp_tx_LDADD) $(LIBS)
-
-swampd$(EXEEXT): $(swampd_OBJECTS) $(swampd_DEPENDENCIES) $(EXTRA_swampd_DEPENDENCIES) 
-	@rm -f swampd$(EXEEXT)
-	$(AM_V_CXXLD)$(swampd_LINK) $(swampd_OBJECTS) $(swampd_LDADD) $(LIBS)
 qt/qt_swamp_qt-swamp.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_swamp_qt-macdockiconhandler.$(OBJEXT): qt/$(am__dirstamp) \
@@ -3685,6 +3673,18 @@ qt/test/qt_test_test_swamp_qt-moc_paymentservertests.$(OBJEXT):  \
 qt/test/test_swamp-qt$(EXEEXT): $(qt_test_test_swamp_qt_OBJECTS) $(qt_test_test_swamp_qt_DEPENDENCIES) $(EXTRA_qt_test_test_swamp_qt_DEPENDENCIES) qt/test/$(am__dirstamp)
 	@rm -f qt/test/test_swamp-qt$(EXEEXT)
 	$(AM_V_CXXLD)$(qt_test_test_swamp_qt_LINK) $(qt_test_test_swamp_qt_OBJECTS) $(qt_test_test_swamp_qt_LDADD) $(LIBS)
+
+swamp-cli$(EXEEXT): $(swamp_cli_OBJECTS) $(swamp_cli_DEPENDENCIES) $(EXTRA_swamp_cli_DEPENDENCIES) 
+	@rm -f swamp-cli$(EXEEXT)
+	$(AM_V_CXXLD)$(swamp_cli_LINK) $(swamp_cli_OBJECTS) $(swamp_cli_LDADD) $(LIBS)
+
+swamp-tx$(EXEEXT): $(swamp_tx_OBJECTS) $(swamp_tx_DEPENDENCIES) $(EXTRA_swamp_tx_DEPENDENCIES) 
+	@rm -f swamp-tx$(EXEEXT)
+	$(AM_V_CXXLD)$(swamp_tx_LINK) $(swamp_tx_OBJECTS) $(swamp_tx_LDADD) $(LIBS)
+
+swampd$(EXEEXT): $(swampd_OBJECTS) $(swampd_DEPENDENCIES) $(EXTRA_swampd_DEPENDENCIES) 
+	@rm -f swampd$(EXEEXT)
+	$(AM_V_CXXLD)$(swampd_LINK) $(swampd_OBJECTS) $(swampd_LDADD) $(LIBS)
 test/$(am__dirstamp):
 	@$(MKDIR_P) test
 	@: > test/$(am__dirstamp)
@@ -3850,9 +3850,6 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/swamp_cli-swamp-cli.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/swamp_tx-swamp-tx.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/swampd-swampd.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_cli_a-rpcclient.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_common_a-amount.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoin_common_a-arith_uint256.Po@am__quote@
@@ -3932,6 +3929,9 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoinconsensus_la-pubkey.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoinconsensus_la-uint256.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libbitcoinconsensus_la-utilstrencodings.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/swamp_cli-swamp-cli.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/swamp_tx-swamp-tx.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/swampd-swampd.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@bench/$(DEPDIR)/bench_bench_swamp-Examples.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@bench/$(DEPDIR)/bench_bench_swamp-bench.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@bench/$(DEPDIR)/bench_bench_swamp-bench_swamp.Po@am__quote@
@@ -4023,9 +4023,6 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@primitives/$(DEPDIR)/libbitcoin_common_a-block.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@primitives/$(DEPDIR)/libbitcoin_common_a-transaction.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@primitives/$(DEPDIR)/libbitcoinconsensus_la-transaction.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_swamp_qt-swamp.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_swamp_qt-macdockiconhandler.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_swamp_qt-macnotificationhandler.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-addressbookpage.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-addresstablemodel.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-askpassphrasedialog.Po@am__quote@
@@ -4125,6 +4122,9 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-walletmodeltransaction.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-walletview.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-winshutdownmonitor.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_swamp_qt-macdockiconhandler.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_swamp_qt-macnotificationhandler.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_swamp_qt-swamp.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/test/$(DEPDIR)/qt_test_test_swamp_qt-compattests.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/test/$(DEPDIR)/qt_test_test_swamp_qt-moc_compattests.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/test/$(DEPDIR)/qt_test_test_swamp_qt-moc_paymentservertests.Po@am__quote@
@@ -8222,48 +8222,6 @@ bench/bench_bench_swamp-Examples.obj: bench/Examples.cpp
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(bench_bench_swamp_CPPFLAGS) $(CPPFLAGS) $(bench_bench_swamp_CXXFLAGS) $(CXXFLAGS) -c -o bench/bench_bench_swamp-Examples.obj `if test -f 'bench/Examples.cpp'; then $(CYGPATH_W) 'bench/Examples.cpp'; else $(CYGPATH_W) '$(srcdir)/bench/Examples.cpp'; fi`
 
-swamp_cli-swamp-cli.o: swamp-cli.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_cli_CPPFLAGS) $(CPPFLAGS) $(swamp_cli_CXXFLAGS) $(CXXFLAGS) -MT swamp_cli-swamp-cli.o -MD -MP -MF $(DEPDIR)/swamp_cli-swamp-cli.Tpo -c -o swamp_cli-swamp-cli.o `test -f 'swamp-cli.cpp' || echo '$(srcdir)/'`swamp-cli.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/swamp_cli-swamp-cli.Tpo $(DEPDIR)/swamp_cli-swamp-cli.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='swamp-cli.cpp' object='swamp_cli-swamp-cli.o' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_cli_CPPFLAGS) $(CPPFLAGS) $(swamp_cli_CXXFLAGS) $(CXXFLAGS) -c -o swamp_cli-swamp-cli.o `test -f 'swamp-cli.cpp' || echo '$(srcdir)/'`swamp-cli.cpp
-
-swamp_cli-swamp-cli.obj: swamp-cli.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_cli_CPPFLAGS) $(CPPFLAGS) $(swamp_cli_CXXFLAGS) $(CXXFLAGS) -MT swamp_cli-swamp-cli.obj -MD -MP -MF $(DEPDIR)/swamp_cli-swamp-cli.Tpo -c -o swamp_cli-swamp-cli.obj `if test -f 'swamp-cli.cpp'; then $(CYGPATH_W) 'swamp-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/swamp-cli.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/swamp_cli-swamp-cli.Tpo $(DEPDIR)/swamp_cli-swamp-cli.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='swamp-cli.cpp' object='swamp_cli-swamp-cli.obj' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_cli_CPPFLAGS) $(CPPFLAGS) $(swamp_cli_CXXFLAGS) $(CXXFLAGS) -c -o swamp_cli-swamp-cli.obj `if test -f 'swamp-cli.cpp'; then $(CYGPATH_W) 'swamp-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/swamp-cli.cpp'; fi`
-
-swamp_tx-swamp-tx.o: swamp-tx.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_tx_CPPFLAGS) $(CPPFLAGS) $(swamp_tx_CXXFLAGS) $(CXXFLAGS) -MT swamp_tx-swamp-tx.o -MD -MP -MF $(DEPDIR)/swamp_tx-swamp-tx.Tpo -c -o swamp_tx-swamp-tx.o `test -f 'swamp-tx.cpp' || echo '$(srcdir)/'`swamp-tx.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/swamp_tx-swamp-tx.Tpo $(DEPDIR)/swamp_tx-swamp-tx.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='swamp-tx.cpp' object='swamp_tx-swamp-tx.o' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_tx_CPPFLAGS) $(CPPFLAGS) $(swamp_tx_CXXFLAGS) $(CXXFLAGS) -c -o swamp_tx-swamp-tx.o `test -f 'swamp-tx.cpp' || echo '$(srcdir)/'`swamp-tx.cpp
-
-swamp_tx-swamp-tx.obj: swamp-tx.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_tx_CPPFLAGS) $(CPPFLAGS) $(swamp_tx_CXXFLAGS) $(CXXFLAGS) -MT swamp_tx-swamp-tx.obj -MD -MP -MF $(DEPDIR)/swamp_tx-swamp-tx.Tpo -c -o swamp_tx-swamp-tx.obj `if test -f 'swamp-tx.cpp'; then $(CYGPATH_W) 'swamp-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/swamp-tx.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/swamp_tx-swamp-tx.Tpo $(DEPDIR)/swamp_tx-swamp-tx.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='swamp-tx.cpp' object='swamp_tx-swamp-tx.obj' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_tx_CPPFLAGS) $(CPPFLAGS) $(swamp_tx_CXXFLAGS) $(CXXFLAGS) -c -o swamp_tx-swamp-tx.obj `if test -f 'swamp-tx.cpp'; then $(CYGPATH_W) 'swamp-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/swamp-tx.cpp'; fi`
-
-swampd-swampd.o: swampd.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swampd_CPPFLAGS) $(CPPFLAGS) $(swampd_CXXFLAGS) $(CXXFLAGS) -MT swampd-swampd.o -MD -MP -MF $(DEPDIR)/swampd-swampd.Tpo -c -o swampd-swampd.o `test -f 'swampd.cpp' || echo '$(srcdir)/'`swampd.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/swampd-swampd.Tpo $(DEPDIR)/swampd-swampd.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='swampd.cpp' object='swampd-swampd.o' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swampd_CPPFLAGS) $(CPPFLAGS) $(swampd_CXXFLAGS) $(CXXFLAGS) -c -o swampd-swampd.o `test -f 'swampd.cpp' || echo '$(srcdir)/'`swampd.cpp
-
-swampd-swampd.obj: swampd.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swampd_CPPFLAGS) $(CPPFLAGS) $(swampd_CXXFLAGS) $(CXXFLAGS) -MT swampd-swampd.obj -MD -MP -MF $(DEPDIR)/swampd-swampd.Tpo -c -o swampd-swampd.obj `if test -f 'swampd.cpp'; then $(CYGPATH_W) 'swampd.cpp'; else $(CYGPATH_W) '$(srcdir)/swampd.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/swampd-swampd.Tpo $(DEPDIR)/swampd-swampd.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='swampd.cpp' object='swampd-swampd.obj' libtool=no @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swampd_CPPFLAGS) $(CPPFLAGS) $(swampd_CXXFLAGS) $(CXXFLAGS) -c -o swampd-swampd.obj `if test -f 'swampd.cpp'; then $(CYGPATH_W) 'swampd.cpp'; else $(CYGPATH_W) '$(srcdir)/swampd.cpp'; fi`
-
 qt/qt_swamp_qt-swamp.o: qt/swamp.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_swamp_qt_CPPFLAGS) $(CPPFLAGS) $(qt_swamp_qt_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_swamp_qt-swamp.o -MD -MP -MF qt/$(DEPDIR)/qt_swamp_qt-swamp.Tpo -c -o qt/qt_swamp_qt-swamp.o `test -f 'qt/swamp.cpp' || echo '$(srcdir)/'`qt/swamp.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_swamp_qt-swamp.Tpo qt/$(DEPDIR)/qt_swamp_qt-swamp.Po
@@ -8375,6 +8333,48 @@ qt/test/qt_test_test_swamp_qt-moc_paymentservertests.obj: qt/test/moc_paymentser
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_swamp_qt-moc_paymentservertests.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_swamp_qt_CPPFLAGS) $(CPPFLAGS) $(qt_test_test_swamp_qt_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_swamp_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
+
+swamp_cli-swamp-cli.o: swamp-cli.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_cli_CPPFLAGS) $(CPPFLAGS) $(swamp_cli_CXXFLAGS) $(CXXFLAGS) -MT swamp_cli-swamp-cli.o -MD -MP -MF $(DEPDIR)/swamp_cli-swamp-cli.Tpo -c -o swamp_cli-swamp-cli.o `test -f 'swamp-cli.cpp' || echo '$(srcdir)/'`swamp-cli.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/swamp_cli-swamp-cli.Tpo $(DEPDIR)/swamp_cli-swamp-cli.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='swamp-cli.cpp' object='swamp_cli-swamp-cli.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_cli_CPPFLAGS) $(CPPFLAGS) $(swamp_cli_CXXFLAGS) $(CXXFLAGS) -c -o swamp_cli-swamp-cli.o `test -f 'swamp-cli.cpp' || echo '$(srcdir)/'`swamp-cli.cpp
+
+swamp_cli-swamp-cli.obj: swamp-cli.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_cli_CPPFLAGS) $(CPPFLAGS) $(swamp_cli_CXXFLAGS) $(CXXFLAGS) -MT swamp_cli-swamp-cli.obj -MD -MP -MF $(DEPDIR)/swamp_cli-swamp-cli.Tpo -c -o swamp_cli-swamp-cli.obj `if test -f 'swamp-cli.cpp'; then $(CYGPATH_W) 'swamp-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/swamp-cli.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/swamp_cli-swamp-cli.Tpo $(DEPDIR)/swamp_cli-swamp-cli.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='swamp-cli.cpp' object='swamp_cli-swamp-cli.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_cli_CPPFLAGS) $(CPPFLAGS) $(swamp_cli_CXXFLAGS) $(CXXFLAGS) -c -o swamp_cli-swamp-cli.obj `if test -f 'swamp-cli.cpp'; then $(CYGPATH_W) 'swamp-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/swamp-cli.cpp'; fi`
+
+swamp_tx-swamp-tx.o: swamp-tx.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_tx_CPPFLAGS) $(CPPFLAGS) $(swamp_tx_CXXFLAGS) $(CXXFLAGS) -MT swamp_tx-swamp-tx.o -MD -MP -MF $(DEPDIR)/swamp_tx-swamp-tx.Tpo -c -o swamp_tx-swamp-tx.o `test -f 'swamp-tx.cpp' || echo '$(srcdir)/'`swamp-tx.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/swamp_tx-swamp-tx.Tpo $(DEPDIR)/swamp_tx-swamp-tx.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='swamp-tx.cpp' object='swamp_tx-swamp-tx.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_tx_CPPFLAGS) $(CPPFLAGS) $(swamp_tx_CXXFLAGS) $(CXXFLAGS) -c -o swamp_tx-swamp-tx.o `test -f 'swamp-tx.cpp' || echo '$(srcdir)/'`swamp-tx.cpp
+
+swamp_tx-swamp-tx.obj: swamp-tx.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_tx_CPPFLAGS) $(CPPFLAGS) $(swamp_tx_CXXFLAGS) $(CXXFLAGS) -MT swamp_tx-swamp-tx.obj -MD -MP -MF $(DEPDIR)/swamp_tx-swamp-tx.Tpo -c -o swamp_tx-swamp-tx.obj `if test -f 'swamp-tx.cpp'; then $(CYGPATH_W) 'swamp-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/swamp-tx.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/swamp_tx-swamp-tx.Tpo $(DEPDIR)/swamp_tx-swamp-tx.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='swamp-tx.cpp' object='swamp_tx-swamp-tx.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swamp_tx_CPPFLAGS) $(CPPFLAGS) $(swamp_tx_CXXFLAGS) $(CXXFLAGS) -c -o swamp_tx-swamp-tx.obj `if test -f 'swamp-tx.cpp'; then $(CYGPATH_W) 'swamp-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/swamp-tx.cpp'; fi`
+
+swampd-swampd.o: swampd.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swampd_CPPFLAGS) $(CPPFLAGS) $(swampd_CXXFLAGS) $(CXXFLAGS) -MT swampd-swampd.o -MD -MP -MF $(DEPDIR)/swampd-swampd.Tpo -c -o swampd-swampd.o `test -f 'swampd.cpp' || echo '$(srcdir)/'`swampd.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/swampd-swampd.Tpo $(DEPDIR)/swampd-swampd.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='swampd.cpp' object='swampd-swampd.o' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swampd_CPPFLAGS) $(CPPFLAGS) $(swampd_CXXFLAGS) $(CXXFLAGS) -c -o swampd-swampd.o `test -f 'swampd.cpp' || echo '$(srcdir)/'`swampd.cpp
+
+swampd-swampd.obj: swampd.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swampd_CPPFLAGS) $(CPPFLAGS) $(swampd_CXXFLAGS) $(CXXFLAGS) -MT swampd-swampd.obj -MD -MP -MF $(DEPDIR)/swampd-swampd.Tpo -c -o swampd-swampd.obj `if test -f 'swampd.cpp'; then $(CYGPATH_W) 'swampd.cpp'; else $(CYGPATH_W) '$(srcdir)/swampd.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/swampd-swampd.Tpo $(DEPDIR)/swampd-swampd.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='swampd.cpp' object='swampd-swampd.obj' libtool=no @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(swampd_CPPFLAGS) $(CPPFLAGS) $(swampd_CXXFLAGS) $(CXXFLAGS) -c -o swampd-swampd.obj `if test -f 'swampd.cpp'; then $(CYGPATH_W) 'swampd.cpp'; else $(CYGPATH_W) '$(srcdir)/swampd.cpp'; fi`
 
 test/test_test_swamp-arith_uint256_tests.o: test/arith_uint256_tests.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_swamp_CPPFLAGS) $(CPPFLAGS) $(test_test_swamp_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_swamp-arith_uint256_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_swamp-arith_uint256_tests.Tpo -c -o test/test_test_swamp-arith_uint256_tests.o `test -f 'test/arith_uint256_tests.cpp' || echo '$(srcdir)/'`test/arith_uint256_tests.cpp

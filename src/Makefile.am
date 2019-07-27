@@ -55,15 +55,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += chipsd
+  bin_PROGRAMS += swampd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += chips-cli chips-tx
+  bin_PROGRAMS += swamp-cli swamp-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# chips core #
+# swamp core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   addressindex.h \
@@ -191,7 +191,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between chipsd and chips-qt
+# server: shared between swampd and swamp-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -249,7 +249,7 @@ libbitcoin_zmq_a_SOURCES = \
 endif
 
 
-# wallet: shared between chipsd and chips-qt, but only linked
+# wallet: shared between swampd and swamp-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -338,7 +338,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sha512.cpp \
   crypto/sha512.h
 
-# common: shared between chipsd, and chips-qt and non-server tools
+# common: shared between swampd, and swamp-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -395,7 +395,7 @@ if GLIBC_BACK_COMPAT
 libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
-# cli: shared between chips-cli and chips-qt
+# cli: shared between swamp-cli and swamp-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -406,16 +406,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-chipsd_SOURCES = chipsd.cpp
-chipsd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-chipsd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-chipsd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+swampd_SOURCES = swampd.cpp
+swampd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+swampd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+swampd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-chipsd_SOURCES += chipsd-res.rc
+swampd_SOURCES += swampd-res.rc
 endif
 
-chipsd_LDADD = \
+swampd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -426,50 +426,50 @@ chipsd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-chipsd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+swampd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-chipsd_LDADD += libbitcoin_wallet.a
+swampd_LDADD += libbitcoin_wallet.a
 endif
 
-chipsd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+swampd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 
-# chips-cli binary #
-chips_cli_SOURCES = chips-cli.cpp
-chips_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-chips_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-chips_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# swamp-cli binary #
+swamp_cli_SOURCES = swamp-cli.cpp
+swamp_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+swamp_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+swamp_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-chips_cli_SOURCES += chips-cli-res.rc
+swamp_cli_SOURCES += swamp-cli-res.rc
 endif
 
-chips_cli_LDADD = \
+swamp_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL)
-chips_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+swamp_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# chips-tx binary #
-chips_tx_SOURCES = chips-tx.cpp
-chips_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-chips_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-chips_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# swamp-tx binary #
+swamp_tx_SOURCES = swamp-tx.cpp
+swamp_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+swamp_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+swamp_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-chips_tx_SOURCES += chips-tx-res.rc
+swamp_tx_SOURCES += swamp-tx-res.rc
 endif
 
-chips_tx_LDADD = \
+swamp_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-chips_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+swamp_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

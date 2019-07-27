@@ -3,7 +3,7 @@
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
 // Copyright (c) 2017-2018 The Proton Core developers
-// Copyright (c) 2018 The chips Core developers
+// Copyright (c) 2018 The swamp Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -60,7 +60,7 @@
 using namespace std;
 
 #if defined(NDEBUG)
-# error "chips Core cannot be compiled without assertions."
+# error "swamp Core cannot be compiled without assertions."
 #endif
 
 /**
@@ -121,7 +121,7 @@ static void CheckBlockIndex(const Consensus::Params& consensusParams);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "chipsCoin Signed Message:\n";
+const string strMessageMagic = "swampCoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -2431,7 +2431,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("chips-scriptch");
+    RenameThread("swamp-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -2828,7 +2828,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     int64_t nTime3 = GetTimeMicros(); nTimeConnect += nTime3 - nTime2;
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime3 - nTime2), 0.001 * (nTime3 - nTime2) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime3 - nTime2) / (nInputs-1), nTimeConnect * 0.000001);
 
-    // CHIPS : MODIFIED TO CHECK MASTERNODE PAYMENTS AND SUPERBLOCKS
+    // SWAMP : MODIFIED TO CHECK MASTERNODE PAYMENTS AND SUPERBLOCKS
 
     // It's possible that we simply don't have enough data and this could fail
     // (i.e. block itself could be a correct one and we need to store it),
@@ -2839,15 +2839,15 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     CAmount blockReward = nFees + GetBlockSubsidy(pindex->pprev->nBits, pindex->pprev->nHeight, chainparams.GetConsensus());
     std::string strError = "";
     if (!IsBlockValueValid(block, pindex->nHeight, blockReward, strError)) {
-        return state.DoS(0, error("ConnectBlock(CHIPS): %s", strError), REJECT_INVALID, "bad-cb-amount");
+        return state.DoS(0, error("ConnectBlock(SWAMP): %s", strError), REJECT_INVALID, "bad-cb-amount");
     }
 
     if (!IsBlockPayeeValid(block.vtx[0], pindex->nHeight, blockReward)) {
         mapRejectedBlocks.insert(make_pair(block.GetHash(), GetTime()));
-        return state.DoS(0, error("ConnectBlock(CHIPS): couldn't find masternode or superblock payments"),
+        return state.DoS(0, error("ConnectBlock(SWAMP): couldn't find masternode or superblock payments"),
                                 REJECT_INVALID, "bad-cb-payee");
     }
-    // END CHIPS
+    // END SWAMP
 
     if (!control.Wait())
         return state.DoS(100, false);
@@ -3785,7 +3785,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                              REJECT_INVALID, "bad-cb-multiple");
 
 
-    // CHIPS : CHECK TRANSACTIONS FOR INSTANTSEND
+    // SWAMP : CHECK TRANSACTIONS FOR INSTANTSEND
 
     if(sporkManager.IsSporkActive(SPORK_3_INSTANTSEND_BLOCK_FILTERING)) {
         // We should never accept block which conflicts with completed transaction lock,
@@ -3805,17 +3805,17 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                     instantsend.Relay(hashLocked);
                     LOCK(cs_main);
                     mapRejectedBlocks.insert(make_pair(block.GetHash(), GetTime()));
-                    return state.DoS(0, error("CheckBlock(CHIPS): transaction %s conflicts with transaction lock %s",
+                    return state.DoS(0, error("CheckBlock(SWAMP): transaction %s conflicts with transaction lock %s",
                                                 tx.GetHash().ToString(), hashLocked.ToString()),
                                      REJECT_INVALID, "conflict-tx-lock");
                 }
             }
         }
     } else {
-        LogPrintf("CheckBlock(CHIPS): spork is off, skipping transaction locking checks\n");
+        LogPrintf("CheckBlock(SWAMP): spork is off, skipping transaction locking checks\n");
     }
 
-    // END CHIPS
+    // END SWAMP
 
     // Check transactions
     BOOST_FOREACH(const CTransaction& tx, block.vtx)
@@ -5017,7 +5017,7 @@ bool static AlreadyHave(const CInv& inv) EXCLUSIVE_LOCKS_REQUIRED(cs_main)
         return mapBlockIndex.count(inv.hash);
 
     /*
-        chips Related Inventory Messages
+        swamp Related Inventory Messages
 
         --
 

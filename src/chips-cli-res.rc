@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "chips"
-            VALUE "FileDescription",    "chips-cli (JSON-RPC client for chips Core)"
+            VALUE "CompanyName",        "swamp"
+            VALUE "FileDescription",    "swamp-cli (JSON-RPC client for swamp Core)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "chips-cli"
+            VALUE "InternalName",       "swamp-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "chips-cli.exe"
-            VALUE "ProductName",        "chips-cli"
+            VALUE "OriginalFilename",   "swamp-cli.exe"
+            VALUE "ProductName",        "swamp-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

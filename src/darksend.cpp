@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2018 The Proton Core developers
 // Copyright (c) 2018 The Resq Core developers
-// Copyright (c) 2018 The chips Core developers
+// Copyright (c) 2018 The swamp Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -35,7 +35,7 @@ std::vector<CAmount> vecPrivateSendDenominations;
 
 void CDarksendPool::ProcessMessage(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
 {
-    if(fLiteMode) return; // ignore all chips related functionality
+    if(fLiteMode) return; // ignore all swamp related functionality
     if(!masternodeSync.IsBlockchainSynced()) return;
 
     if(strCommand == NetMsgType::DSACCEPT) {
@@ -750,7 +750,7 @@ void CDarksendPool::ChargeFees()
 
     Being that mixing has "no fees" we need to have some kind of cost associated
     with using it to stop abuse. Otherwise it could serve as an attack vector and
-    allow endless transaction that would bloat chips and make it unusable. To
+    allow endless transaction that would bloat swamp and make it unusable. To
     stop these kinds of attacks 1 in 10 successful transactions are charged. This
     adds up to a cost of 0.001DRK per transaction on average.
 */
@@ -2199,10 +2199,10 @@ int CDarksendPool::GetDenominations(const std::vector<CTxOut>& vecTxOut, bool fS
 bool CDarksendPool::GetDenominationsBits(int nDenom, std::vector<int> &vecBitsRet)
 {
     // ( bit on if present, 4 denominations example )
-    // bit 0 - 100CHIPS+1
-    // bit 1 - 10CHIPS+1
-    // bit 2 - 1CHIPS+1
-    // bit 3 - .1CHIPS+1
+    // bit 0 - 100SWAMP+1
+    // bit 1 - 10SWAMP+1
+    // bit 2 - 1SWAMP+1
+    // bit 3 - .1SWAMP+1
 
     int nMaxDenoms = vecPrivateSendDenominations.size();
 
@@ -2466,14 +2466,14 @@ void CDarksendPool::UpdatedBlockTip(const CBlockIndex *pindex)
 //TODO: Rename/move to core
 void ThreadCheckDarkSendPool()
 {
-    if(fLiteMode) return; // disable all chips specific functionality
+    if(fLiteMode) return; // disable all swamp specific functionality
 
     static bool fOneThread;
     if(fOneThread) return;
     fOneThread = true;
 
     // Make this thread recognisable as the PrivateSend thread
-    RenameThread("chips-privatesend");
+    RenameThread("swamp-privatesend");
 
     unsigned int nTick = 0;
     unsigned int nDoAutoNextRun = nTick + PRIVATESEND_AUTO_TIMEOUT_MIN;

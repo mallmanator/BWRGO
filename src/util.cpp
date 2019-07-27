@@ -2,12 +2,12 @@
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
 // Copyright (c) 2017-2018 The Proton Core developers
-// Copyright (c) 2018 The chips Core developers
+// Copyright (c) 2018 The swamp Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/chips-config.h"
+#include "config/swamp-config.h"
 #endif
 
 #include "util.h"
@@ -109,7 +109,7 @@ static const char alphanum[] =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
       "abcdefghijklmnopqrstuvwxyz";
 
-//chips only features
+//swamp only features
 bool fMasterNode = false;
 bool fLiteMode = false;
 /**
@@ -121,8 +121,8 @@ bool fLiteMode = false;
 */
 int nWalletBackups = 10;
 
-const char * const BITCOIN_CONF_FILENAME = "chips.conf";
-const char * const BITCOIN_PID_FILENAME = "chipsd.pid";
+const char * const BITCOIN_CONF_FILENAME = "swamp.conf";
+const char * const BITCOIN_PID_FILENAME = "swampd.pid";
 
 map<string, string> mapArgs;
 map<string, vector<string> > mapMultiArgs;
@@ -276,8 +276,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "chips" is a composite category enabling all chips-related debug output
-            if(ptrCategory->count(string("chips"))) {
+            // "swamp" is a composite category enabling all swamp-related debug output
+            if(ptrCategory->count(string("swamp"))) {
                 ptrCategory->insert(string("privatesend"));
                 ptrCategory->insert(string("instantsend"));
                 ptrCategory->insert(string("masternode"));
@@ -501,7 +501,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "chips";
+    const char* pszModule = "swamp";
 #endif
     if (pex)
         return strprintf(
@@ -521,13 +521,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\chipsCore
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\chipsCore
-    // Mac: ~/Library/Application Support/chipsCore
-    // Unix: ~/.chipscore
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\swampCore
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\swampCore
+    // Mac: ~/Library/Application Support/swampCore
+    // Unix: ~/.swampcore
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "chipsCore";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "swampCore";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -537,10 +537,10 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/chipsCore";
+    return pathRet / "Library/Application Support/swampCore";
 #else
     // Unix
-    return pathRet / ".chipscore";
+    return pathRet / ".swampcore";
 #endif
 #endif
 }
@@ -634,7 +634,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()){
-        // Create empty chips.conf if it does not excist
+        // Create empty swamp.conf if it does not excist
        // FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
 
         FILE* ConfFile = fopen(GetConfigFile().string().c_str(), "w");
@@ -653,12 +653,12 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
         std::string str(s, 34);
         std::string rpcpass = "rpcpassword=" + str + "\n";
         fprintf(ConfFile, rpcpass.c_str());
-        fprintf(ConfFile, "port=9419\n");
+        fprintf(ConfFile, "port=9429\n");
         fprintf(ConfFile, "rpcport=9421\n");
         fprintf(ConfFile, "rpcallowip=127.0.0.1\n");
         fprintf(ConfFile, "# masternode=1\n");
         fprintf(ConfFile, "# masternodeprivkey=use_masternode_genkey\n");
-        fprintf(ConfFile, "# masternodeaddr=Static_IP:9419\n");
+        fprintf(ConfFile, "# masternodeaddr=Static_IP:9429\n");
 
         fclose(ConfFile);
 
@@ -671,7 +671,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
               //  return;
 //        	ReadConfigFile(mapSettingsRet, mapMultiSettingsRet);
        // } else {
-        	// LogPrintf("chips.conf file not found or can't be created\n");
+        	// LogPrintf("swamp.conf file not found or can't be created\n");
         	// return; // Nothing to read, so just return
        // }
     }
@@ -681,7 +681,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
     {
-        // Don't overwrite existing settings so command line settings override chips.conf
+        // Don't overwrite existing settings so command line settings override swamp.conf
         string strKey = string("-") + it->string_key;
         string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);
@@ -695,7 +695,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 void AddSeedsToConfigFile(FILE* configFile) {
 	fprintf(configFile,"onlynet=ipv4\r\n");
-	fprintf(configFile,"addnode=144.202.109.173:9419\r\n");
+	fprintf(configFile,"addnode=144.202.109.173:9429\r\n");
 
 }
 

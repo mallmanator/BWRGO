@@ -123,7 +123,7 @@ public:
 };
 
 /**
- * chips RPC command dispatcher.
+ * swamp RPC command dispatcher.
  */
 class CRPCTable
 {

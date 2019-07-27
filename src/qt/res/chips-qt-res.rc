@@ -18,14 +18,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "chips"
-            VALUE "FileDescription",    "chips Core (GUI node for chips)"
+            VALUE "CompanyName",        "swamp"
+            VALUE "FileDescription",    "swamp Core (GUI node for swamp)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "chips-qt"
+            VALUE "InternalName",       "swamp-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "chips-qt.exe"
-            VALUE "ProductName",        "chips Core"
+            VALUE "OriginalFilename",   "swamp-qt.exe"
+            VALUE "ProductName",        "swamp Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

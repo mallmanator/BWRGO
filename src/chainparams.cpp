@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin Core developers
 // Copyright (c) 2014-2018 The Resq Core developers
-// Copyright (c) 2014-2018 The chips Core developers
+// Copyright (c) 2014-2018 The swamp Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -86,8 +86,8 @@ public:
         consensus.BIP34Height = 2100000000; // FIX
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8"); // FIX
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 2.5 * 60; // chips: every blocks
-        consensus.nPowTargetSpacing = 2.5 * 60; // chips: 2.5 minute
+        consensus.nPowTargetTimespan = 2.5 * 60; // swamp: every blocks
+        consensus.nPowTargetSpacing = 2.5 * 60; // swamp: 2.5 minute
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
@@ -116,7 +116,7 @@ public:
         pchMessageStart[2] = 0xbc;
         pchMessageStart[3] = 0xb5;
         vAlertPubKey = ParseHex("0426506ae65fcec9d1f7eff0e36c2b81363c3de04f30e7a59475ffd4b13db1a04997476f3507e6927574185ca80c0835892e1727e057802142161b689265bcce06");
-        nDefaultPort = 9419;
+        nDefaultPort = 9429;
         nMaxTipAge = 12 * 60 * 60; // ~36 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nPruneAfterHeight = 200000;
 
@@ -126,23 +126,23 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x000006a15615feb4d2db6fdffe9e08289ae1cc6c731b9487cbcc194cf043a8ae"));
         assert(genesis.hashMerkleRoot == uint256S("0x4040fb47f6f0376cbfb2f703379eb3329a73840a574252fdc84f3b387c68e375"));
 
-        //vSeeds.push_back(CDNSSeedData("chips.com", "chips.com"));
-        //vSeeds.push_back(CDNSSeedData("explorer.chips.com", "explorer.chips.com"));
-       // vSeeds.push_back(CDNSSeedData("node1.chips.com", "node1.chips.com"));
-       // vSeeds.push_back(CDNSSeedData("node2.chips.com", "node2.chips.com"));
-       // vSeeds.push_back(CDNSSeedData("node3.chips.com", "node3.chips.com"));
+        //vSeeds.push_back(CDNSSeedData("swamp.com", "swamp.com"));
+        //vSeeds.push_back(CDNSSeedData("explorer.swamp.com", "explorer.swamp.com"));
+       // vSeeds.push_back(CDNSSeedData("node1.swamp.com", "node1.swamp.com"));
+       // vSeeds.push_back(CDNSSeedData("node2.swamp.com", "node2.swamp.com"));
+       // vSeeds.push_back(CDNSSeedData("node3.swamp.com", "node3.swamp.com"));
 
-        // chips addresses start with 'T'
+        // swamp addresses start with 'T'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,66);
-        // chips script addresses start with '7'
+        // swamp script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,8);
-        // chips private keys start with 'E'
+        // swamp private keys start with 'E'
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,194);
-        // chips BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
+        // swamp BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
-        // chips BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
+        // swamp BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
-        // chips BIP44 coin type is '5'
+        // swamp BIP44 coin type is '5'
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x05).convert_to_container<std::vector<unsigned char> >();
 
         fMiningRequiresPeers = true;
@@ -195,8 +195,8 @@ public:
         consensus.BIP34Height = 21111; // FIX
         consensus.BIP34Hash = uint256S("0x0000000023b3a96d3484e5abb3755c413e7d41500f8e2a5c3f0dd01299cd8ef8"); // FIX
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 60 * 60; // chips: 1 hour
-        consensus.nPowTargetSpacing = 2 * 60; // chips: 2 minutes
+        consensus.nPowTargetTimespan = 60 * 60; // swamp: 1 hour
+        consensus.nPowTargetSpacing = 2 * 60; // swamp: 2 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
@@ -215,7 +215,7 @@ public:
         pchMessageStart[2] = 0x7d;
         pchMessageStart[3] = 0xd6;
         vAlertPubKey = ParseHex("04f9e05c65b8cf20e31464d7f35504b62999f845c9242bc6b1bcd1993c643e3ca40527a13de58afa831dccdeacae82b39c01602daf3a7f4151032f5dacefa36932");
-        nDefaultPort = 19419;
+        nDefaultPort = 19429;
         nMaxTipAge = 0x7fffffff; // allow mining on top of old blocks for testnet
         nPruneAfterHeight = 1000;
 
@@ -229,17 +229,17 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        // Testnet chips addresses start with 't'
+        // Testnet swamp addresses start with 't'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,128);
-        // Testnet chips script addresses start with '5'
+        // Testnet swamp script addresses start with '5'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
         // Testnet private keys start with '5' or 'n' (Bitcoin defaults) (?)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,33);
-        // Testnet chips BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Testnet swamp BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Testnet chips BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Testnet swamp BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        // Testnet chips BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet swamp BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
        // vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
@@ -295,8 +295,8 @@ public:
         consensus.BIP34Height = -1; // BIP34 has not necessarily activated on regtest
         consensus.BIP34Hash = uint256();
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 60 * 60; // chips: 1 hour
-        consensus.nPowTargetSpacing = 2 * 60; // chips: 2 minutes
+        consensus.nPowTargetTimespan = 60 * 60; // swamp: 1 hour
+        consensus.nPowTargetSpacing = 2 * 60; // swamp: 2 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.nRuleChangeActivationThreshold = 108; // 75% for testchains
@@ -313,7 +313,7 @@ public:
         pchMessageStart[2] = 0x5e;
         pchMessageStart[3] = 0xd7;
         nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
-        nDefaultPort = 29419;
+        nDefaultPort = 29429;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1560912992, 186896, 0x1e0ffff0, 1, 10 * COIN);
@@ -340,17 +340,17 @@ public:
             0,
             0
         };
-        // Regtest chips addresses start with 'n'
+        // Regtest swamp addresses start with 'n'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,112);
-        // Regtest chips script addresses start with '5'
+        // Regtest swamp script addresses start with '5'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
         // Regtest private keys start with '5' or 'c' (Bitcoin defaults) (?)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,240);
-        // Regtest chips BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Regtest swamp BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Regtest chips BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Regtest swamp BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        // Regtest chips BIP44 coin type is '1' (All coin's testnet default)
+        // Regtest swamp BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
    }
 };

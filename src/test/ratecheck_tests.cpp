@@ -1,9 +1,9 @@
 // Copyright (c) 2014-2018 The Proton Core developers
-// Copyright (c) 2018 The chips Core developers
+// Copyright (c) 2018 The swamp Core developers
 
 #include "governance.h"
 
-#include "test/test_chips.h"
+#include "test/test_swamp.h"
 
 #include <boost/test/unit_test.hpp>
 

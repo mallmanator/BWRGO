@@ -1,5 +1,5 @@
 <!DOCTYPE RCC><RCC version="1.0">
     <qresource prefix="/translations">
-        <file alias="en">locale/chips_en.qm</file>
+        <file alias="en">locale/swamp_en.qm</file>
     </qresource>
 </RCC>

@@ -16,9 +16,9 @@ enum GovernanceObjectType {
     ValueOverride = 1, 
 
     // -------------------------------
-    // chipsNetwork - is the root node
-    chipsNetwork = 1000,
-    chipsNetworkVariable = 1001,
+    // swampNetwork - is the root node
+    swampNetwork = 1000,
+    swampNetworkVariable = 1001,
     Category = 1002,
 
     // Actors

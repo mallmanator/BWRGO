@@ -7,8 +7,8 @@ GovernanceObjectType GovernanceStringToType(std::string strType) {
     if(strType == "AllTypes") type = AllTypes;
     if(strType == "Error") type = Error;
     if(strType == "ValueOverride") type = ValueOverride;
-    if(strType == "chipsNetwork") type = chipsNetwork;
-    if(strType == "chipsNetworkVariable") type = chipsNetworkVariable;
+    if(strType == "swampNetwork") type = swampNetwork;
+    if(strType == "swampNetworkVariable") type = swampNetworkVariable;
     if(strType == "Category") type = Category;
     if(strType == "Group") type = Group;
     if(strType == "User") type = User;
@@ -28,8 +28,8 @@ std::string GovernanceTypeToString(GovernanceObjectType type) {
     if(type == AllTypes) s = "AllTypes";
     if(type == Error) s = "Error";
     if(type == ValueOverride) s = "ValueOverride";
-    if(type == chipsNetwork) s = "chipsNetwork";
-    if(type == chipsNetworkVariable) s = "chipsNetworkVariable";
+    if(type == swampNetwork) s = "swampNetwork";
+    if(type == swampNetworkVariable) s = "swampNetworkVariable";
     if(type == Category) s = "Category";
     if(type == Group) s = "Group";
     if(type == User) s = "User";

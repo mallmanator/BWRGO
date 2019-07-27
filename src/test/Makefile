@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C .. chips_test
+	$(MAKE) -C .. swamp_test
 clean:
-	$(MAKE) -C .. chips_test_clean
+	$(MAKE) -C .. swamp_test_clean
 check:
-	$(MAKE) -C .. chips_test_check
+	$(MAKE) -C .. swamp_test_check

@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between chips-cli and chipsd)
- * of a given instance of the chips system.
+ * CBaseChainParams defines the base parameters (shared between swamp-cli and swampd)
+ * of a given instance of the swamp system.
  */
 class CBaseChainParams
 {

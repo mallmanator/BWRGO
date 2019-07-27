@@ -6,7 +6,7 @@
 #define BITCOIN_NETBASE_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/chips-config.h"
+#include "config/swamp-config.h"
 #endif
 
 #include "compat.h"
@@ -188,13 +188,13 @@ class CService : public CNetAddr
 class proxyType
 {
 public:
-    proxyType(): randomize_cchipstials(false) {}
-    proxyType(const CService &proxy, bool randomize_cchipstials=false): proxy(proxy), randomize_cchipstials(randomize_cchipstials) {}
+    proxyType(): randomize_cswamptials(false) {}
+    proxyType(const CService &proxy, bool randomize_cswamptials=false): proxy(proxy), randomize_cswamptials(randomize_cswamptials) {}
 
     bool IsValid() const { return proxy.IsValid(); }
 
     CService proxy;
-    bool randomize_cchipstials;
+    bool randomize_cswamptials;
 };
 
 enum Network ParseNetwork(std::string net);

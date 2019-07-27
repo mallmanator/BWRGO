@@ -61,7 +61,7 @@
     </qresource>
     <qresource prefix="/images/drkblue">
         <file alias="about">res/images/drkblue/about.png</file>
-        <file alias="chips_logo_horizontal">res/images/drkblue/chips_logo_horizontal.png</file>
+        <file alias="swamp_logo_horizontal">res/images/drkblue/swamp_logo_horizontal.png</file>
         <file alias="unchecked">res/images/drkblue/unchecked.png</file>
         <file alias="checked">res/images/drkblue/checked.png</file>
         <file alias="drkblue_downArrow">res/images/drkblue/drkblue_downArrow.png</file>
@@ -76,7 +76,7 @@
     </qresource>
     <qresource prefix="/images/crownium">
         <file alias="about">res/images/crownium/about.png</file>
-        <file alias="chips_logo_horizontal">res/images/crownium/chips_logo_horizontal.png</file>
+        <file alias="swamp_logo_horizontal">res/images/crownium/swamp_logo_horizontal.png</file>
         <file alias="unchecked">res/images/crownium/unchecked.png</file>
         <file alias="checked">res/images/crownium/checked.png</file>
         <file alias="drkblue_downArrow">res/images/crownium/drkblue_downArrow.png</file>
@@ -91,7 +91,7 @@
     </qresource>
     <qresource prefix="/images/light">
         <file alias="about">res/images/light/about.png</file>
-        <file alias="chips_logo_horizontal">res/images/light/chips_logo_horizontal.png</file>
+        <file alias="swamp_logo_horizontal">res/images/light/swamp_logo_horizontal.png</file>
         <file alias="unchecked">res/images/light/unchecked.png</file>
         <file alias="checked">res/images/light/checked.png</file>
         <file alias="drkblue_downArrow">res/images/light/drkblue_downArrow.png</file>
@@ -107,7 +107,7 @@
     */
     <qresource prefix="/images/trad">
         <file alias="about">res/images/trad/about.png</file>
-        <file alias="chips_logo_horizontal">res/images/trad/chips_logo_horizontal.png</file>
+        <file alias="swamp_logo_horizontal">res/images/trad/swamp_logo_horizontal.png</file>
         <file alias="drkblue_downArrow">res/images/trad/drkblue_downArrow.png</file>
         <file alias="drkblue_downArrow_small">res/images/trad/drkblue_downArrow_small.png</file>
         <file alias="drkblue_upArrow_small">res/images/trad/drkblue_upArrow_small.png</file>

@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C ../../ test_chips_qt
+	$(MAKE) -C ../../ test_swamp_qt
 clean:
-	$(MAKE) -C ../../ test_chips_qt_clean
+	$(MAKE) -C ../../ test_swamp_qt_clean
 check:
-	$(MAKE) -C ../../ test_chips_qt_check
+	$(MAKE) -C ../../ test_swamp_qt_check

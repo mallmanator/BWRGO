@@ -9,22 +9,22 @@
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
 /* Version Build */
-#define CLIENT_VERSION_BUILD 1.0
+#define CLIENT_VERSION_BUILD 0
 
 /* Version is release */
 #define CLIENT_VERSION_IS_RELEASE false
 
 /* Major version */
-#define CLIENT_VERSION_MAJOR 1
+#define CLIENT_VERSION_MAJOR 3
 
 /* Minor version */
-#define CLIENT_VERSION_MINOR 1
+#define CLIENT_VERSION_MINOR 3
 
 /* Build revision */
-#define CLIENT_VERSION_REVISION 1
+#define CLIENT_VERSION_REVISION 99
 
 /* Version is release */
-#define COPYRIGHT_YEAR 2019
+#define COPYRIGHT_YEAR 2018
 
 /* Define this symbol to build code that uses AVX2 intrinsics */
 #define ENABLE_AVX2 1

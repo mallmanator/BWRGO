@@ -76,27 +76,27 @@
 
 /* Define to 1 if you have the declaration of `be16toh', and to 0 if you
    don't. */
-#define HAVE_DECL_BE16TOH 0
+#define HAVE_DECL_BE16TOH 1
 
 /* Define to 1 if you have the declaration of `be32toh', and to 0 if you
    don't. */
-#define HAVE_DECL_BE32TOH 0
+#define HAVE_DECL_BE32TOH 1
 
 /* Define to 1 if you have the declaration of `be64toh', and to 0 if you
    don't. */
-#define HAVE_DECL_BE64TOH 0
+#define HAVE_DECL_BE64TOH 1
 
 /* Define to 1 if you have the declaration of `bswap_16', and to 0 if you
    don't. */
-#define HAVE_DECL_BSWAP_16 0
+#define HAVE_DECL_BSWAP_16 1
 
 /* Define to 1 if you have the declaration of `bswap_32', and to 0 if you
    don't. */
-#define HAVE_DECL_BSWAP_32 0
+#define HAVE_DECL_BSWAP_32 1
 
 /* Define to 1 if you have the declaration of `bswap_64', and to 0 if you
    don't. */
-#define HAVE_DECL_BSWAP_64 0
+#define HAVE_DECL_BSWAP_64 1
 
 /* Define to 1 if you have the declaration of `daemon', and to 0 if you don't.
    */
@@ -108,39 +108,39 @@
 
 /* Define to 1 if you have the declaration of `htobe16', and to 0 if you
    don't. */
-#define HAVE_DECL_HTOBE16 0
+#define HAVE_DECL_HTOBE16 1
 
 /* Define to 1 if you have the declaration of `htobe32', and to 0 if you
    don't. */
-#define HAVE_DECL_HTOBE32 0
+#define HAVE_DECL_HTOBE32 1
 
 /* Define to 1 if you have the declaration of `htobe64', and to 0 if you
    don't. */
-#define HAVE_DECL_HTOBE64 0
+#define HAVE_DECL_HTOBE64 1
 
 /* Define to 1 if you have the declaration of `htole16', and to 0 if you
    don't. */
-#define HAVE_DECL_HTOLE16 0
+#define HAVE_DECL_HTOLE16 1
 
 /* Define to 1 if you have the declaration of `htole32', and to 0 if you
    don't. */
-#define HAVE_DECL_HTOLE32 0
+#define HAVE_DECL_HTOLE32 1
 
 /* Define to 1 if you have the declaration of `htole64', and to 0 if you
    don't. */
-#define HAVE_DECL_HTOLE64 0
+#define HAVE_DECL_HTOLE64 1
 
 /* Define to 1 if you have the declaration of `le16toh', and to 0 if you
    don't. */
-#define HAVE_DECL_LE16TOH 0
+#define HAVE_DECL_LE16TOH 1
 
 /* Define to 1 if you have the declaration of `le32toh', and to 0 if you
    don't. */
-#define HAVE_DECL_LE32TOH 0
+#define HAVE_DECL_LE32TOH 1
 
 /* Define to 1 if you have the declaration of `le64toh', and to 0 if you
    don't. */
-#define HAVE_DECL_LE64TOH 0
+#define HAVE_DECL_LE64TOH 1
 
 /* Define to 1 if you have the declaration of `strerror_r', and to 0 if you
    don't. */

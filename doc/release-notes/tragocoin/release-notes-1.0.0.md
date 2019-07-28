@@ -1,13 +1,9 @@
 1.0.0 Release notes
 ====================
 
-tragocoin Core version 1.0.0 is now available from:
+swamp Core version 1.0.0 is now available on github
 
-  https://tragocoincoin.io/downloads
-
-Please report bugs using the issue tracker at github:
-
-  https://github.com/tragocoincoin/tragocoin/issues
+Please report bugs using the issue tracker at github
 
 
 How to Upgrade
@@ -30,8 +26,6 @@ the blockchain. To do so, start the client with --reindex.**
 Credits
 --------
 
-Thanks to who contributed to this release, at least:
+Thanks to who contributed to this release
 
-tragocoincoingroup
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/tragocoin/).

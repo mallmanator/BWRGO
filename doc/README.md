@@ -1,11 +1,11 @@
-tragocoin Core 1.0.1
+swamp Core 1.0.1
 =====================
 
-This is the official reference wallet for tragocoin digital currency and comprises the backbone of the tragocoin peer-to-peer network. You can [download tragocoin Core](https://tragocoincoin.io) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for swamp digital currency and comprises the backbone of the swamp peer-to-peer network. You can [download swamp Core](https://swampcoin.io) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
-The following are some helpful notes on how to run tragocoin on your native platform.
+The following are some helpful notes on how to run swamp on your native platform.
 
 ### Unix
 
@@ -16,22 +16,22 @@ Unpack the files into a directory and run:
 
 ### Windows
 
-Unpack the files into a directory, and then run tragocoin-qt.exe.
+Unpack the files into a directory, and then run swamp-qt.exe.
 
 ### OS X
 
-Drag tragocoin-Qt to your applications folder, and then run tragocoin-Qt.
+Drag swamp-Qt to your applications folder, and then run swamp-Qt.
 
 ### Need Help?
 
-* See the [tragocoin documentation](https://tragocoincoin.atlassian.net/wiki/display/DOC)
+* See the [swamp documentation](https://swampcoin.atlassian.net/wiki/display/DOC)
 for help and more information.
-* Ask for help on [#tragocoincoin](http://webchat.freenode.net?channels=tragocoincoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=tragocoincoin).
-* Ask for help on the [tragocoinTalk](https://tragocointalk.org/) forums.
+* Ask for help on [#swampcoin](http://webchat.freenode.net?channels=swampcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=swampcoin).
+* Ask for help on the [swampTalk](https://swamptalk.org/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build tragocoin Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build swamp Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build tragocoin Core on your native 
 
 Development
 ---------------------
-The tragocoin Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The swamp Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -57,8 +57,8 @@ The tragocoin Core repo's [root README](/README.md) contains relevant informatio
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [tragocoinTalk](https://tragocointalk.org/) forums, in the Development & Technical Discussion board.
-* Discuss on [#tragocoincoin](http://webchat.freenode.net/?channels=tragocoincoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=tragocoincoin).
+* Discuss on the [swampTalk](https://swamptalk.org/) forums, in the Development & Technical Discussion board.
+* Discuss on [#swampcoin](http://webchat.freenode.net/?channels=swampcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=swampcoin).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

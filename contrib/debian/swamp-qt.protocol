@@ -1,6 +1,6 @@
 [Protocol]
-exec=tragocoin-qt '%u'
-protocol=tragocoin
+exec=swamp-qt '%u'
+protocol=swamp
 input=none
 output=none
 helper=true

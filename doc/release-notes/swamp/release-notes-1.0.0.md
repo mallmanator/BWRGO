@@ -11,8 +11,8 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/tragocoin-Qt (on Mac) or
-tragocoind/tragocoin-qt (on Linux).
+installer (on Windows) or just copy over /Applications/swamp-Qt (on Mac) or
+swampd/swamp-qt (on Linux).
 
 **This new version uses transaction indexing by default, you will need to reindex 
 the blockchain. To do so, start the client with --reindex.**

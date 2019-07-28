@@ -1,25 +1,25 @@
-# /etc/conf.d/tragocoind: config file for /etc/init.d/tragocoind
+# /etc/conf.d/swampd: config file for /etc/init.d/swampd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/tragocoincore/tragocoin.conf"
+#BITCOIND_CONFIGFILE="/etc/swampcore/swamp.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/tragocoind"
+#BITCOIND_PIDDIR="/var/run/swampd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/tragocoind.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/swampd.pid"
 
-# Where to write tragocoind data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/tragocoind"
+# Where to write swampd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/swampd"
 
-# User and group to own tragocoind process
-#BITCOIND_USER="tragocoincore"
-#BITCOIND_GROUP="tragocoincore"
+# User and group to own swampd process
+#BITCOIND_USER="swampcore"
+#BITCOIND_GROUP="swampcore"
 
-# Path to tragocoind executable
-#BITCOIND_BIN="/usr/bin/tragocoind"
+# Path to swampd executable
+#BITCOIND_BIN="/usr/bin/swampd"
 
-# Nice value to run tragocoind under
+# Nice value to run swampd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

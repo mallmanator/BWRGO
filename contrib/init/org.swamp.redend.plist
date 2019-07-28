@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.tragocoin.tragocoind</string>
+	<string>org.swamp.swampd</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/tragocoind</string>
+		<string>/usr/local/bin/swampd</string>
 		<string>-daemon</string>
 	</array>
 	<key>RunAtLoad</key>

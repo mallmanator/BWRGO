@@ -23,7 +23,7 @@ packages:
 - "python"
 reference_datetime: "2017-01-01 00:00:00"
 remotes:
-- "url": "https://github.com/swampcoin/swampcoin.git"
+- "url": "https://github.com/swampcoin/swamp.git"
   "dir": "swampcoin"
 files: []
 script: |
@@ -94,7 +94,7 @@ script: |
 
   export PATH=${WRAP_DIR}:${PATH}
 
-  cd swampcoin
+  cd swamp
   BASEPREFIX=`pwd`/depends
   # Build dependencies for each host
   for i in $HOSTS; do

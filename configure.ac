@@ -7,17 +7,17 @@ define(_CLIENT_VERSION_BUILD, 2)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[tragocoin Core]])
-AC_INIT([tragocoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/trago-project/tragocoin/issues],[tragocoincore])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[swamp Core]])
+AC_INIT([swamp Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/swamp-project/swamp/issues],[swampcore])
 AC_CONFIG_SRCDIR([src/main.cpp])
-AC_CONFIG_HEADERS([src/config/tragocoin-config.h])
+AC_CONFIG_HEADERS([src/config/swamp-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=tragocoind
-BITCOIN_GUI_NAME=tragocoin-qt
-BITCOIN_CLI_NAME=tragocoin-cli
-BITCOIN_TX_NAME=tragocoin-tx
+BITCOIN_DAEMON_NAME=swampd
+BITCOIN_GUI_NAME=swamp-qt
+BITCOIN_CLI_NAME=swamp-cli
+BITCOIN_TX_NAME=swamp-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
@@ -27,9 +27,9 @@ fi
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef TRAGO_CONFIG_H])
-AH_TOP([#define TRAGO_CONFIG_H])
-AH_BOTTOM([#endif //TRAGO_CONFIG_H])
+AH_TOP([#ifndef SWAMP_CONFIG_H])
+AH_TOP([#define SWAMP_CONFIG_H])
+AH_BOTTOM([#endif //SWAMP_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME

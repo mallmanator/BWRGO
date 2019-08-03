@@ -53,15 +53,15 @@ SWAMP Currency Features
 
 | Days | PoW Reward | Miner Reward | MN Reward |
 |:-----------|:-----------|:-----------|:-----------|
-| 1 | `5 CHIPS` | `5 SWAMP` | `None` |
-| 2 | `20 CHIPS` | `20 SWAMP` | `None` |
-| 3 - 7 | `100 CHIPS` | `100 SWAMP` | `None` |
-| 8 - 15 | `100 CHIPS` | `50 SWAMP` | `50 SWAMP` |
-| 16 | `75 CHIPS` | `37.5 SWAMP` | `37.5 SWAMP` |
-| 17 | `50 CHIPS` | `25 SWAMP` | `25 SWAMP` |
-| 18 | `25 CHIPS` | `12.5 SWAMP` | `12.5 SWAMP` |
-| 19 | `10 CHIPS` | `5 SWAMP` | `5 SWAMP` |
-| 20 ~ | `5 CHIPS` | `2.5 SWAMP` | `2.5 SWAMP` |
+| 1 | `5 SWAMP` | `5 SWAMP` | `None` |
+| 2 | `20 SWAMP` | `20 SWAMP` | `None` |
+| 3 - 7 | `100 SWAMP` | `100 SWAMP` | `None` |
+| 8 - 15 | `100 SWAMP` | `50 SWAMP` | `50 SWAMP` |
+| 16 | `75 SWAMP` | `37.5 SWAMP` | `37.5 SWAMP` |
+| 17 | `50 SWAMP` | `25 SWAMP` | `25 SWAMP` |
+| 18 | `25 SWAMP` | `12.5 SWAMP` | `12.5 SWAMP` |
+| 19 | `10 SWAMP` | `5 SWAMP` | `5 SWAMP` |
+| 20 ~ | `5 SWAMP` | `2.5 SWAMP` | `2.5 SWAMP` |
 
 
 

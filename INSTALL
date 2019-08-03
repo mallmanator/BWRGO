@@ -1,4 +1,4 @@
-Building tragocoin Core
+Building swamp Core
 
 Use the autogen script to prepare the build environment.
 
@@ -7,7 +7,7 @@ Use the autogen script to prepare the build environment.
     make
 
 Precompiled binaries are available at github, see
-https://github.com/trago-project/tragocoin/releases
+https://github.com/swampcoin/swamp/releases
 
 Always verify the signatures and checksums.
 

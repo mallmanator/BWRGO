@@ -1,26 +1,10 @@
-What is BWRGO CHIPS?
+What is SWAMP coin?
 ----------------
-First, let's get the acronym out of the way:<br>
-<b>B</b> - Blue <br>
-<b>W</b> - White<br>
-<b>R</b> - Red<br>
-<b>G</b> - Green<br>
-<b>O</b> - Orange<br>
-These are the standard chip colors used in Thursday night poker.
+I dont know, you tell me!
 
-BWRGO is an experimental digital currency used exclusively to fund and  
-forever enshrine the legacy of Thursday night poker.  Thursday night 
-poker is famous for such titles as "Atlanta" and Cocktail Cove (a.k.a. tha cock). 
-More information can be found on these revolutionary games at 
-https://mike.skott.us/2018/atlanta-cocktail-cove/ 
-
-BWRGO uses peer-to-peer technology to operate with no central 
-authority: managing transactions and issuing money are carried
-out collectively by the network. The fuel for this network is know as CHIPS and is the name of open source
-software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the CHIPS Core software, see https://github.com/mallmanator/CHIPS/releases
+the CHIPS Core software, see https://github.com/swampcoin/swamp/releases
 
 License
 -------
@@ -50,46 +34,46 @@ CHIPS Currency Features
 
 | Specification | Value |
 |:-----------|:-----------|
-| Name | `CHIPS` |
-| Currency | `CHIPS` |
+| Name | `SWAMP` |
+| Currency | `SWAMP` |
 | Total Supply | `25,000,000` |
 | Block Size | `4MB` |
 | Block Time | `2.5 Minutes` |
-| PoW Normal Reward | `5 CHIPS` |
-| PoW Mega Reward | `200 CHIPS` |
-| Masternode Collateral | `20,000 CHIPS` |
+| PoW Normal Reward | `5 SWAMP` |
+| PoW Mega Reward | `200 SWAMP` |
+| Masternode Collateral | `20,000 SWAMP` |
 | Masternode Reward | `50% Of Block Reward` |
 | Masternode Start | `Friday, July 12, 2019 3:00:00 AM` |
-| Port | `9419` |
-| RPC Port | `19419` |
-| Masternode Fixed Port | `9419` |
+| Port | `9429` |
+| RPC Port | `19429` |
+| Masternode Fixed Port | `9429` |
 
 
 ## Block Rewards 
 
 | Days | PoW Reward | Miner Reward | MN Reward |
 |:-----------|:-----------|:-----------|:-----------|
-| 1 | `5 CHIPS` | `5 CHIPS` | `None` |
-| 2 | `20 CHIPS` | `20 CHIPS` | `None` |
-| 3 - 7 | `100 CHIPS` | `100 CHIPS` | `None` |
-| 8 - 15 | `100 CHIPS` | `50 CHIPS` | `50 CHIPS` |
-| 16 | `75 CHIPS` | `37.5 CHIPS` | `37.5 CHIPS` |
-| 17 | `50 CHIPS` | `25 CHIPS` | `25 CHIPS` |
-| 18 | `25 CHIPS` | `12.5 CHIPS` | `12.5 CHIPS` |
-| 19 | `10 CHIPS` | `5 CHIPS` | `5 TRAGO` |
-| 20 ~ | `5 CHIPS` | `2.5 CHIPS` | `2.5 CHIPS` |
+| 1 | `5 CHIPS` | `5 SWAMP` | `None` |
+| 2 | `20 CHIPS` | `20 SWAMP` | `None` |
+| 3 - 7 | `100 CHIPS` | `100 SWAMP` | `None` |
+| 8 - 15 | `100 CHIPS` | `50 SWAMP` | `50 SWAMP` |
+| 16 | `75 CHIPS` | `37.5 SWAMP` | `37.5 SWAMP` |
+| 17 | `50 CHIPS` | `25 SWAMP` | `25 SWAMP` |
+| 18 | `25 CHIPS` | `12.5 SWAMP` | `12.5 SWAMP` |
+| 19 | `10 CHIPS` | `5 SWAMP` | `5 SWAMP` |
+| 20 ~ | `5 CHIPS` | `2.5 SWAMP` | `2.5 SWAMP` |
 
 
 
 | Monthly Mega Block | PoW Reward | Miner Reward | MN Reward |
 |:-----------|:-----------|:-----------|:-----------|
-| Year 1 | `200 CHIPS` | `100 CHIPS` | `100 CHIPS` |
-| Year 2 | `100 CHIPS` | `60 CHIPS` | `40 CHIPS` |
+| Year 1 | `200 SWAMP` | `100 SWAMP` | `100 SWAMP` |
+| Year 2 | `100 SWAMP` | `60 SWAMP` | `40 SWAMP` |
 | Year 3 ~ | `None` | `None` | `None` |
 
 
 
-Build Tragocoin Wallet
+Build SWAMP Wallet
 ----------
 
 ### Building for 64-bit Windows
@@ -115,8 +99,8 @@ Note that for WSL the tragocoin Core source path MUST be somewhere in the defaul
 The next three steps are an example of how to acquire the source in an appropriate way.
 
     cd /usr/src
-    sudo git clone https://github.com/mallmanator/CHIPS/chips.git
-    sudo chmod -R a+rw CHIPS
+    sudo git clone https://github.com/swampcoin/swamp.git
+    sudo chmod -R a+rw SWAMP
     
 Once the source code is ready the build steps are below.
 
@@ -140,7 +124,7 @@ Once the source code is ready the build steps are below.
     # If you want to build the Qt GUI:
     sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 
-    git clone https://github.com/mallmanator/CHIPS/chips.git --recursive
+    git clone https://github.com/swampcoin/swamp.git --recursive
     
     cd CHIPS
 
@@ -170,16 +154,16 @@ Then install [Homebrew](https://brew.sh).
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-#### Build Tragocoin Core
+#### Build SWAMP Core
 
 1. Clone the tragocoin source code and cd into `tragocoin`
 
-        git clone --recursive https://github.com/mallmanator/CHIPS/chips.git
-        cd CHIPS
+        git clone --recursive https://github.com/swampcoin/swamp.git
+        cd SWAMP
 
 2.  Build Tragocoin Core:
 
-    Configure and build the headless CHIPS binaries as well as the GUI (if Qt is found).
+    Configure and build the headless SWAMP binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -190,7 +174,7 @@ NOTE: Building with Qt4 is still supported, however, could result in a broken UI
 
 ### Run
 
-Then you can either run the command-line daemon using `src/tragocoind` and `src/chips-cli`, or you can run the Qt GUI using `src/qt/chipsn-qt`
+Then you can either run the command-line daemon using `src/swampd` and `src/swamp-cli`, or you can run the Qt GUI using `src/qt/swamp-qt`
 
 For in-depth description of Sparknet and how to use CHIPS for interacting with contracts, please see [sparknet-guide](doc/sparknet-guide.md).
 
@@ -218,7 +202,7 @@ Coinbase address is the wallet address you would like the reward to goto. Debug 
 
 ### Building a masternode
 
-Setting up a masternode requires a basic understanding of Linux and blockchain technology, as well as an ability to follow instructions closely. It also requires regular maintenance and careful security. Full guide instructions setup : https://github.com/mallmanator/CHIPS/doc/masternode_setup_guide.txt
+Setting up a masternode requires a basic understanding of Linux and blockchain technology, as well as an ability to follow instructions closely. It also requires regular maintenance and careful security. Full guide instructions setup : https://github.com/swampcoin/swamp/doc/masternode_setup_guide.txt
 
 
 Development Process

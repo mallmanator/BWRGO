@@ -1,7 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin Core developers
 // Copyright (c) 2014-2018 The Resq Core developers
-// Copyright (c) 2014-2018 The tragocoin Core developers
+// Copyright (c) 2014-2018 The bwrgo Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -86,9 +86,9 @@ public:
         consensus.BIP34Height = 2100000000; // FIX
         consensus.BIP34Hash = uint256S("0x000000000000024b89b42a942fe0d9fea3bb44ab7bd1b19115dd6a759c0808b8"); // FIX
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 2.5 * 60; // tragocoin: every blocks
-        consensus.nPowTargetSpacing = 2.5 * 60; // tragocoin: 2.5 minute
-        consensus.fPowAllowMinDifficultyBlocks = false;
+        consensus.nPowTargetTimespan = 2.5 * 60; // bwrgo: every blocks
+        consensus.nPowTargetSpacing = 1 * 60; // bwrgo: 2.5 minute
+        consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
@@ -102,7 +102,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1555459200; // Apr 31, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000010d96c32fd677"); //1938
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000"); //1938
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0000000009cc1f28c974798e6222442be48a61a8f23a1497d4cdada1c38a76c4"); //1938
 
@@ -116,7 +116,7 @@ public:
         pchMessageStart[2] = 0xbc;
         pchMessageStart[3] = 0xb5;
         vAlertPubKey = ParseHex("0426506ae65fcec9d1f7eff0e36c2b81363c3de04f30e7a59475ffd4b13db1a04997476f3507e6927574185ca80c0835892e1727e057802142161b689265bcce06");
-        nDefaultPort = 9420;
+        nDefaultPort = 9419;
         nMaxTipAge = 12 * 60 * 60; // ~36 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nPruneAfterHeight = 200000;
 
@@ -126,28 +126,28 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x000006a15615feb4d2db6fdffe9e08289ae1cc6c731b9487cbcc194cf043a8ae"));
         assert(genesis.hashMerkleRoot == uint256S("0x4040fb47f6f0376cbfb2f703379eb3329a73840a574252fdc84f3b387c68e375"));
 
-        vSeeds.push_back(CDNSSeedData("tragocoin.com", "tragocoin.com"));
-        vSeeds.push_back(CDNSSeedData("explorer.tragocoin.com", "explorer.tragocoin.com"));
-        vSeeds.push_back(CDNSSeedData("node1.tragocoin.com", "node1.tragocoin.com"));
-        vSeeds.push_back(CDNSSeedData("node2.tragocoin.com", "node2.tragocoin.com"));
-        vSeeds.push_back(CDNSSeedData("node3.tragocoin.com", "node3.tragocoin.com"));
+        //vSeeds.push_back(CDNSSeedData("bwrgo.com", "bwrgo.com"));
+        //vSeeds.push_back(CDNSSeedData("explorer.bwrgo.com", "explorer.bwrgo.com"));
+       // vSeeds.push_back(CDNSSeedData("node1.bwrgo.com", "node1.bwrgo.com"));
+       // vSeeds.push_back(CDNSSeedData("node2.bwrgo.com", "node2.bwrgo.com"));
+       // vSeeds.push_back(CDNSSeedData("node3.bwrgo.com", "node3.bwrgo.com"));
 
-        // tragocoin addresses start with 'T'
+        // bwrgo addresses start with 'T'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,66);
-        // tragocoin script addresses start with '7'
+        // bwrgo script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,8);
-        // tragocoin private keys start with 'E'
+        // bwrgo private keys start with 'E'
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,194);
-        // tragocoin BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
+        // bwrgo BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
-        // tragocoin BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
+        // bwrgo BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
-        // tragocoin BIP44 coin type is '5'
+        // bwrgo BIP44 coin type is '5'
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x05).convert_to_container<std::vector<unsigned char> >();
 
         fMiningRequiresPeers = true;
         fDefaultConsistencyChecks = false;
-        fRequireStandard = true;
+        fRequireStandard = false;
         fMineBlocksOnDemand = false;
         fTestnetToBeDeprecatedFieldRPC = false;
 
@@ -162,7 +162,7 @@ public:
             1562303740, // * UNIX timestamp of last checkpoint block
             0,          // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            500	        // * estimated number of transactions per day after checkpoint
+            0.0	        // * estimated number of transactions per day after checkpoint
         };
     }
 };
@@ -195,8 +195,8 @@ public:
         consensus.BIP34Height = 21111; // FIX
         consensus.BIP34Hash = uint256S("0x0000000023b3a96d3484e5abb3755c413e7d41500f8e2a5c3f0dd01299cd8ef8"); // FIX
         consensus.powLimit = uint256S("00000fffff000000000000000000000000000000000000000000000000000000");
-        consensus.nPowTargetTimespan = 60 * 60; // tragocoin: 1 hour
-        consensus.nPowTargetSpacing = 2 * 60; // tragocoin: 2 minutes
+        consensus.nPowTargetTimespan = 60 * 60; // bwrgo: 1 hour
+        consensus.nPowTargetSpacing = 2 * 60; // bwrgo: 2 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
@@ -215,7 +215,7 @@ public:
         pchMessageStart[2] = 0x7d;
         pchMessageStart[3] = 0xd6;
         vAlertPubKey = ParseHex("04f9e05c65b8cf20e31464d7f35504b62999f845c9242bc6b1bcd1993c643e3ca40527a13de58afa831dccdeacae82b39c01602daf3a7f4151032f5dacefa36932");
-        nDefaultPort = 19420;
+        nDefaultPort = 19419;
         nMaxTipAge = 0x7fffffff; // allow mining on top of old blocks for testnet
         nPruneAfterHeight = 1000;
 
@@ -229,22 +229,22 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        // Testnet tragocoin addresses start with 't'
+        // Testnet bwrgo addresses start with 't'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,128);
-        // Testnet tragocoin script addresses start with '5'
+        // Testnet bwrgo script addresses start with '5'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
         // Testnet private keys start with '5' or 'n' (Bitcoin defaults) (?)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,33);
-        // Testnet tragocoin BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Testnet bwrgo BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Testnet tragocoin BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Testnet bwrgo BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        // Testnet tragocoin BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet bwrgo BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
-        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
+       // vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
-        fMiningRequiresPeers = false;
+        fMiningRequiresPeers = true;
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
         fMineBlocksOnDemand = false;
@@ -295,8 +295,8 @@ public:
         consensus.BIP34Height = -1; // BIP34 has not necessarily activated on regtest
         consensus.BIP34Hash = uint256();
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 60 * 60; // tragocoin: 1 hour
-        consensus.nPowTargetSpacing = 2 * 60; // tragocoin: 2 minutes
+        consensus.nPowTargetTimespan = 60 * 60; // bwrgo: 1 hour
+        consensus.nPowTargetSpacing = 2 * 60; // bwrgo: 2 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.nRuleChangeActivationThreshold = 108; // 75% for testchains
@@ -313,7 +313,7 @@ public:
         pchMessageStart[2] = 0x5e;
         pchMessageStart[3] = 0xd7;
         nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
-        nDefaultPort = 29420;
+        nDefaultPort = 29419;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1560912992, 186896, 0x1e0ffff0, 1, 10 * COIN);
@@ -340,17 +340,17 @@ public:
             0,
             0
         };
-        // Regtest tragocoin addresses start with 'n'
+        // Regtest bwrgo addresses start with 'n'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,112);
-        // Regtest tragocoin script addresses start with '5'
+        // Regtest bwrgo script addresses start with '5'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
         // Regtest private keys start with '5' or 'c' (Bitcoin defaults) (?)
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,240);
-        // Regtest tragocoin BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
+        // Regtest bwrgo BIP32 pubkeys start with 'tpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
-        // Regtest tragocoin BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
+        // Regtest bwrgo BIP32 prvkeys start with 'tprv' (Bitcoin defaults)
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
-        // Regtest tragocoin BIP44 coin type is '1' (All coin's testnet default)
+        // Regtest bwrgo BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE]  = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
    }
 };

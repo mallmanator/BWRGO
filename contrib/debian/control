@@ -1,8 +1,8 @@
-Source: tragocoin
+Source: bwrgo
 Section: utils
 Priority: optional
-Maintainer: Holger Schinzel <holger@tragocoincoin.info>
-Uploaders: Holger Schinzel <holger@tragocoincoin.info>
+Maintainer: Holger Schinzel <holger@bwrgocoin.info>
+Uploaders: Holger Schinzel <holger@bwrgocoin.info>
 Build-Depends: debhelper,
  devscripts,
  automake,
@@ -24,45 +24,45 @@ Build-Depends: debhelper,
  libprotobuf-dev, protobuf-compiler,
  python
 Standards-Version: 3.9.2
-Homepage: https://tragocoincoin.io/
-Vcs-Git: git://github.com/tragocoincoin/tragocoincoin.git
-Vcs-Browser: https://github.com/tragocoincoin/tragocoincoin
+Homepage: https://bwrgocoin.io/
+Vcs-Git: git://github.com/bwrgocoin/bwrgocoin.git
+Vcs-Browser: https://github.com/bwrgocoin/bwrgocoin
 
-Package: tragocoind
+Package: bwrgod
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- tragocoin is an experimental new digital currency that enables anonymous, instant
- payments to anyone, anywhere in the world. tragocoin uses peer-to-peer
+ bwrgo is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. bwrgo uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. tragocoin Core
+ and issuing money are carried out collectively by the network. bwrgo Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides the daemon, tragocoind, and the CLI tool
- tragocoin-cli to interact with the daemon.
+ This package provides the daemon, bwrgod, and the CLI tool
+ bwrgo-cli to interact with the daemon.
 
-Package: tragocoin-qt
+Package: bwrgo-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- tragocoin is an experimental new digital currency that enables anonymous, instant
- payments to anyone, anywhere in the world. tragocoin uses peer-to-peer
+ bwrgo is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. bwrgo uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. tragocoin Core
+ and issuing money are carried out collectively by the network. bwrgo Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides tragocoin-Qt, a GUI for tragocoin based on Qt.
+ This package provides bwrgo-Qt, a GUI for bwrgo based on Qt.
 
-Package: tragocoin-tx
+Package: bwrgo-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- tragocoin is an experimental new digital currency that enables anonymous, instant
- payments to anyone, anywhere in the world. tragocoin uses peer-to-peer
+ bwrgo is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. bwrgo uses peer-to-peer
  technology to operate with no central authority: managing transactions
- and issuing money are carried out collectively by the network. tragocoin Core
+ and issuing money are carried out collectively by the network. bwrgo Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides tragocoin-tx, a command-line transaction creation
- tool which can be used without a tragocoin daemon.  Some means of
+ This package provides bwrgo-tx, a command-line transaction creation
+ tool which can be used without a bwrgo daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

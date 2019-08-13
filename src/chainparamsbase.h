@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between tragocoin-cli and tragocoind)
- * of a given instance of the tragocoin system.
+ * CBaseChainParams defines the base parameters (shared between bwrgo-cli and bwrgod)
+ * of a given instance of the bwrgo system.
  */
 class CBaseChainParams
 {

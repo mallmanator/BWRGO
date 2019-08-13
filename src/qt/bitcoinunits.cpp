@@ -1,7 +1,7 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
 // Copyright (c) 2017-2018 The Proton Core developers
-// Copyright (c) 2018 The tragocoin Core developers
+// Copyright (c) 2018 The bwrgo Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -21,9 +21,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(TRAGO);
-    unitlist.append(mTRAGO);
-    unitlist.append(uTRAGO);
+    unitlist.append(BWRGO);
+    unitlist.append(mBWRGO);
+    unitlist.append(uBWRGO);
     unitlist.append(duffs);
     return unitlist;
 }
@@ -32,9 +32,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case TRAGO:
-    case mTRAGO:
-    case uTRAGO:
+    case BWRGO:
+    case mBWRGO:
+    case uBWRGO:
     case duffs:
         return true;
     default:
@@ -48,9 +48,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case TRAGO: return QString("TRAGO");
-            case mTRAGO: return QString("mTRAGO");
-            case uTRAGO: return QString::fromUtf8("μTRAGO");
+            case BWRGO: return QString("BWRGO");
+            case mBWRGO: return QString("mBWRGO");
+            case uBWRGO: return QString::fromUtf8("μBWRGO");
             case duffs: return QString("duffs");
             default: return QString("???");
         }
@@ -59,9 +59,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case TRAGO: return QString("tTRAGO");
-            case mTRAGO: return QString("mtTRAGO");
-            case uTRAGO: return QString::fromUtf8("μtTRAGO");
+            case BWRGO: return QString("tBWRGO");
+            case mBWRGO: return QString("mtBWRGO");
+            case uBWRGO: return QString::fromUtf8("μtBWRGO");
             case duffs: return QString("tduffs");
             default: return QString("???");
         }
@@ -74,10 +74,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case TRAGO: return QString("tragocoin");
-            case mTRAGO: return QString("Milli-tragocoin (1 / 1" THIN_SP_UTF8 "000)");
-            case uTRAGO: return QString("Micro-tragocoin (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-tragocoin (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case BWRGO: return QString("bwrgo");
+            case mBWRGO: return QString("Milli-bwrgo (1 / 1" THIN_SP_UTF8 "000)");
+            case uBWRGO: return QString("Micro-bwrgo (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case duffs: return QString("Ten Nano-bwrgo (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -85,10 +85,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case TRAGO: return QString("Testtragocoins");
-            case mTRAGO: return QString("Milli-Testtragocoin (1 / 1" THIN_SP_UTF8 "000)");
-            case uTRAGO: return QString("Micro-Testtragocoin (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-Testtragocoin (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case BWRGO: return QString("Testbwrgos");
+            case mBWRGO: return QString("Milli-Testbwrgo (1 / 1" THIN_SP_UTF8 "000)");
+            case uBWRGO: return QString("Micro-Testbwrgo (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case duffs: return QString("Ten Nano-Testbwrgo (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }
@@ -98,9 +98,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case TRAGO:  return 100000000;
-    case mTRAGO: return 100000;
-    case uTRAGO: return 100;
+    case BWRGO:  return 100000000;
+    case mBWRGO: return 100000;
+    case uBWRGO: return 100;
     case duffs: return 1;
     default:   return 100000000;
     }
@@ -110,9 +110,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case TRAGO: return 8;
-    case mTRAGO: return 5;
-    case uTRAGO: return 2;
+    case BWRGO: return 8;
+    case mBWRGO: return 5;
+    case uBWRGO: return 2;
     case duffs: return 0;
     default: return 0;
     }

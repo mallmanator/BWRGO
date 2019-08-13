@@ -1,11 +1,11 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=tragocoin
-Comment=tragocoin P2P Cryptocurrency
-Exec=tragocoin-qt %u
+Name=bwrgo
+Comment=bwrgo P2P Cryptocurrency
+Exec=bwrgo-qt %u
 Terminal=false
 Type=Application
-Icon=tragocoin128
-MimeType=x-scheme-handler/tragocoin;
+Icon=bwrgo128
+MimeType=x-scheme-handler/bwrgo;
 Categories=Office;Finance;
-Name[en_US]=tragocoin-qt.desktop
+Name[en_US]=bwrgo-qt.desktop

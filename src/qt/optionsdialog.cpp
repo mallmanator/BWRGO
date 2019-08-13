@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/tragocoin-config.h"
+#include "config/bwrgo-config.h"
 #endif
 
 #include "optionsdialog.h"
@@ -90,10 +90,10 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     }
     
     /* Theme selector */
-    ui->theme->addItem(QString("TRAGO-light"), QVariant("light"));
-    ui->theme->addItem(QString("TRAGO-blue"), QVariant("drkblue"));
-    ui->theme->addItem(QString("TRAGO-Crownium"), QVariant("crownium"));
-    ui->theme->addItem(QString("TRAGO-traditional"), QVariant("trad"));
+    ui->theme->addItem(QString("BWRGO-light"), QVariant("light"));
+    ui->theme->addItem(QString("BWRGO-blue"), QVariant("drkblue"));
+    ui->theme->addItem(QString("BWRGO-Crownium"), QVariant("crownium"));
+    ui->theme->addItem(QString("BWRGO-traditional"), QVariant("trad"));
     
     /* Language selector */
     QDir translations(":translations");

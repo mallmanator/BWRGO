@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "tragocoin"
-            VALUE "FileDescription",    "tragocoin-tx (CLI tragocoin transaction editor utility)"
+            VALUE "CompanyName",        "bwrgo"
+            VALUE "FileDescription",    "bwrgo-tx (CLI bwrgo transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "tragocoin-tx"
+            VALUE "InternalName",       "bwrgo-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "tragocoin-tx.exe"
-            VALUE "ProductName",        "tragocoin-tx"
+            VALUE "OriginalFilename",   "bwrgo-tx.exe"
+            VALUE "ProductName",        "bwrgo-tx"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

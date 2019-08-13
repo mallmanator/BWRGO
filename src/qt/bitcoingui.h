@@ -6,7 +6,7 @@
 #define BITCOIN_QT_BITCOINGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/tragocoin-config.h"
+#include "config/bwrgo-config.h"
 #endif
 
 #include "amount.h"
@@ -233,7 +233,7 @@ private Q_SLOTS:
     void showPeers();
     void showRepair();
 
-    /** Open external (default) editor with tragocoin.conf */
+    /** Open external (default) editor with bwrgo.conf */
     void showConfEditor();
     /** Open external (default) editor with masternode.conf */
     void showMNConfEditor();

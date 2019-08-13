@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.tragocoin.tragocoind</string>
+	<string>org.bwrgo.bwrgod</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/tragocoind</string>
+		<string>/usr/local/bin/bwrgod</string>
 		<string>-daemon</string>
 	</array>
 	<key>RunAtLoad</key>

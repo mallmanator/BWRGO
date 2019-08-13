@@ -1,7 +1,7 @@
 Release Process
 ====================
 
-* Update translations, see [translation_process.md](https://github.com/tragocoincoin/tragocoin/blob/master/doc/translation_process.md#syncing-with-transifex)
+* Update translations, see [translation_process.md](https://github.com/bwrgocoin/bwrgo/blob/master/doc/translation_process.md#syncing-with-transifex)
 * Update hardcoded [seeds](/contrib/seeds)
 
 * * *
@@ -10,14 +10,14 @@ Release Process
 Check out the source code in the following directory hierarchy.
 
 	cd /path/to/your/toplevel/build
-	git clone https://github.com/tragocoincoin/gitian.sigs.git
-	git clone https://github.com/tragocoincoin/tragocoincoin-detached-sigs.git
+	git clone https://github.com/bwrgocoin/gitian.sigs.git
+	git clone https://github.com/bwrgocoin/bwrgocoin-detached-sigs.git
 	git clone https://github.com/devrandom/gitian-builder.git
-	git clone https://github.com/tragocoincoin/tragocoincoin.git
+	git clone https://github.com/bwrgocoin/bwrgocoin.git
 
-###tragocoin Core maintainers/release engineers, update (commit) version in sources
+###bwrgo Core maintainers/release engineers, update (commit) version in sources
 
-	pushd ./tragocoin
+	pushd ./bwrgo
 	contrib/verifysfbinaries/verify.sh
 	configure.ac
 	doc/README*
@@ -40,7 +40,7 @@ Check out the source code in the following directory hierarchy.
 
  Setup Gitian descriptors:
 
-	pushd ./tragocoin
+	pushd ./bwrgo
 	export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
 	export VERSION=(new version, e.g. 0.8.0)
 	git fetch
@@ -76,52 +76,52 @@ Check out the source code in the following directory hierarchy.
 
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
-	make -C ../tragocoin/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../bwrgo/depends download SOURCES_PATH=`pwd`/cache/common
 
 Only missing files will be fetched, so this is safe to re-run for each build.
 
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 ```
-./bin/gbuild --url tragocoin=/path/to/tragocoin,signature=/path/to/sigs {rest of arguments}
+./bin/gbuild --url bwrgo=/path/to/bwrgo,signature=/path/to/sigs {rest of arguments}
 ```
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-###Build and sign tragocoin Core for Linux, Windows, and OS X:
+###Build and sign bwrgo Core for Linux, Windows, and OS X:
 
-	./bin/gbuild --commit tragocoin=v${VERSION} ../tragocoin/contrib/gitian-descriptors/gitian-linux.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../tragocoin/contrib/gitian-descriptors/gitian-linux.yml
-	mv build/out/tragocoin-*.tar.gz build/out/src/tragocoin-*.tar.gz ../
+	./bin/gbuild --commit bwrgo=v${VERSION} ../bwrgo/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../bwrgo/contrib/gitian-descriptors/gitian-linux.yml
+	mv build/out/bwrgo-*.tar.gz build/out/src/bwrgo-*.tar.gz ../
 
-	./bin/gbuild --commit tragocoin=v${VERSION} ../tragocoin/contrib/gitian-descriptors/gitian-win.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../tragocoin/contrib/gitian-descriptors/gitian-win.yml
-	mv build/out/tragocoin-*-win-unsigned.tar.gz inputs/tragocoin-win-unsigned.tar.gz
-	mv build/out/tragocoin-*.zip build/out/tragocoin-*.exe ../
+	./bin/gbuild --commit bwrgo=v${VERSION} ../bwrgo/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../bwrgo/contrib/gitian-descriptors/gitian-win.yml
+	mv build/out/bwrgo-*-win-unsigned.tar.gz inputs/bwrgo-win-unsigned.tar.gz
+	mv build/out/bwrgo-*.zip build/out/bwrgo-*.exe ../
 
-	./bin/gbuild --commit tragocoin=v${VERSION} ../tragocoin/contrib/gitian-descriptors/gitian-osx.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../tragocoin/contrib/gitian-descriptors/gitian-osx.yml
-	mv build/out/tragocoin-*-osx-unsigned.tar.gz inputs/tragocoin-osx-unsigned.tar.gz
-	mv build/out/tragocoin-*.tar.gz build/out/tragocoin-*.dmg ../
+	./bin/gbuild --commit bwrgo=v${VERSION} ../bwrgo/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../bwrgo/contrib/gitian-descriptors/gitian-osx.yml
+	mv build/out/bwrgo-*-osx-unsigned.tar.gz inputs/bwrgo-osx-unsigned.tar.gz
+	mv build/out/bwrgo-*.tar.gz build/out/bwrgo-*.dmg ../
 	popd
 
   Build output expected:
 
-  1. source tarball (tragocoin-${VERSION}.tar.gz)
-  2. linux 32-bit and 64-bit dist tarballs (tragocoin-${VERSION}-linux[32|64].tar.gz)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (tragocoin-${VERSION}-win[32|64]-setup-unsigned.exe, tragocoin-${VERSION}-win[32|64].zip)
-  4. OS X unsigned installer and dist tarball (tragocoin-${VERSION}-osx-unsigned.dmg, tragocoin-${VERSION}-osx64.tar.gz)
+  1. source tarball (bwrgo-${VERSION}.tar.gz)
+  2. linux 32-bit and 64-bit dist tarballs (bwrgo-${VERSION}-linux[32|64].tar.gz)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (bwrgo-${VERSION}-win[32|64]-setup-unsigned.exe, bwrgo-${VERSION}-win[32|64].zip)
+  4. OS X unsigned installer and dist tarball (bwrgo-${VERSION}-osx-unsigned.dmg, bwrgo-${VERSION}-osx64.tar.gz)
   5. Gitian signatures (in gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/
 
 ###Verify other gitian builders signatures to your own. (Optional)
 
   Add other gitian builders keys to your gpg keyring
 
-	gpg --import ../tragocoin/contrib/gitian-downloader/*.pgp
+	gpg --import ../bwrgo/contrib/gitian-downloader/*.pgp
 
   Verify the signatures
 
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../tragocoin/contrib/gitian-descriptors/gitian-linux.yml
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../tragocoin/contrib/gitian-descriptors/gitian-win.yml
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../tragocoin/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../bwrgo/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../bwrgo/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../bwrgo/contrib/gitian-descriptors/gitian-osx.yml
 
 	popd
 
@@ -139,25 +139,25 @@ Commit your signature to gitian.sigs:
 
   Wait for Windows/OS X detached signatures:
 	Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-	Detached signatures will then be committed to the [tragocoincoin-detached-sigs](https://github.com/tragocoincoin/tragocoincoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+	Detached signatures will then be committed to the [bwrgocoin-detached-sigs](https://github.com/bwrgocoin/bwrgocoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
   Create (and optionally verify) the signed OS X binary:
 
 	pushd ./gitian-builder
-	./bin/gbuild -i --commit signature=v${VERSION} ../tragocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../tragocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../tragocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	mv build/out/tragocoin-osx-signed.dmg ../tragocoin-${VERSION}-osx.dmg
+	./bin/gbuild -i --commit signature=v${VERSION} ../bwrgo/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../bwrgo/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../bwrgo/contrib/gitian-descriptors/gitian-osx-signer.yml
+	mv build/out/bwrgo-osx-signed.dmg ../bwrgo-${VERSION}-osx.dmg
 	popd
 
   Create (and optionally verify) the signed Windows binaries:
 
 	pushd ./gitian-builder
-	./bin/gbuild -i --commit signature=v${VERSION} ../tragocoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../tragocoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../tragocoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	mv build/out/tragocoin-*win64-setup.exe ../tragocoin-${VERSION}-win64-setup.exe
-	mv build/out/tragocoin-*win32-setup.exe ../tragocoin-${VERSION}-win32-setup.exe
+	./bin/gbuild -i --commit signature=v${VERSION} ../bwrgo/contrib/gitian-descriptors/gitian-win-signer.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../bwrgo/contrib/gitian-descriptors/gitian-win-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../bwrgo/contrib/gitian-descriptors/gitian-win-signer.yml
+	mv build/out/bwrgo-*win64-setup.exe ../bwrgo-${VERSION}-win64-setup.exe
+	mv build/out/bwrgo-*win32-setup.exe ../bwrgo-${VERSION}-win32-setup.exe
 	popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -182,18 +182,18 @@ rm SHA256SUMS
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the tragocoincoin.info server
+- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the bwrgocoin.info server
 
-- Update tragocoincoin.info
+- Update bwrgocoin.info
 
 - Announce the release:
-  - tragocoin-development mailing list
+  - bwrgo-development mailing list
 
-  - Update title of #tragocoincoin on Freenode IRC
+  - Update title of #bwrgocoin on Freenode IRC
 
-  - Optionally reddit /r/tragocoinpay, ... but this will usually sort out itself
+  - Optionally reddit /r/bwrgopay, ... but this will usually sort out itself
 
-- Notify flare so that he can start building [the PPAs](https://launchpad.net/~tragocoincoin.info/+archive/ubuntu/tragocoin)
+- Notify flare so that he can start building [the PPAs](https://launchpad.net/~bwrgocoin.info/+archive/ubuntu/bwrgo)
 
 - Add release notes for the new version to the directory `doc/release-notes` in git master
 

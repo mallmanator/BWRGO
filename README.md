@@ -1,9 +1,9 @@
-![Tragocoin Logo](https://github.com/trago-project/tragocoin/raw/master/logo.png)
+![Tragocoin Logo](https://github.com/bwrgo-project/bwrgo/raw/master/logo.png)
 
 # Tragocoin Core staging tree 0.10.0.2"
 
 
-| [Website](https://www.tragocoin.com) | [Exchange](https://www.tragocoin.com) | | [Alt Exchange](https://rocket-exchange.net/market/ENY-TRAGO) | [Block Explorer](https://trago.chainz.ge) | [Forum BitcoinTalk](https://bitcointalk.org/index.php?topic=5161102/) |
+| [Website](https://www.bwrgo.com) | [Exchange](https://www.bwrgo.com) | | [Alt Exchange](https://rocket-exchange.net/market/ENY-BWRGO) | [Block Explorer](https://bwrgo.chainz.ge) | [Forum BitcoinTalk](https://bitcointalk.org/index.php?topic=5161102/) |
 
 What is Tragocoin?
 ----------------
@@ -15,7 +15,7 @@ are carried out collectively by the network. Tragocoin Core is the name of the o
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Tragocoin Core software, see https://www.tragocoin.com
+the Tragocoin Core software, see https://www.bwrgo.com
 
 
 Features
@@ -35,40 +35,40 @@ Features
 | Specification | Value |
 |:-----------|:-----------|
 | Name | `Tragocoin` |
-| Currency | `TRAGO` |
+| Currency | `BWRGO` |
 | Total Supply | `25,000,000` |
 | Block Size | `4MB` |
 | Block Time | `2.5 Minutes` |
-| PoW Normal Reward | `5 TRAGO` |
-| PoW Mega Reward | `200 TRAGO` |
-| Masternode Collateral | `20,000 TRAGO` |
+| PoW Normal Reward | `5 BWRGO` |
+| PoW Mega Reward | `200 BWRGO` |
+| Masternode Collateral | `20,000 BWRGO` |
 | Masternode Reward | `50% Of Block Reward` |
 | Masternode Start | `Friday, July 12, 2019 3:00:00 AM` |
-| Port | `9420` |
+| Port | `9419` |
 | RPC Port | `9421` |
-| Masternode Fixed Port | `9420` |
+| Masternode Fixed Port | `9419` |
 
 
 ## Block Rewards 
 
 | Days | PoW Reward | Miner Reward | MN Reward |
 |:-----------|:-----------|:-----------|:-----------|
-| 1 | `5 TRAGO` | `5 TRAGO` | `None` |
-| 2 | `20 TRAGO` | `20 TRAGO` | `None` |
-| 3 - 7 | `100 TRAGO` | `100 TRAGO` | `None` |
-| 8 - 15 | `100 TRAGO` | `50 TRAGO` | `50 TRAGO` |
-| 16 | `75 TRAGO` | `37.5 TRAGO` | `37.5 TRAGO` |
-| 17 | `50 TRAGO` | `25 TRAGO` | `25 TRAGO` |
-| 18 | `25 TRAGO` | `12.5 TRAGO` | `12.5 TRAGO` |
-| 19 | `10 TRAGO` | `5 TRAGO` | `5 TRAGO` |
-| 20 ~ | `5 TRAGO` | `2.5 TRAGO` | `2.5 TRAGO` |
+| 1 | `5 BWRGO` | `5 BWRGO` | `None` |
+| 2 | `20 BWRGO` | `20 BWRGO` | `None` |
+| 3 - 7 | `100 BWRGO` | `100 BWRGO` | `None` |
+| 8 - 15 | `100 BWRGO` | `50 BWRGO` | `50 BWRGO` |
+| 16 | `75 BWRGO` | `37.5 BWRGO` | `37.5 BWRGO` |
+| 17 | `50 BWRGO` | `25 BWRGO` | `25 BWRGO` |
+| 18 | `25 BWRGO` | `12.5 BWRGO` | `12.5 BWRGO` |
+| 19 | `10 BWRGO` | `5 BWRGO` | `5 BWRGO` |
+| 20 ~ | `5 BWRGO` | `2.5 BWRGO` | `2.5 BWRGO` |
 
 
 
 | Monthly Mega Block | PoW Reward | Miner Reward | MN Reward |
 |:-----------|:-----------|:-----------|:-----------|
-| Year 1 | `200 TRAGO` | `100 TRAGO` | `100 TRAGO` |
-| Year 2 | `100 TRAGO` | `60 TRAGO` | `40 TRAGO` |
+| Year 1 | `200 BWRGO` | `100 BWRGO` | `100 BWRGO` |
+| Year 2 | `100 BWRGO` | `60 BWRGO` | `40 BWRGO` |
 | Year 3 ~ | `None` | `None` | `None` |
 
 
@@ -94,13 +94,13 @@ Ubuntu Xenial 16.04 and Windows Subsystem for Linux
     
 Once the tool chain is installed the build steps are common:
 
-Note that for WSL the tragocoin Core source path MUST be somewhere in the default mount file system, for example /usr/src/tragocoin, AND not under /mnt/d/. If this is not the case the dependency autoconf scripts will fail. This means you cannot use a directory that located directly on the host Windows file system to perform the build.
+Note that for WSL the bwrgo Core source path MUST be somewhere in the default mount file system, for example /usr/src/bwrgo, AND not under /mnt/d/. If this is not the case the dependency autoconf scripts will fail. This means you cannot use a directory that located directly on the host Windows file system to perform the build.
 
 The next three steps are an example of how to acquire the source in an appropriate way.
 
     cd /usr/src
-    sudo git clone https://github.com/trago-project/tragocoin.git
-    sudo chmod -R a+rw tragocoin
+    sudo git clone https://github.com/bwrgo-project/bwrgo.git
+    sudo chmod -R a+rw bwrgo
     
 Once the source code is ready the build steps are below.
 
@@ -124,9 +124,9 @@ Once the source code is ready the build steps are below.
     # If you want to build the Qt GUI:
     sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
 
-    git clone https://github.com/trago-project/tragocoin --recursive
+    git clone https://github.com/bwrgo-project/bwrgo --recursive
     
-    cd tragocoin
+    cd bwrgo
 
     # Note autogen will prompt to install some more dependencies if needed
     ./autogen.sh
@@ -156,14 +156,14 @@ NOTE: Building with Qt4 is still supported, however, could result in a broken UI
 
 #### Build Tragocoin Core
 
-1. Clone the tragocoin source code and cd into `tragocoin`
+1. Clone the bwrgo source code and cd into `bwrgo`
 
-        git clone --recursive https://github.com/trago-project/tragocoin.git
-        cd tragocoin
+        git clone --recursive https://github.com/bwrgo-project/bwrgo.git
+        cd bwrgo
 
 2.  Build Tragocoin Core:
 
-    Configure and build the headless tragocoin binaries as well as the GUI (if Qt is found).
+    Configure and build the headless bwrgo binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -174,14 +174,14 @@ NOTE: Building with Qt4 is still supported, however, could result in a broken UI
 
 ### Run
 
-Then you can either run the command-line daemon using `src/tragocoind` and `src/tragocoin-cli`, or you can run the Qt GUI using `src/qt/tragocoin-qt`
+Then you can either run the command-line daemon using `src/bwrgod` and `src/bwrgo-cli`, or you can run the Qt GUI using `src/qt/bwrgo-qt`
 
 For in-depth description of Sparknet and how to use Tragocoin for interacting with contracts, please see [sparknet-guide](doc/sparknet-guide.md).
 
 
 ### Mining
 
-Create an TRAGO Wallet. Setup your tragocoin.conf file. download miner software https://www.tragocoin.com 
+Create an BWRGO Wallet. Setup your bwrgo.conf file. download miner software https://www.bwrgo.com 
 
 Example commandline for cpuminer is:
 
@@ -192,14 +192,14 @@ Coinbase address is the wallet address you would like the reward to goto. Debug 
 
 ### Building a masternode
 
-Setting up a masternode requires a basic understanding of Linux and blockchain technology, as well as an ability to follow instructions closely. It also requires regular maintenance and careful security. Full guide instructions setup : https://www.tragocoin.com/page/setup
+Setting up a masternode requires a basic understanding of Linux and blockchain technology, as well as an ability to follow instructions closely. It also requires regular maintenance and careful security. Full guide instructions setup : https://www.bwrgo.com/page/setup
 
 
 Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/trago-project/tragocoin/tags) are created
+completely stable. [Tags](https://github.com/bwrgo-project/bwrgo/tags) are created
 regularly to indicate new official, stable release versions of Tragocoin.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).

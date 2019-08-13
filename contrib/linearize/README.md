@@ -1,9 +1,9 @@
 # Linearize
 Construct a linear, no-fork, best version of the blockchain.
 
-## Step 0: Install tragocoin_hash
+## Step 0: Install bwrgo_hash
 
-https://github.com/tragocoincoin/tragocoin_hash
+https://github.com/bwrgocoin/bwrgo_hash
 
 ## Step 1: Download hash list
 

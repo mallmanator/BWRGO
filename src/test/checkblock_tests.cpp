@@ -6,7 +6,7 @@
 #include "consensus/validation.h"
 #include "main.h" // For CheckBlock
 #include "primitives/block.h"
-#include "test/test_tragocoin.h"
+#include "test/test_bwrgo.h"
 #include "utiltime.h"
 
 #include <cstdio>

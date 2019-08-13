@@ -1,15 +1,15 @@
 [Unit]
-Description=tragocoin's distributed currency daemon
+Description=bwrgo's distributed currency daemon
 After=network.target
 
 [Service]
-User=tragocoincore
-Group=tragocoincore
+User=bwrgocore
+Group=bwrgocore
 
 Type=forking
-PIDFile=/var/lib/tragocoind/tragocoind.pid
-ExecStart=/usr/bin/tragocoind -daemon -pid=/var/lib/tragocoind/tragocoind.pid \
--conf=/etc/tragocoincore/tragocoin.conf -datadir=/var/lib/tragocoind -disablewallet
+PIDFile=/var/lib/bwrgod/bwrgod.pid
+ExecStart=/usr/bin/bwrgod -daemon -pid=/var/lib/bwrgod/bwrgod.pid \
+-conf=/etc/bwrgocore/bwrgo.conf -datadir=/var/lib/bwrgod -disablewallet
 
 Restart=always
 PrivateTmp=true

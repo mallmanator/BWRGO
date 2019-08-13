@@ -7,17 +7,17 @@ define(_CLIENT_VERSION_BUILD, 2)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[tragocoin Core]])
-AC_INIT([tragocoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/trago-project/tragocoin/issues],[tragocoincore])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[bwrgo Core]])
+AC_INIT([bwrgo Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/bwrgo-project/bwrgo/issues],[bwrgocore])
 AC_CONFIG_SRCDIR([src/main.cpp])
-AC_CONFIG_HEADERS([src/config/tragocoin-config.h])
+AC_CONFIG_HEADERS([src/config/bwrgo-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=tragocoind
-BITCOIN_GUI_NAME=tragocoin-qt
-BITCOIN_CLI_NAME=tragocoin-cli
-BITCOIN_TX_NAME=tragocoin-tx
+BITCOIN_DAEMON_NAME=bwrgod
+BITCOIN_GUI_NAME=bwrgo-qt
+BITCOIN_CLI_NAME=bwrgo-cli
+BITCOIN_TX_NAME=bwrgo-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
@@ -27,9 +27,9 @@ fi
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef TRAGO_CONFIG_H])
-AH_TOP([#define TRAGO_CONFIG_H])
-AH_BOTTOM([#endif //TRAGO_CONFIG_H])
+AH_TOP([#ifndef BWRGO_CONFIG_H])
+AH_TOP([#define BWRGO_CONFIG_H])
+AH_BOTTOM([#endif //BWRGO_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME
@@ -294,7 +294,7 @@ CPPFLAGS="$CPPFLAGS -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS"
 
 AC_ARG_WITH([utils],
   [AS_HELP_STRING([--with-utils],
-  [build tragocoin-cli tragocoin-tx (default=yes)])],
+  [build bwrgo-cli bwrgo-tx (default=yes)])],
   [build_bitcoin_utils=$withval],
   [build_bitcoin_utils=yes])
 
@@ -306,7 +306,7 @@ AC_ARG_WITH([libs],
 
 AC_ARG_WITH([daemon],
   [AS_HELP_STRING([--with-daemon],
-  [build tragocoind daemon (default=yes)])],
+  [build bwrgod daemon (default=yes)])],
   [build_bitcoind=$withval],
   [build_bitcoind=yes])
 
@@ -505,7 +505,7 @@ AC_C_BIGENDIAN
 dnl Check for pthread compile/link requirements
 AX_PTHREAD
 
-# The following macro will add the necessary defines to tragocoin-config.h, but
+# The following macro will add the necessary defines to bwrgo-config.h, but
 # they also need to be passed down to any subprojects. Pull the results out of
 # the cache and add them to CPPFLAGS.
 AC_SYS_LARGEFILE
@@ -1054,11 +1054,11 @@ AC_SUBST(UNIVALUE_LIBS)
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build tragocoind])
+AC_MSG_CHECKING([whether to build bwrgod])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (tragocoin-cli tragocoin-tx)])
+AC_MSG_CHECKING([whether to build utils (bwrgo-cli bwrgo-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 
@@ -1159,7 +1159,7 @@ if test x$bitcoin_enable_qt != xno; then
     AC_MSG_WARN("xgettext is required to update qt translations")
   fi
 
-  AC_MSG_CHECKING([whether to build test_tragocoin-qt])
+  AC_MSG_CHECKING([whether to build test_bwrgo-qt])
   if test x$use_gui_tests$bitcoin_enable_qt_test = xyesyes; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="yes"
@@ -1170,7 +1170,7 @@ fi
 
 AM_CONDITIONAL([ENABLE_ZMQ], [test "x$use_zmq" = "xyes"])
 
-AC_MSG_CHECKING([whether to build test_tragocoin])
+AC_MSG_CHECKING([whether to build test_bwrgo])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="yes"

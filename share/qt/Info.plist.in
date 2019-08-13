@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Proton Core developers, @COPYRIGHT_YEAR@ The tragocoin Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Proton Core developers, @COPYRIGHT_YEAR@ The bwrgo Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>tragocoin-Qt</string>
+  <string>bwrgo-Qt</string>
   
   <key>CFBundleName</key>
-  <string>tragocoin-Qt</string>
+  <string>bwrgo-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.tragocoin.tragocoin-Qt</string>
+  <string>org.bwrgo.bwrgo-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.tragocoin.tragocoinPayment</string>
+      <string>org.bwrgo.bwrgoPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>tragocoin</string>
+        <string>bwrgo</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.tragocoin.paymentrequest</string>
+      <string>org.bwrgo.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>tragocoin payment request</string>
+      <string>bwrgo payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-tragocoin-payment-request</string>
+        <string>application/x-bwrgo-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>tragocoincoinmentrequest</string>
+          <string>bwrgocoinmentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.tragocoin.paymentrequest</string>
+        <string>org.bwrgo.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

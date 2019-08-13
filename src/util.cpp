@@ -2,12 +2,12 @@
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
 // Copyright (c) 2017-2018 The Proton Core developers
-// Copyright (c) 2018 The tragocoin Core developers
+// Copyright (c) 2018 The bwrgo Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/tragocoin-config.h"
+#include "config/bwrgo-config.h"
 #endif
 
 #include "util.h"
@@ -109,7 +109,7 @@ static const char alphanum[] =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
       "abcdefghijklmnopqrstuvwxyz";
 
-//tragocoin only features
+//bwrgo only features
 bool fMasterNode = false;
 bool fLiteMode = false;
 /**
@@ -121,8 +121,8 @@ bool fLiteMode = false;
 */
 int nWalletBackups = 10;
 
-const char * const BITCOIN_CONF_FILENAME = "tragocoin.conf";
-const char * const BITCOIN_PID_FILENAME = "tragocoind.pid";
+const char * const BITCOIN_CONF_FILENAME = "bwrgo.conf";
+const char * const BITCOIN_PID_FILENAME = "bwrgod.pid";
 
 map<string, string> mapArgs;
 map<string, vector<string> > mapMultiArgs;
@@ -276,8 +276,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "tragocoin" is a composite category enabling all tragocoin-related debug output
-            if(ptrCategory->count(string("tragocoin"))) {
+            // "bwrgo" is a composite category enabling all bwrgo-related debug output
+            if(ptrCategory->count(string("bwrgo"))) {
                 ptrCategory->insert(string("privatesend"));
                 ptrCategory->insert(string("instantsend"));
                 ptrCategory->insert(string("masternode"));
@@ -501,7 +501,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "tragocoin";
+    const char* pszModule = "bwrgo";
 #endif
     if (pex)
         return strprintf(
@@ -521,13 +521,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\tragocoinCore
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\tragocoinCore
-    // Mac: ~/Library/Application Support/tragocoinCore
-    // Unix: ~/.tragocoincore
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\bwrgoCore
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\bwrgoCore
+    // Mac: ~/Library/Application Support/bwrgoCore
+    // Unix: ~/.bwrgocore
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "tragocoinCore";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "bwrgoCore";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -537,10 +537,10 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/tragocoinCore";
+    return pathRet / "Library/Application Support/bwrgoCore";
 #else
     // Unix
-    return pathRet / ".tragocoincore";
+    return pathRet / ".bwrgocore";
 #endif
 #endif
 }
@@ -634,7 +634,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()){
-        // Create empty tragocoin.conf if it does not excist
+        // Create empty bwrgo.conf if it does not excist
        // FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
 
         FILE* ConfFile = fopen(GetConfigFile().string().c_str(), "w");
@@ -653,12 +653,12 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
         std::string str(s, 34);
         std::string rpcpass = "rpcpassword=" + str + "\n";
         fprintf(ConfFile, rpcpass.c_str());
-        fprintf(ConfFile, "port=9420\n");
+        fprintf(ConfFile, "port=9419\n");
         fprintf(ConfFile, "rpcport=9421\n");
         fprintf(ConfFile, "rpcallowip=127.0.0.1\n");
         fprintf(ConfFile, "# masternode=1\n");
         fprintf(ConfFile, "# masternodeprivkey=use_masternode_genkey\n");
-        fprintf(ConfFile, "# masternodeaddr=Static_IP:9420\n");
+        fprintf(ConfFile, "# masternodeaddr=Static_IP:9419\n");
 
         fclose(ConfFile);
 
@@ -671,7 +671,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
               //  return;
 //        	ReadConfigFile(mapSettingsRet, mapMultiSettingsRet);
        // } else {
-        	// LogPrintf("tragocoin.conf file not found or can't be created\n");
+        	// LogPrintf("bwrgo.conf file not found or can't be created\n");
         	// return; // Nothing to read, so just return
        // }
     }
@@ -681,7 +681,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
     {
-        // Don't overwrite existing settings so command line settings override tragocoin.conf
+        // Don't overwrite existing settings so command line settings override bwrgo.conf
         string strKey = string("-") + it->string_key;
         string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);
@@ -695,7 +695,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 void AddSeedsToConfigFile(FILE* configFile) {
 	fprintf(configFile,"onlynet=ipv4\r\n");
-	fprintf(configFile,"addnode=144.202.109.173:9420\r\n");
+	fprintf(configFile,"addnode=144.202.109.173:9419\r\n");
 
 }
 

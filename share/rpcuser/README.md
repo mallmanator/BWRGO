@@ -3,7 +3,7 @@ RPC Tools
 
 ### [RPCUser](/share/rpcuser) ###
 
-Create an RPC user login ctragocointial.
+Create an RPC user login cbwrgotial.
 
 Usage:
 

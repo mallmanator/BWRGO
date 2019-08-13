@@ -78,13 +78,13 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your tragocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your tragocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your bwrgo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your bwrgo addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your tragocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>These are your tragocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
+        <source>These are your bwrgo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>These are your bwrgo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -214,8 +214,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TRAGO&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TRAGO&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BWRGO&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BWRGO&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -235,8 +235,8 @@
     </message>
     <message>
         <location line="+57"/>
-        <source>tragocoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your tragocoins from being stolen by malware infecting your computer.</source>
-        <translation>tragocoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your tragocoins from being stolen by malware infecting your computer.</translation>
+        <source>bwrgo Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bwrgos from being stolen by malware infecting your computer.</source>
+        <translation>bwrgo Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bwrgos from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -309,8 +309,8 @@
     <message>
         <location filename="../bitcoingui.cpp" line="+127"/>
         <location line="+919"/>
-        <source>tragocoin Core</source>
-        <translation>tragocoin Core</translation>
+        <source>bwrgo Core</source>
+        <translation>bwrgo Core</translation>
     </message>
     <message>
         <location line="-910"/>
@@ -339,8 +339,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Send coins to a tragocoin address</source>
-        <translation>Send coins to a tragocoin address</translation>
+        <source>Send coins to a bwrgo address</source>
+        <translation>Send coins to a bwrgo address</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -349,8 +349,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Request payments (generates QR codes and tragocoin: URIs)</source>
-        <translation>Request payments (generates QR codes and tragocoin: URIs)</translation>
+        <source>Request payments (generates QR codes and bwrgo: URIs)</source>
+        <translation>Request payments (generates QR codes and bwrgo: URIs)</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -384,13 +384,13 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;About tragocoin Core</source>
-        <translation>&amp;About tragocoin Core</translation>
+        <source>&amp;About bwrgo Core</source>
+        <translation>&amp;About bwrgo Core</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about tragocoin Core</source>
-        <translation>Show information about tragocoin Core</translation>
+        <source>Show information about bwrgo Core</source>
+        <translation>Show information about bwrgo Core</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -469,8 +469,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Sign messages with your tragocoin addresses to prove you own them</source>
-        <translation>Sign messages with your tragocoin addresses to prove you own them</translation>
+        <source>Sign messages with your bwrgo addresses to prove you own them</source>
+        <translation>Sign messages with your bwrgo addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -479,8 +479,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Verify messages to ensure they were signed with specified tragocoin addresses</source>
-        <translation>Verify messages to ensure they were signed with specified tragocoin addresses</translation>
+        <source>Verify messages to ensure they were signed with specified bwrgo addresses</source>
+        <translation>Verify messages to ensure they were signed with specified bwrgo addresses</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -574,8 +574,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Open a tragocoin: URI or payment request</source>
-        <translation>Open a tragocoin: URI or payment request</translation>
+        <source>Open a bwrgo: URI or payment request</source>
+        <translation>Open a bwrgo: URI or payment request</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -584,8 +584,8 @@
     </message>
     <message>
         <location line="+267"/>
-        <source>tragocoin Core client</source>
-        <translation>tragocoin Core client</translation>
+        <source>bwrgo Core client</source>
+        <translation>bwrgo Core client</translation>
     </message>
     <message>
         <location line="+334"/>
@@ -619,8 +619,8 @@
     </message>
     <message numerus="yes">
         <location line="+347"/>
-        <source>%n active connection(s) to tragocoin network</source>
-        <translation><numerusform>%n active connection to tragocoin network</numerusform><numerusform>%n active connections to tragocoin network</numerusform></translation>
+        <source>%n active connection(s) to bwrgo network</source>
+        <translation><numerusform>%n active connection to bwrgo network</numerusform><numerusform>%n active connections to bwrgo network</numerusform></translation>
     </message>
     <message>
         <location line="+15"/>
@@ -654,8 +654,8 @@
     </message>
     <message>
         <location line="-567"/>
-        <source>Modify configuration options for tragocoin Core</source>
-        <translation>Modify configuration options for tragocoin Core</translation>
+        <source>Modify configuration options for bwrgo Core</source>
+        <translation>Modify configuration options for bwrgo Core</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -674,8 +674,8 @@
     </message>
     <message>
         <location line="+20"/>
-        <source>Show the tragocoin Core help message to get a list with possible tragocoin Core command-line options</source>
-        <translation>Show the tragocoin Core help message to get a list with possible tragocoin Core command-line options</translation>
+        <source>Show the bwrgo Core help message to get a list with possible bwrgo Core command-line options</source>
+        <translation>Show the bwrgo Core help message to get a list with possible bwrgo Core command-line options</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1164,13 +1164,13 @@
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 1000 TRAGO</source>
-        <translation>Use 2 separate masternodes to mix funds up to 1000 TRAGO</translation>
+        <source>Use 2 separate masternodes to mix funds up to 1000 BWRGO</source>
+        <translation>Use 2 separate masternodes to mix funds up to 1000 BWRGO</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 1000 TRAGO</source>
-        <translation>Use 8 separate masternodes to mix funds up to 1000 TRAGO</translation>
+        <source>Use 8 separate masternodes to mix funds up to 1000 BWRGO</source>
+        <translation>Use 8 separate masternodes to mix funds up to 1000 BWRGO</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1179,18 +1179,18 @@
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 TRAGO to anonymize 1000 TRAGO</source>
-        <translation>This option is the quickest and will cost about ~0.025 TRAGO to anonymize 1000 TRAGO</translation>
+        <source>This option is the quickest and will cost about ~0.025 BWRGO to anonymize 1000 BWRGO</source>
+        <translation>This option is the quickest and will cost about ~0.025 BWRGO to anonymize 1000 BWRGO</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 TRAGO to anonymize 1000 TRAGO</source>
-        <translation>This option is moderately fast and will cost about 0.05 TRAGO to anonymize 1000 TRAGO</translation>
+        <source>This option is moderately fast and will cost about 0.05 BWRGO to anonymize 1000 BWRGO</source>
+        <translation>This option is moderately fast and will cost about 0.05 BWRGO to anonymize 1000 BWRGO</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>0.1 TRAGO per 1000 TRAGO you anonymize.</source>
-        <translation>0.1 TRAGO per 1000 TRAGO you anonymize.</translation>
+        <source>0.1 BWRGO per 1000 BWRGO you anonymize.</source>
+        <translation>0.1 BWRGO per 1000 BWRGO you anonymize.</translation>
     </message>
     <message>
         <location line="-13"/>
@@ -1206,18 +1206,18 @@
     </message>
     <message>
         <location line="-29"/>
-        <source>PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening tragocoin&apos;s configuration screen.</source>
-        <translation>PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening tragocoin&apos;s configuration screen.</translation>
+        <source>PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening bwrgo&apos;s configuration screen.</source>
+        <translation>PrivateSend was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening bwrgo&apos;s configuration screen.</translation>
     </message>
     <message>
         <location line="+15"/>
-        <source>PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening tragocoin&apos;s configuration screen.</source>
-        <translation>PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening tragocoin&apos;s configuration screen.</translation>
+        <source>PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening bwrgo&apos;s configuration screen.</source>
+        <translation>PrivateSend was successfully set to high (%1 and 8 rounds). You can change this at any time by opening bwrgo&apos;s configuration screen.</translation>
     </message>
     <message>
         <location line="+15"/>
-        <source>PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening tragocoin&apos;s configuration screen.</source>
-        <translation>PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening tragocoin&apos;s configuration screen.</translation>
+        <source>PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening bwrgo&apos;s configuration screen.</source>
+        <translation>PrivateSend was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening bwrgo&apos;s configuration screen.</translation>
     </message>
 </context>
 <context>
@@ -1269,8 +1269,8 @@
     </message>
     <message>
         <location line="+71"/>
-        <source>The entered address &quot;%1&quot; is not a valid tragocoin address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid tragocoin address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid bwrgo address.</source>
+        <translation>The entered address &quot;%1&quot; is not a valid bwrgo address.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1320,8 +1320,8 @@
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+37"/>
-        <source>tragocoin Core</source>
-        <translation>tragocoin Core</translation>
+        <source>bwrgo Core</source>
+        <translation>bwrgo Core</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1336,8 +1336,8 @@
     </message>
     <message>
         <location line="+5"/>
-        <source>About tragocoin Core</source>
-        <translation>About tragocoin Core</translation>
+        <source>About bwrgo Core</source>
+        <translation>About bwrgo Core</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -1381,8 +1381,8 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the tragocoin in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an tragocointive process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 TRAGO, 0.1 TRAGO, 1 TRAGO and 10 TRAGO -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href=&quot;https://tragocoincoin.atlassian.net/wiki/display/DOC/PrivateSend&quot;&gt;https://tragocoincoin.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </source>
-        <translation>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the tragocoin in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an tragocointive process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 TRAGO, 0.1 TRAGO, 1 TRAGO and 10 TRAGO -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href=&quot;https://tragocoincoin.atlassian.net/wiki/display/DOC/PrivateSend&quot;&gt;https://tragocoincoin.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </translation>
+        <source>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the bwrgo in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an bwrgotive process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 BWRGO, 0.1 BWRGO, 1 BWRGO and 10 BWRGO -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href=&quot;https://bwrgocoin.atlassian.net/wiki/display/DOC/PrivateSend&quot;&gt;https://bwrgocoin.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </source>
+        <translation>&lt;h3&gt;PrivateSend Basics&lt;/h3&gt; PrivateSend gives you true financial privacy by obscuring the origins of your funds. All the bwrgo in your wallet is comprised of different &quot;inputs&quot; which you can think of as separate, discrete coins.&lt;br&gt; PrivateSend uses an bwrgotive process to mix your inputs with the inputs of two other people, without having your coins ever leave your wallet. You retain control of your money at all times..&lt;hr&gt; &lt;b&gt;The PrivateSend process works like this:&lt;/b&gt;&lt;ol type=&quot;1&quot;&gt; &lt;li&gt;PrivateSend begins by breaking your transaction inputs down into standard denominations. These denominations are 0.01 BWRGO, 0.1 BWRGO, 1 BWRGO and 10 BWRGO -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called &quot;masternodes.&quot; These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know &quot;who&quot; you are.&lt;/li&gt; &lt;li&gt;When two other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users&apos; wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it&apos;s called a &quot;round.&quot; Each round of PrivateSend makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be anonymized. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these &quot;change addresses.&quot; Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have PrivateSend disabled. &lt;hr&gt;For more info see &lt;a href=&quot;https://bwrgocoin.atlassian.net/wiki/display/DOC/PrivateSend&quot;&gt;https://bwrgocoin.atlassian.net/wiki/display/DOC/PrivateSend&lt;/a&gt;         </translation>
     </message>
     <message>
         <location line="-50"/>
@@ -1409,18 +1409,18 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to tragocoin Core.</source>
-        <translation>Welcome to tragocoin Core.</translation>
+        <source>Welcome to bwrgo Core.</source>
+        <translation>Welcome to bwrgo Core.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where tragocoin Core will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where tragocoin Core will store its data.</translation>
+        <source>As this is the first time the program is launched, you can choose where bwrgo Core will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where bwrgo Core will store its data.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>tragocoin Core will download and store a copy of the tragocoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>tragocoin Core will download and store a copy of the tragocoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>bwrgo Core will download and store a copy of the bwrgo block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>bwrgo Core will download and store a copy of the bwrgo block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1434,8 +1434,8 @@
     </message>
     <message>
         <location filename="../intro.cpp" line="+88"/>
-        <source>tragocoin Core</source>
-        <translation>tragocoin Core</translation>
+        <source>bwrgo Core</source>
+        <translation>bwrgo Core</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1675,8 +1675,8 @@
     </message>
     <message>
         <location line="+155"/>
-        <source>Amount of tragocoin to keep anonymized</source>
-        <translation>Amount of tragocoin to keep anonymized</translation>
+        <source>Amount of bwrgo to keep anonymized</source>
+        <translation>Amount of bwrgo to keep anonymized</translation>
     </message>
     <message>
         <location line="-119"/>
@@ -1685,13 +1685,13 @@
     </message>
     <message>
         <location line="-104"/>
-        <source>Automatically start tragocoin Core after logging in to the system.</source>
-        <translation>Automatically start tragocoin Core after logging in to the system.</translation>
+        <source>Automatically start bwrgo Core after logging in to the system.</source>
+        <translation>Automatically start bwrgo Core after logging in to the system.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start tragocoin Core on system login</source>
-        <translation>&amp;Start tragocoin Core on system login</translation>
+        <source>&amp;Start bwrgo Core on system login</source>
+        <translation>&amp;Start bwrgo Core on system login</translation>
     </message>
     <message>
         <location line="+123"/>
@@ -1750,8 +1750,8 @@
     </message>
     <message>
         <location line="+60"/>
-        <source>Automatically open the tragocoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the tragocoin Core client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the bwrgo Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the bwrgo Core client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1765,8 +1765,8 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the tragocoin network through a SOCKS5 proxy.</source>
-        <translation>Connect to the tragocoin network through a SOCKS5 proxy.</translation>
+        <source>Connect to the bwrgo network through a SOCKS5 proxy.</source>
+        <translation>Connect to the bwrgo network through a SOCKS5 proxy.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1780,8 +1780,8 @@
     </message>
     <message>
         <location line="+45"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting tragocoin Core.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting tragocoin Core.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting bwrgo Core.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting bwrgo Core.</translation>
     </message>
     <message>
         <location line="+99"/>
@@ -1877,8 +1877,8 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>Connect to the tragocoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Connect to the tragocoin network through a separate SOCKS5 proxy for Tor hidden services.</translation>
+        <source>Connect to the bwrgo network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Connect to the bwrgo network through a separate SOCKS5 proxy for Tor hidden services.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1918,9 +1918,9 @@
     <message>
         <location line="+34"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/tragocoin/</source>
+https://www.transifex.com/projects/p/bwrgo/</source>
         <translation>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/projects/p/tragocoin/</translation>
+https://www.transifex.com/projects/p/bwrgo/</translation>
     </message>
     <message>
         <location line="+19"/>
@@ -2020,8 +2020,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
         <location line="+50"/>
         <location line="+355"/>
         <location line="+258"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the tragocoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the tragocoin network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the bwrgo network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the bwrgo network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-364"/>
@@ -2152,8 +2152,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>0 TRAGO / 0 Rounds</source>
-        <translation>0 TRAGO / 0 Rounds</translation>
+        <source>0 BWRGO / 0 Rounds</source>
+        <translation>0 BWRGO / 0 Rounds</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2382,8 +2382,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="-402"/>
-        <source>Cannot start tragocoin: click-to-pay handler</source>
-        <translation>Cannot start tragocoin: click-to-pay handler</translation>
+        <source>Cannot start bwrgo: click-to-pay handler</source>
+        <translation>Cannot start bwrgo: click-to-pay handler</translation>
     </message>
     <message>
         <location line="+103"/>
@@ -2414,8 +2414,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+8"/>
-        <source>URI cannot be parsed! This can be caused by an invalid tragocoin address or malformed URI parameters.</source>
-        <translation>URI cannot be parsed! This can be caused by an invalid tragocoin address or malformed URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid bwrgo address or malformed URI parameters.</source>
+        <translation>URI cannot be parsed! This can be caused by an invalid bwrgo address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -2521,8 +2521,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+119"/>
-        <source>Enter a tragocoin address (e.g. %1)</source>
-        <translation>Enter a tragocoin address (e.g. %1)</translation>
+        <source>Enter a bwrgo address (e.g. %1)</source>
+        <translation>Enter a bwrgo address (e.g. %1)</translation>
     </message>
     <message>
         <location line="+857"/>
@@ -2722,8 +2722,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+48"/>
-        <source>Open the tragocoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the tragocoin Core debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the bwrgo Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the bwrgo Core debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -2990,8 +2990,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+148"/>
-        <source>Welcome to the tragocoin Core RPC console.</source>
-        <translation>Welcome to the tragocoin Core RPC console.</translation>
+        <source>Welcome to the bwrgo Core RPC console.</source>
+        <translation>Welcome to the bwrgo Core RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3080,8 +3080,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the tragocoin network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the tragocoin network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the bwrgo network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the bwrgo network.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3096,8 +3096,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="-14"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the tragocoin network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the tragocoin network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the bwrgo network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the bwrgo network.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3419,8 +3419,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for tragocoin transactions than the network can process.</source>
-        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for tragocoin transactions than the network can process.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for bwrgo transactions than the network can process.</source>
+        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for bwrgo transactions than the network can process.</translation>
     </message>
     <message>
         <location line="-59"/>
@@ -3675,8 +3675,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+229"/>
-        <source>Warning: Invalid tragocoin address</source>
-        <translation>Warning: Invalid tragocoin address</translation>
+        <source>Warning: Invalid bwrgo address</source>
+        <translation>Warning: Invalid bwrgo address</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -3703,8 +3703,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The tragocoin address to send the payment to</source>
-        <translation>The tragocoin address to send the payment to</translation>
+        <source>The bwrgo address to send the payment to</source>
+        <translation>The bwrgo address to send the payment to</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3752,8 +3752,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="-1046"/>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of tragocoin than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of tragocoin than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of bwrgo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of bwrgo than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3767,8 +3767,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the tragocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the tragocoin network.</source>
-        <translation>A message that was attached to the tragocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the tragocoin network.</translation>
+        <source>A message that was attached to the bwrgo: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the bwrgo network.</source>
+        <translation>A message that was attached to the bwrgo: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the bwrgo network.</translation>
     </message>
     <message>
         <location line="+433"/>
@@ -3802,8 +3802,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+119"/>
-        <source>tragocoin Core is shutting down...</source>
-        <translation>tragocoin Core is shutting down...</translation>
+        <source>bwrgo Core is shutting down...</source>
+        <translation>bwrgo Core is shutting down...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3825,13 +3825,13 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>You can sign messages/agreements with your addresses to prove you can receive tragocoin sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>You can sign messages/agreements with your addresses to prove you can receive tragocoin sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive bwrgo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>You can sign messages/agreements with your addresses to prove you can receive bwrgo sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The tragocoin address to sign the message with</source>
-        <translation>The tragocoin address to sign the message with</translation>
+        <source>The bwrgo address to sign the message with</source>
+        <translation>The bwrgo address to sign the message with</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3872,8 +3872,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+17"/>
-        <source>Sign the message to prove you own this tragocoin address</source>
-        <translation>Sign the message to prove you own this tragocoin address</translation>
+        <source>Sign the message to prove you own this bwrgo address</source>
+        <translation>Sign the message to prove you own this bwrgo address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3903,13 +3903,13 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>The tragocoin address the message was signed with</source>
-        <translation>The tragocoin address the message was signed with</translation>
+        <source>The bwrgo address the message was signed with</source>
+        <translation>The bwrgo address the message was signed with</translation>
     </message>
     <message>
         <location line="+33"/>
-        <source>Verify the message to ensure it was signed with the specified tragocoin address</source>
-        <translation>Verify the message to ensure it was signed with the specified tragocoin address</translation>
+        <source>Verify the message to ensure it was signed with the specified bwrgo address</source>
+        <translation>Verify the message to ensure it was signed with the specified bwrgo address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3997,8 +3997,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+45"/>
-        <source>tragocoin Core</source>
-        <translation>tragocoin Core</translation>
+        <source>bwrgo Core</source>
+        <translation>bwrgo Core</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -4012,8 +4012,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>The tragocoin Core developers</source>
-        <translation>The tragocoin Core developers</translation>
+        <source>The bwrgo Core developers</source>
+        <translation>The bwrgo Core developers</translation>
     </message>
     <message>
         <location filename="../networkstyle.cpp" line="+21"/>
@@ -4665,8 +4665,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     <message>
         <location line="-28"/>
         <location line="+12"/>
-        <source>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TRAGO.</source>
-        <translation>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TRAGO.</translation>
+        <source>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 BWRGO.</source>
+        <translation>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 BWRGO.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -4723,16 +4723,16 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
 </context>
 <context>
-    <name>tragocoin-core</name>
+    <name>bwrgo-core</name>
     <message>
-        <location filename="../tragocoinstrings.cpp" line="+34"/>
+        <location filename="../bwrgostrings.cpp" line="+34"/>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation>Bind to given address and always listen on it. Use [host]:port notation for IPv6</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Cannot obtain a lock on data directory %s. tragocoin Core is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. tragocoin Core is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. bwrgo Core is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. bwrgo Core is probably already running.</translation>
     </message>
     <message>
         <location line="+32"/>
@@ -4781,8 +4781,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. tragocoin Core is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. tragocoin Core is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. bwrgo Core is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. bwrgo Core is probably already running.</translation>
     </message>
     <message>
         <location line="+39"/>
@@ -5076,8 +5076,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+17"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 TRAGO.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 1000 TRAGO.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 1000 BWRGO.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 1000 BWRGO.</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -5136,8 +5136,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) %i The tragocoin Core Developers</source>
-        <translation>Copyright (C) %i The tragocoin Core Developers</translation>
+        <source>Copyright (C) %i The bwrgo Core Developers</source>
+        <translation>Copyright (C) %i The bwrgo Core Developers</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -5151,8 +5151,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of tragocoin Core</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of tragocoin Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of bwrgo Core</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of bwrgo Core</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -5206,8 +5206,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. tragocoin Core is shutting down.</source>
-        <translation>Initialization sanity check failed. tragocoin Core is shutting down.</translation>
+        <source>Initialization sanity check failed. bwrgo Core is shutting down.</source>
+        <translation>Initialization sanity check failed. bwrgo Core is shutting down.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5496,8 +5496,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Wallet needed to be rewritten: restart tragocoin Core to complete</source>
-        <translation>Wallet needed to be rewritten: restart tragocoin Core to complete</translation>
+        <source>Wallet needed to be rewritten: restart bwrgo Core to complete</source>
+        <translation>Wallet needed to be rewritten: restart bwrgo Core to complete</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -5551,8 +5551,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Keep N TRAGO anonymized (default: %u)</source>
-        <translation>Keep N TRAGO anonymized (default: %u)</translation>
+        <source>Keep N BWRGO anonymized (default: %u)</source>
+        <translation>Keep N BWRGO anonymized (default: %u)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -5561,8 +5561,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="-328"/>
-        <source>Disable all tragocoin specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
-        <translation>Disable all tragocoin specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</translation>
+        <source>Disable all bwrgo specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</source>
+        <translation>Disable all bwrgo specific functionality (Masternodes, PrivateSend, InstantSend, Governance) (0-1, default: %u)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5626,8 +5626,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TRAGO.</source>
-        <translation>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 TRAGO.</translation>
+        <source>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 BWRGO.</source>
+        <translation>InstantSend doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 BWRGO.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5661,8 +5661,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong tragocoin Core will not work properly.</source>
-        <translation>Please check that your computer&apos;s date and time are correct! If your clock is wrong tragocoin Core will not work properly.</translation>
+        <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong bwrgo Core will not work properly.</source>
+        <translation>Please check that your computer&apos;s date and time are correct! If your clock is wrong bwrgo Core will not work properly.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5686,8 +5686,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Randomize ctragocointials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
-        <translation>Randomize ctragocointials for every proxy connection. This enables Tor stream isolation (default: %u)</translation>
+        <source>Randomize cbwrgotials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
+        <translation>Randomize cbwrgotials for every proxy connection. This enables Tor stream isolation (default: %u)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5736,8 +5736,8 @@ https://www.transifex.com/projects/p/tragocoin/</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 TRAGO.</source>
-        <translation>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 TRAGO.</translation>
+        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 BWRGO.</source>
+        <translation>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 BWRGO.</translation>
     </message>
     <message>
         <location line="+6"/>

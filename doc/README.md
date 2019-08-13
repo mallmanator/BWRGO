@@ -1,11 +1,11 @@
-tragocoin Core 1.0.1
+bwrgo Core 1.0.1
 =====================
 
-This is the official reference wallet for tragocoin digital currency and comprises the backbone of the tragocoin peer-to-peer network. You can [download tragocoin Core](https://tragocoincoin.io) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for bwrgo digital currency and comprises the backbone of the bwrgo peer-to-peer network. You can [download bwrgo Core](https://bwrgocoin.io) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
-The following are some helpful notes on how to run tragocoin on your native platform.
+The following are some helpful notes on how to run bwrgo on your native platform.
 
 ### Unix
 
@@ -16,22 +16,22 @@ Unpack the files into a directory and run:
 
 ### Windows
 
-Unpack the files into a directory, and then run tragocoin-qt.exe.
+Unpack the files into a directory, and then run bwrgo-qt.exe.
 
 ### OS X
 
-Drag tragocoin-Qt to your applications folder, and then run tragocoin-Qt.
+Drag bwrgo-Qt to your applications folder, and then run bwrgo-Qt.
 
 ### Need Help?
 
-* See the [tragocoin documentation](https://tragocoincoin.atlassian.net/wiki/display/DOC)
+* See the [bwrgo documentation](https://bwrgocoin.atlassian.net/wiki/display/DOC)
 for help and more information.
-* Ask for help on [#tragocoincoin](http://webchat.freenode.net?channels=tragocoincoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=tragocoincoin).
-* Ask for help on the [tragocoinTalk](https://tragocointalk.org/) forums.
+* Ask for help on [#bwrgocoin](http://webchat.freenode.net?channels=bwrgocoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=bwrgocoin).
+* Ask for help on the [bwrgoTalk](https://bwrgotalk.org/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build tragocoin Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build bwrgo Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build tragocoin Core on your native 
 
 Development
 ---------------------
-The tragocoin Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The bwrgo Core repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -57,8 +57,8 @@ The tragocoin Core repo's [root README](/README.md) contains relevant informatio
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [tragocoinTalk](https://tragocointalk.org/) forums, in the Development & Technical Discussion board.
-* Discuss on [#tragocoincoin](http://webchat.freenode.net/?channels=tragocoincoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=tragocoincoin).
+* Discuss on the [bwrgoTalk](https://bwrgotalk.org/) forums, in the Development & Technical Discussion board.
+* Discuss on [#bwrgocoin](http://webchat.freenode.net/?channels=bwrgocoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=bwrgocoin).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

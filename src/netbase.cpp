@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifdef HAVE_CONFIG_H
-#include "config/tragocoin-config.h"
+#include "config/bwrgo-config.h"
 #endif
 
 #include "netbase.h"
@@ -573,7 +573,7 @@ static bool ConnectThroughProxy(const proxyType &proxy, const std::string& strDe
         return false;
     }
     // do socks negotiation
-    if (proxy.randomize_ctragocointials) {
+    if (proxy.randomize_cbwrgotials) {
         ProxyCredentials random_auth;
         random_auth.username = strprintf("%i", insecure_rand());
         random_auth.password = strprintf("%i", insecure_rand());

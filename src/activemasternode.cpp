@@ -1,6 +1,6 @@
 // Copyright (c) 2014-2018 The Proton Core developers
 // Copyright (c) 2018 The Resq Core developers
-// Copyright (c) 2018 The tragocoin Core developers
+// Copyright (c) 2018 The bwrgo Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -213,7 +213,7 @@ void CActiveMasternode::ManageStateInitial()
     }
 
     if(pwalletMain->GetBalance() < MN_COLLATERAL * COIN) {
-        LogPrintf("CActiveMasternode::ManageStateInitial -- %s: Wallet balance is < 100 000 TRAGO\n", GetStateString());
+        LogPrintf("CActiveMasternode::ManageStateInitial -- %s: Wallet balance is < 100 000 BWRGO\n", GetStateString());
         return;
     }
 

@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
 // Copyright (c) 2017-2018 The Proton Core developers
-// Copyright (c) 2018 The tragocoin Core developers
+// Copyright (c) 2018 The bwrgo Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -30,8 +30,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called tragocoin (https://tragocoincoin.io/),
- * which enables instant payments to anyone, anywhere in the world. tragocoin uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called bwrgo (https://bwrgocoin.io/),
+ * which enables instant payments to anyone, anywhere in the world. bwrgo uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -72,13 +72,13 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/tragocoin.conf are parsed in qt/tragocoin.cpp's main()
+    // If Qt is used, parameters/bwrgo.conf are parsed in qt/bwrgo.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
     if (mapArgs.count("-?") || mapArgs.count("-h") ||  mapArgs.count("-help") || mapArgs.count("-version"))
     {
-        std::string strUsage = _("tragocoin Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("bwrgo Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
 
         if (mapArgs.count("-version"))
         {
@@ -87,7 +87,7 @@ bool AppInit(int argc, char* argv[])
         else
         {
             strUsage += "\n" + _("Usage:") + "\n" +
-                  "  tragocoind [options]                     " + _("Start tragocoin Core Daemon") + "\n";
+                  "  bwrgod [options]                     " + _("Start bwrgo Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -128,19 +128,19 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "tragocoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "bwrgo:"))
                 fCommandLine = true;
 
         if (fCommandLine)
         {
-            fprintf(stderr, "Error: There is no RPC client functionality in tragocoind anymore. Use the tragocoin-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in bwrgod anymore. Use the bwrgo-cli utility instead.\n");
             exit(EXIT_FAILURE);
         }
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon)
         {
-            fprintf(stdout, "tragocoin Core server starting\n");
+            fprintf(stdout, "bwrgo Core server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -191,7 +191,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect tragocoind signal handlers
+    // Connect bwrgod signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);

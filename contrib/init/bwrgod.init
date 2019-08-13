@@ -1,36 +1,36 @@
 #!/bin/bash
 #
-#  tragocoind The tragocoin Core server.
+#  bwrgod The bwrgo Core server.
 #
 #
 # chkconfig: 345 80 20
-# description: tragocoind
-# processname: tragocoind
+# description: bwrgod
+# processname: bwrgod
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/tragocoind, see below
-if [ -f /etc/sysconfig/tragocoind ]; then
-        . /etc/sysconfig/tragocoind
+# you can override defaults in /etc/sysconfig/bwrgod, see below
+if [ -f /etc/sysconfig/bwrgod ]; then
+        . /etc/sysconfig/bwrgod
 fi
 
 RETVAL=0
 
-prog=tragocoind
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/tragocoind
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/tragocoind}
+prog=bwrgod
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/bwrgod
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/bwrgod}
 
-# tragocoind defaults to /usr/bin/tragocoind, override with BITCOIND_BIN
-tragocoind=${BITCOIND_BIN-/usr/bin/tragocoind}
+# bwrgod defaults to /usr/bin/bwrgod, override with BITCOIND_BIN
+bwrgod=${BITCOIND_BIN-/usr/bin/bwrgod}
 
-# tragocoind opts default to -disablewallet, override with BITCOIND_OPTS
-tragocoind_opts=${BITCOIND_OPTS--disablewallet}
+# bwrgod opts default to -disablewallet, override with BITCOIND_OPTS
+bwrgod_opts=${BITCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $tragocoind $tragocoind_opts
+    daemon $DAEMONOPTS $bwrgod $bwrgod_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

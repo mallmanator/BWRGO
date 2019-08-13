@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C .. tragocoin_test
+	$(MAKE) -C .. bwrgo_test
 clean:
-	$(MAKE) -C .. tragocoin_test_clean
+	$(MAKE) -C .. bwrgo_test_clean
 check:
-	$(MAKE) -C .. tragocoin_test_check
+	$(MAKE) -C .. bwrgo_test_check

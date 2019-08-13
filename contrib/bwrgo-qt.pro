@@ -19,4 +19,4 @@ FORMS += \
     ../src/qt/forms/transactiondescdialog.ui
 
 RESOURCES += \
-    ../src/qt/tragocoin.qrc
+    ../src/qt/bwrgo.qrc

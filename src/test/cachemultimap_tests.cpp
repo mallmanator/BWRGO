@@ -1,9 +1,9 @@
 // Copyright (c) 2014-2018 The Proton Core developers
-// Copyright (c) 2018 The tragocoin Core developers
+// Copyright (c) 2018 The bwrgo Core developers
 
 #include "cachemultimap.h"
 
-#include "test/test_tragocoin.h"
+#include "test/test_bwrgo.h"
 
 #include <algorithm>
 #include <iostream>

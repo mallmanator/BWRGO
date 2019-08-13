@@ -4,7 +4,7 @@
 #include "arith_uint256.h"
 #include "uint256.h"
 #include "version.h"
-#include "test/test_tragocoin.h"
+#include "test/test_bwrgo.h"
 
 #include <boost/test/unit_test.hpp>
 #include <stdint.h>

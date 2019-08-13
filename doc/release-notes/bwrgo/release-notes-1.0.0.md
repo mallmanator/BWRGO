@@ -1,13 +1,13 @@
 1.0.0 Release notes
 ====================
 
-tragocoin Core version 1.0.0 is now available from:
+bwrgo Core version 1.0.0 is now available from:
 
-  https://tragocoincoin.io/downloads
+  https://bwrgocoin.io/downloads
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/tragocoincoin/tragocoin/issues
+  https://github.com/bwrgocoin/bwrgo/issues
 
 
 How to Upgrade
@@ -15,8 +15,8 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/tragocoin-Qt (on Mac) or
-tragocoind/tragocoin-qt (on Linux).
+installer (on Windows) or just copy over /Applications/bwrgo-Qt (on Mac) or
+bwrgod/bwrgo-qt (on Linux).
 
 **This new version uses transaction indexing by default, you will need to reindex 
 the blockchain. To do so, start the client with --reindex.**
@@ -32,6 +32,6 @@ Credits
 
 Thanks to who contributed to this release, at least:
 
-tragocoincoingroup
+bwrgocoingroup
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/tragocoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/bwrgo/).

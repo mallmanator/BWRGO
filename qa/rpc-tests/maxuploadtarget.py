@@ -87,8 +87,8 @@ class MaxUploadTest(BitcoinTestFramework):
  
     def add_options(self, parser):
         parser.add_option("--testbinary", dest="testbinary",
-                          default=os.getenv("TRAGOD", "tragocoind"),
-                          help="tragocoind binary to test")
+                          default=os.getenv("BWRGOD", "bwrgod"),
+                          help="bwrgod binary to test")
 
     def setup_chain(self):
         initialize_chain_clean(self.options.tmpdir, 2)

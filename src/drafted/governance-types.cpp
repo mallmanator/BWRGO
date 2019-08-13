@@ -7,8 +7,8 @@ GovernanceObjectType GovernanceStringToType(std::string strType) {
     if(strType == "AllTypes") type = AllTypes;
     if(strType == "Error") type = Error;
     if(strType == "ValueOverride") type = ValueOverride;
-    if(strType == "tragocoinNetwork") type = tragocoinNetwork;
-    if(strType == "tragocoinNetworkVariable") type = tragocoinNetworkVariable;
+    if(strType == "bwrgoNetwork") type = bwrgoNetwork;
+    if(strType == "bwrgoNetworkVariable") type = bwrgoNetworkVariable;
     if(strType == "Category") type = Category;
     if(strType == "Group") type = Group;
     if(strType == "User") type = User;
@@ -28,8 +28,8 @@ std::string GovernanceTypeToString(GovernanceObjectType type) {
     if(type == AllTypes) s = "AllTypes";
     if(type == Error) s = "Error";
     if(type == ValueOverride) s = "ValueOverride";
-    if(type == tragocoinNetwork) s = "tragocoinNetwork";
-    if(type == tragocoinNetworkVariable) s = "tragocoinNetworkVariable";
+    if(type == bwrgoNetwork) s = "bwrgoNetwork";
+    if(type == bwrgoNetworkVariable) s = "bwrgoNetworkVariable";
     if(type == Category) s = "Category";
     if(type == Group) s = "Group";
     if(type == User) s = "User";

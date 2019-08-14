@@ -38,7 +38,7 @@ BWRGO Currency Features
 | Currency | `BWRGO` |
 | Total Supply | `25,000,000` |
 | Block Size | `4MB` |
-| Block Time | `2.5 Minutes` |
+| Block Time | `1 Minute` |
 | PoW Normal Reward | `5 BWRGO` |
 | PoW Mega Reward | `200 BWRGO` |
 | Masternode Collateral | `20,000 BWRGO` |

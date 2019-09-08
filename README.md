@@ -28,7 +28,7 @@ completely stable. [Tags](https://github.com/bwrgo-project/bwrgo/tags) are creat
 regularly to indicate new official, stable release versions of bwrgo Core.
 
 
-BWRGO Currency Features
+BWRGO Currency Features 
 =============
 
 * PoW X16R algorithm.

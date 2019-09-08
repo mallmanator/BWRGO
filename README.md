@@ -1,6 +1,16 @@
-What is BWRGO coin?
-----------------
-I dont know, you tell me!
+<h2>What is BWRGO?</h2>
+<br>
+First, let's get the acronym out of the way:<br>
+<b>B</b> - Blue<br>
+<b>W</b> - White<br>
+<b>R</b> - Red<br>
+<b>G</b> - Green<br>
+<b>O</b> - Orange<br>
+These are the standard chip colors used in Thursday night poker.<br><br>
+
+BWRGO is an experimental digital currency used exclusively to fund and forever enshrine the legacy of Thursday night poker. Thursday night poker is famous for such titles as "Atlanta" and Cocktail Cove (a.k.a. tha cock) and yes even the controversial fame "Big A". More information can be found on these revolutionary games at https://mike.skott.us/2018/atlanta-cocktail-cove/
+
+BWRGO uses peer-to-peer technology to operate with no central authority: managing transactions and issuing money are carried out collectively by the network. bwrgo Core is the name of open source software which enables the use of this currency.
 
 
 For more information, as well as an immediately useable, binary version of

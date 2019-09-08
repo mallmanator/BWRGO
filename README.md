@@ -1,9 +1,9 @@
 <h2>What is BWRGO?</h2>
 <br>
 First, let's get the acronym out of the way:<br>
-<b><p style="color:red">B</font></b> - Blue<br>
+<b>B</b> - Blue<br>
 <b>W</b> - White<br>
-<b>R</b> - Red<br>
+<b>R</b> - Red &#x1F534;<br> 
 <b>G</b> - Green<br>
 <b>O</b> - Orange<br>
 These are the standard chip colors used in Thursday night poker.<br><br>
